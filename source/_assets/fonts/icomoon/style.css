@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?lgp7gz');
+  src:  url('fonts/icomoon.eot?lgp7gz#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?lgp7gz') format('truetype'),
+    url('fonts/icomoon.woff?lgp7gz') format('woff'),
+    url('fonts/icomoon.svg?lgp7gz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-corperate:before {
+  content: "\e900";
+}
+.icon-destination:before {
+  content: "\e901";
+}
+.icon-digital-experience:before {
+  content: "\e902";
+}
+.icon-donor-recognition:before {
+  content: "\e903";
+}
+.icon-education:before {
+  content: "\e904";
+}
+.icon-entertainment:before {
+  content: "\e905";
+}
+.icon-exterior-signs:before {
+  content: "\e906";
+}
+.icon-facebook .path1:before {
+  content: "\e907";
+  color: rgb(0, 0, 0);
+}
+.icon-facebook .path2:before {
+  content: "\e908";
+  margin-left: -1.0048828125em;
+  color: rgb(255, 255, 255);
+}
+.icon-health-care:before {
+  content: "\e909";
+}
+.icon-interior-signs:before {
+  content: "\e90a";
+}
+.icon-linkedin .path1:before {
+  content: "\e90b";
+  color: rgb(48, 48, 48);
+}
+.icon-linkedin .path2:before {
+  content: "\e90c";
+  margin-left: -1.0048828125em;
+  color: rgb(255, 255, 255);
+}
+.icon-linkedin .path3:before {
+  content: "\e90d";
+  margin-left: -1.0048828125em;
+  color: rgb(255, 255, 255);
+}
+.icon-linkedin .path4:before {
+  content: "\e90e";
+  margin-left: -1.0048828125em;
+  color: rgb(255, 255, 255);
+}
+.icon-logo:before {
+  content: "\e90f";
+}
+.icon-required:before {
+  content: "\e910";
+}
+.icon-resume-file:before {
+  content: "\e911";
+}
+.icon-send:before {
+  content: "\e912";
+}
+.icon-speciality-fabrication:before {
+  content: "\e913";
+}
+.icon-swipe:before {
+  content: "\e914";
+}
+.icon-twitter .path1:before {
+  content: "\e915";
+  color: rgb(48, 48, 48);
+}
+.icon-twitter .path2:before {
+  content: "\e916";
+  margin-left: -1.0048828125em;
+  color: rgb(255, 255, 255);
+}
+.icon-x:before {
+  content: "\e917";
+}
+.icon-arrow-right:before {
+  content: "\e918";
+}
+.icon-calander:before {
+  content: "\e919";
+}
+.icon-camera:before {
+  content: "\e91a";
+}
+.icon-check:before {
+  content: "\e91b";
+}
+.icon-civic:before {
+  content: "\e91c";
+}
+.icon-arrow-down:before {
+  content: "\e91d";
+}
+.icon-angle-right:before {
+  content: "\e91e";
+}
+
