@@ -1,32 +1,49 @@
 .footer {
-  background-color: silver;
-  padding: 0 12px;
+  background-color: $color-tundora;
+  padding: 0 40px;
   height: 75px;
+  @include clearfix;
 
   ul {
     margin: 0;
+    float: left;
   }
 
   li {
     display: inline-block;
     list-style: none;
     vertical-align: middle;
-  }
+    margin-right: 35px;
 
-  a {
-    display: block;
-    text-transform: uppercase;
-    color: $color-white;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 2.5px;
-
-    &:hover {
-      color: $color-lochmara;
+    &:last-child {
+      margin-right: 0;
     }
 
-    &.active {
-      font-weight: 700;
+    a {
+      display: block;
+      color: $color-white;
+      font-size: 14px;
+      letter-spacing: 3.5px;
+      padding: 28px 0;
+
+      &:hover {
+        color: $color-lochmara;
+      }
+
+      &.active {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__logo {
+    float: right;
+    width: 44px;
+    height: 44px;
+    margin-top: 15px;
+
+    a {
+      display: block;
     }
   }
 }

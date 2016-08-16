@@ -1,0 +1,83 @@
+.subscribe {
+  @include clearfix;
+  padding: 0 45px;
+  background-color: $color-mine-shaft;
+  padding-top: 46px;
+  padding-bottom: 46px;
+
+  &__left {
+    float: left;
+
+    h3 {
+      color: $color-white;
+      font-size: 30px;
+      letter-spacing: 2.5px;
+      margin: 0 0 2px;
+    }
+
+    p {
+      color: $color-white;
+      font-size: 14px;
+      letter-spacing: 2.8px;
+      font-weight: 100;
+      margin: 0 0 5px;
+    }
+
+    form {
+      @include clearfix;
+    }
+
+    input {
+      border: none;
+      box-shadow: none;
+      font-size: 12px;
+      font-weight: 100;
+      letter-spacing: 1.8px;
+      width: 260px;
+      line-height: 14px;
+      padding: 10px 14px;
+      background-color: $color-white;
+      float: left;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      border: none;
+      box-shadow: none;
+      font-size: 12px;
+      font-weight: 100;
+      letter-spacing: 1.8px;
+      line-height: 14px;
+      padding: 0 37px;
+      height: 34px;
+      background-color: $color-lochmara;
+      float: left;
+
+      &:hover {
+        background-color: $color-deep-cerulean;
+      }
+
+      i {
+        font-size: 22px;
+        color: $color-white;
+      }
+    }
+  }
+
+  &__right {
+    float: right;
+
+    ul {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    span {
+      display: block;
+      color: $color-white;
+    }
+  }
+}
