@@ -1,7 +1,53 @@
-<ul>
-  {% for post in site.categories.application %}
-    <div>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </div>
-  {% endfor %}
-</ul>
+<div class="applications">
+  <div class="applications__item">
+    <a class="applications__link" href="">
+      <div class="applications__image"></div>
+      <div class="applications__table">
+        <div class="applications__table-cell">
+          <div class="applications__icon">
+            <i class="icon-logo"></i>
+          </div>
+          <div class="applications__text">
+            Urban Sign matches the process to your project, providing the best solution at the best value.
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="applications__item">
+    <a class="applications__link" href="">
+      <div class="applications__image"></div>
+      <div class="applications__table">
+        <div class="applications__table-cell">
+          <div class="applications__icon">
+            <i class="icon-exterior-signs"></i>
+          </div>
+          <div class="applications__title">
+            Exterior Signs
+          </div>
+          <div class="applications__text">
+            Exterior signage brings an organization’s brand to the street and helps visitors find their way.
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="applications__item">
+    <a class="applications__link" href="">
+      <div class="applications__image"></div>
+      <div class="applications__table">
+        <div class="applications__table-cell">
+          <div class="applications__icon">
+            <i class="icon-interior-signs"></i>
+          </div>
+          <div class="applications__title">
+            Interior Signs
+          </div>
+          <div class="applications__text">
+            Interior signs provide valuable context and direct visitors to their destination.
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
