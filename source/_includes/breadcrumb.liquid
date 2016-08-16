@@ -1,0 +1,10 @@
+<ol class="breadcrumb">
+  {% for node in site.pages %}
+    {% if page.url == node.url %}
+      {% if page.url != '/'%}
+        <li><a href="/">Home</a></li>
+        <li><a href="{{node.url}}">{{node.title}}</a></li>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</ol>

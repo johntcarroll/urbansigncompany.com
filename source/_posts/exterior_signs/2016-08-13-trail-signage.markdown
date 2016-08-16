@@ -1,7 +1,8 @@
 ---
-title:  "interior signs"
+title: Trail Signage
 date:   2014-10-22 17:26:19
-categories: jekyll update
+categories: exterior-signs
 layout: default
 permalink: /:title/
+folder: exterior-signs
 ---
