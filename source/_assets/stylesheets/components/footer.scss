@@ -1,0 +1,32 @@
+.footer {
+  background-color: silver;
+  padding: 0 12px;
+  height: 75px;
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
+    vertical-align: middle;
+  }
+
+  a {
+    display: block;
+    text-transform: uppercase;
+    color: $color-white;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2.5px;
+
+    &:hover {
+      color: $color-lochmara;
+    }
+
+    &.active {
+      font-weight: 700;
+    }
+  }
+}
