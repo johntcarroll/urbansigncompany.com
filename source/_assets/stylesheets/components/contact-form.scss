@@ -1,49 +1,97 @@
 .contact-form {
+  margin-bottom: 69px;
+  max-width: 975px;
+  width: 100%;
+
   &__title {
+    color: $color-light-shaft;
     font-size: 30px;
     line-height: 48px;
-    font-family: 'work_sansregular';
+    letter-spacing: 3px;
+    margin-bottom: 9px;
   }
 
-  &__form {
-
+  &__subtitle {
+    @include font-size--i;
+    margin-top: 0;
+    margin-bottom: 24px;
+    letter-spacing: 4px;
+    text-transform: capitalize;
   }
 
-  .form {
+  &__info {
+    margin-bottom: 24px;
 
-    &__item {
-      position: relative;
-    }
+    p {
+      color: $color-light-shaft;
+      font-size: 14px;
+      line-height: 25px;
+      margin-bottom: 15px;
+      word-spacing: -1px;
 
-    &__icon {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 34px;
-      width: 60px;
-      z-index: 6;
-    }
-
-    &__icon-wrapper {
-      position: relative;
-      text-align: right;
-      height: 100%;
-      width: 100%;
-    }
-
-    .form-control {
-      border: 1px solid #D4D2D4;
-      border-radius: 0;
-      background-color: #fff;
-      position: relative;
-      z-index: 1;
+      a {
+        color: $color-light-shaft;
+      }
     }
   }
+
+  &__form-container {
+    @include breakpoint('phone-portrait') {
+      background: red;
+    }
+  }
+
+  .message {
+
+    &--default {
+      color: $color-light-shaft;
+
+      .icon-required {
+        color: $color-curious-blue;
+        font-size: 11px;
+        height: 10px;
+        width: 11px;
+      }
+    }
+
+    &--danger {
+      color: $color-crimson;
+      display: none;
+    }
+
+    i {
+      font-size: 11px;
+      margin-right: 3px;
+      height: 10px;
+      width: 11px;
+    }
+  }
+
+
 
   &__details {
     .address {
+      color: $color-light-shaft;
+      @include font-size--e;
+      margin-bottom: 25px;
+
       &__item {
         display: block;
+        margin-bottom: 8px;
+      }
+    }
+
+    .contacts {
+      &__item {
+        margin-bottom: 5px;
+
+        & > a {
+          color: $color-light-shaft;
+
+          &.text-email {
+            color: $color-lochmara;
+          }
+        }
       }
     }
   }

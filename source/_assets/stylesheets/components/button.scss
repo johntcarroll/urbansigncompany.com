@@ -1,0 +1,27 @@
+.btn {
+    border-radius: 0;
+
+    &--sent,
+    &--submit {
+      background-color: $color-lochmara;
+      border-color: $color-lochmara;
+      margin-top: 11px;
+      padding: 7px 37px 6px 38px;
+      letter-spacing: 3px;
+      @include font-size--e;
+      @include font-base-regular;
+      text-transform: uppercase;
+
+      i {
+        font-size: 20px;
+        height: 21px;
+        width: 20px;
+      }
+
+      i,
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }

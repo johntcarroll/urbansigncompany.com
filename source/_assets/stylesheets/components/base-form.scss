@@ -1,0 +1,77 @@
+.base-form {
+
+  &__item {
+    position: relative;
+    margin-bottom: 20px;
+
+    .form-control {
+      border: 1px solid $color-mine-shaft;
+      border-radius: 0;
+      background-color: $color-white;
+      box-shadow: none;
+      color: $color-mine-shaft;
+      @include font-size--c;
+      letter-spacing: 2px;
+      height: 35px;
+      padding-top: 7px;
+      padding-bottom: 6px;
+      position: relative;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+
+    textarea {
+      &.form-control {
+        height: 180px;
+        padding-top: 10px;
+        resize: none;
+      }
+
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 35px;
+    width: 31px;
+    z-index: 6;
+  }
+
+  &__icon-wrapper {
+    padding: 9px;
+    position: relative;
+    text-align: right;
+    height: 100%;
+    width: 100%;
+
+    &--textarea {
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+
+    i {
+      font-size: 11px;
+      height: 10px;
+      width: 11px;
+
+      &.icon-required,
+      &.icon-check {
+        color: $color-curious-blue;
+      }
+    }
+
+    .icon-check {
+      display: none;
+    }
+
+    .icon-x {
+      color: $color-crimson;
+      display: none;
+    }
+  }
+
+
+
+}
