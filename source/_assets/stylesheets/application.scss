@@ -1,10 +1,14 @@
+@import "mixins/fonts/fonts";
 @import "components/icons";
-@import "components/container";
+@import "fonts/font-face";
 @import "bootstrap/bootstrap";
 @import "components/colors";
 @import "variables/base";
+@import "components/base";
 @import "components/header";
 @import "components/footer";
 @import "components/subscribe";
+@import "components/contact-form";
+@import "components/employment-form";
 @import "components/navigation";
 @import "components/applications"

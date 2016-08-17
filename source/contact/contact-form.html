@@ -7,5 +7,98 @@ permalink: /contact-form/
 order: 4
 ---
 
-<h2>Contact Form</h2>
+
 <h2><a href="{{ BASE_PATH }}/employment-form/">Employment Form</a></h2>
+<div class="container contact-form">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+      <div class="contact-form__info">
+        <h2 class="contact-form__title">Contact Form</h2>
+        <p>
+          Fill in the form below or call us on
+          <a href="tel:856 691 8388">856 691 8388</a>
+        </p>
+        <p class="message message--default">
+          <span class="icon-required"></span>
+          <span>Required fields!</span>
+        </p>
+        <p class="message message--danger">
+          <span class="icon-x"></span>
+          <span>Required fieldsnot filled out!</span>
+        </p>
+      </div>
+      <!-- /.contact-info -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+      <form class="contact-form__form form">
+        <div class="form-group form__item">
+          <input type="text" class="form-control input input--default" placeholder="Seth Devis">
+          <div class="form__icon">
+            <div class="form__icon-wrapper">
+              <span class="icon-required"></span>
+              <span class="icon-check"></span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group form__item">
+          <input type="text" class="form-control input input--default" placeholder="Company">
+        </div>
+        <div class="form-group form__item">
+          <input type="email" class="form-control input input--default" placeholder="Email">
+        </div>
+        <div class="form-group form__item">
+          <input type="tel" class="form-control input input--default" placeholder="Phone">
+          <div class="form__icon">
+            <div class="form__icon-wrapper">
+              <span class="icon-required"></span>
+              <span class="icon-x"></span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group form__item">
+          <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+          <div class="form__icon">
+            <div class="form__icon-wrapper">
+              <span class="icon-required"></span>
+            </div>
+          </div>
+        </div>
+        <p class="message-success">
+          <i class="icon-check"></i>
+          Your message has been successfully send
+        </p>
+        <button type="submit" class="btn btn-primary">
+          <span>
+            Send
+            <i class="icon-send"></i>
+          </span>
+        </button>
+
+      </form>
+
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+      <div class="contact__details">
+        <h4>Urban sign</h4>
+        <div class="address">
+          <span class="address__item">527 East Chestnut Avenue,</span>
+          <span class="address__item">PO Box 640</span>
+          <span class="address__item">New Jersey, 08362</span>
+        </div>
+        <ul class="list-unstyled contacts">
+          <li class="contacts__item">
+            Phone: <a href="tel:856 691 8388">856 691 8388</a>
+          </li>
+          <li class="contacts__item">
+            Fax <a href="tel:856 692 8688">856 692 8688</a>
+          </li>
+          <li class="contacts__item">
+            Email: <a href="mailto:info@urbansigncompany.com">info@urbansigncompany.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

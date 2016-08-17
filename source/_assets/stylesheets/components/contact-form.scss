@@ -1,0 +1,50 @@
+.contact-form {
+  &__title {
+    font-size: 30px;
+    line-height: 48px;
+    font-family: 'work_sansregular';
+  }
+
+  &__form {
+
+  }
+
+  .form {
+
+    &__item {
+      position: relative;
+    }
+
+    &__icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 34px;
+      width: 60px;
+      z-index: 6;
+    }
+
+    &__icon-wrapper {
+      position: relative;
+      text-align: right;
+      height: 100%;
+      width: 100%;
+    }
+
+    .form-control {
+      border: 1px solid #D4D2D4;
+      border-radius: 0;
+      background-color: #fff;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &__details {
+    .address {
+      &__item {
+        display: block;
+      }
+    }
+  }
+}
