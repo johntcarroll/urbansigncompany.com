@@ -7,8 +7,25 @@ permalink: /
 order: 1
 ---
 
-<div class="homepage">
+<div class="banner">
   {% include up_applications_navigation.liquid %}
+  <div class="banner__image" style="background-image: url('{{ src | asset_path : "banner.jpg" }}')"></div>
+  <div class="banner__inner">
+    <div class="banner__box">
+    <div class="banner__title">
+    <h1>Urban Sign is a national leader in architectural sign fabrication.</h1>
+  </div>
+  <div class="banner__description">
+    We partner with innovative clients and designers, building a reputation for excellence across a wide variety of sign, exhibition and place-making projects.
+  </div>
+  <div class="banner__btn">
+    <a href="" class="button button--main"></a>
+  </div>
+  </div>
+  <div class="banner__arrow">
+    <i class=""></i>
+  </div>
+  </div>
 </div>
 
 {% include down_applications_navigation.liquid %}

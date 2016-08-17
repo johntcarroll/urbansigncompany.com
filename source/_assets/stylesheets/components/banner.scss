@@ -1,0 +1,44 @@
+.banner {
+  position: relative;
+  height: 700px;
+  padding-top: 50px;
+
+  &__image {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__inner {
+    max-width: 931px;
+    margin: 0 auto;
+    @include clearfix;
+  }
+
+  &__box {
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+    float: right;
+    text-align: right;
+  }
+
+  &__title {
+
+    h1 {
+      color: $color-white;
+      @include font-base-medium;
+      font-size: 34px;
+    }
+  }
+
+  &__description {
+    color: $color-white;
+    font-size: 14px;
+  }
+}

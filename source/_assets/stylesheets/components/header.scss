@@ -1,6 +1,10 @@
 .header {
-  background-color: $color-lochmara;
   padding: 0 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
 
   ul {
     margin: 0;
