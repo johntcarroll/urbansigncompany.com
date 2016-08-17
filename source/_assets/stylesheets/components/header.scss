@@ -1,5 +1,5 @@
 .header {
-  background-color: silver;
+  background-color: $color-lochmara;
   padding: 0 12px;
 
   ul {
@@ -16,7 +16,6 @@
   a {
     display: block;
     text-transform: uppercase;
-    color: $color-white;
     font-size: 12px;
     letter-spacing: 2.5px;
 

@@ -1,0 +1,35 @@
+.navigation {
+  background-color: $color-lochmara;
+  padding: 10px 0;
+
+  ul {
+    text-align: center;
+    font-size: 0;
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid $color-white;
+    border-right: none;
+
+    &:last-child {
+      border-right: 1px solid $color-white;
+    }
+  }
+
+  a {
+    display: block;
+    background-color: $color-nepal;
+    text-transform: uppercase;
+    padding: 14px 16px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-lochmara;
+    }
+  }
+}

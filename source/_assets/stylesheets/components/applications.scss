@@ -1,0 +1,43 @@
+.applications {
+  font-size: 0;
+
+  &__item {
+    width: 33.333%;
+    display: inline-block;
+    background-color: gray;
+    height: 200px;
+    vertical-align: top;
+  }
+
+  &__icon {
+
+    i {
+      color: $color-white;
+      font-size: 30px;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    color: $color-white;
+  }
+
+  &__text {
+    color: $color-black;
+    font-size: 14px;
+  }
+
+  &__table {
+    display: table;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+
+}

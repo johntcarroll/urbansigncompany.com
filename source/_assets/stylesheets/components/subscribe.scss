@@ -3,7 +3,9 @@
   padding: 0 45px;
   background-color: $color-mine-shaft;
   padding-top: 46px;
-  padding-bottom: 46px;
+  padding-bottom: 66px;
+
+  // LEFT BAR
 
   &__left {
     float: left;
@@ -67,17 +69,46 @@
     }
   }
 
+  // RIGHT BAR
+
   &__right {
     float: right;
 
     ul {
       display: inline-block;
       vertical-align: top;
+
+      &:first-child {
+        padding-right: 65px;
+      }
+    }
+
+    li {
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a,
+    span {
+      color: $color-white;
+      font-size: 14px;
+      letter-spacing: 2.2px;
+      font-weight: 100;
     }
 
     span {
       display: block;
-      color: $color-white;
+      line-height: 22px;
+    }
+
+    a {
+
+      &:hover {
+        color: $color-lochmara;
+      }
     }
   }
 }
