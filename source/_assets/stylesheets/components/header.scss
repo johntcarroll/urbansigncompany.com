@@ -24,7 +24,7 @@
     }
 
     &.active {
-      font-weight: 700;
+      @include font-base-bold;
     }
   }
 
@@ -33,7 +33,7 @@
     height: 3px;
     background-color: $color-black;
     border-radius: 50%;
-    margin: 0 10px;
+    margin: 0 8px;
   }
 }
 

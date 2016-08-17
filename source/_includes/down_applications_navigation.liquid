@@ -1,53 +1,104 @@
 <div class="applications">
-  <div class="applications__item">
+  <div class="applications__item applications__item--silver">
     <a class="applications__link" href="">
-      <div class="applications__image"></div>
-      <div class="applications__table">
-        <div class="applications__table-cell">
-          <div class="applications__icon">
-            <i class="icon-logo"></i>
-          </div>
-          <div class="applications__text">
-            Urban Sign matches the process to your project, providing the best solution at the best value.
-          </div>
-        </div>
+      <div class="applications__box">
+        <div class="applications__icon">
+        <i class="icon-logo"></i>
+      </div>
+      <div class="applications__text">
+        Urban Sign matches the process to your project, providing the best solution at the best value.
+      </div>
       </div>
     </a>
   </div>
   <div class="applications__item">
     <a class="applications__link" href="">
-      <div class="applications__image"></div>
-      <div class="applications__table">
-        <div class="applications__table-cell">
-          <div class="applications__icon">
-            <i class="icon-exterior-signs"></i>
-          </div>
-          <div class="applications__title">
-            Exterior Signs
-          </div>
-          <div class="applications__text">
-            Exterior signage brings an organization’s brand to the street and helps visitors find their way.
-          </div>
+      <div class="applications__image" style="background-image: url('{{ src | asset_path : "applications-1.jpg" }}')"></div>
+      <div class="applications__box">
+        <div class="applications__icon">
+          <i class="icon-exterior-signs"></i>
+          {{ src | img : "arrow.png" }}
+        </div>
+        <div class="applications__title">
+          Exterior Signs
+        </div>
+        <div class="applications__text">
+          Exterior signage brings an organization’s brand to the street and helps visitors find their way.
         </div>
       </div>
+      <div class="applications__overlay"></div>
     </a>
   </div>
   <div class="applications__item">
     <a class="applications__link" href="">
-      <div class="applications__image"></div>
-      <div class="applications__table">
-        <div class="applications__table-cell">
-          <div class="applications__icon">
-            <i class="icon-interior-signs"></i>
-          </div>
-          <div class="applications__title">
-            Interior Signs
-          </div>
-          <div class="applications__text">
-            Interior signs provide valuable context and direct visitors to their destination.
-          </div>
+      <div class="applications__image" style="background-image: url('{{ src | asset_path : "applications-1.jpg" }}')"></div>
+      <div class="applications__box">
+        <div class="applications__icon">
+          <i class="icon-interior-signs"></i>
+          {{ src | img : "arrow.png" }}
+        </div>
+        <div class="applications__title">
+          Interior Signs
+        </div>
+        <div class="applications__text">
+          Interior signs provide valuable context and direct visitors to their destination.
         </div>
       </div>
+      <div class="applications__overlay"></div>
+    </a>
+  </div>
+  <div class="applications__item">
+    <a class="applications__link" href="">
+      <div class="applications__image" style="background-image: url('{{ src | asset_path : "applications-1.jpg" }}')"></div>
+      <div class="applications__box">
+        <div class="applications__icon">
+          <i class="icon-donor-recognition"></i>
+          {{ src | img : "arrow.png" }}
+        </div>
+        <div class="applications__title">
+          Donor Recognition
+        </div>
+        <div class="applications__text">
+          Donor signage often uses unique fabrication techniques or specialty materials.
+        </div>
+      </div>
+      <div class="applications__overlay"></div>
+    </a>
+  </div>
+  <div class="applications__item">
+    <a class="applications__link" href="">
+      <div class="applications__image" style="background-image: url('{{ src | asset_path : "applications-1.jpg" }}')"></div>
+      <div class="applications__box">
+        <div class="applications__icon">
+          <i class="icon-digital-experience"></i>
+          {{ src | img : "arrow.png" }}
+        </div>
+        <div class="applications__title">
+          Digital Experiences
+        </div>
+        <div class="applications__text">
+          Digital signage is a moving target–both literally and technologically.
+        </div>
+      </div>
+      <div class="applications__overlay"></div>
+    </a>
+  </div>
+  <div class="applications__item">
+    <a class="applications__link" href="">
+      <div class="applications__image" style="background-image: url('{{ src | asset_path : "applications-1.jpg" }}')"></div>
+      <div class="applications__box">
+        <div class="applications__icon">
+          <i class="icon-speciality-fabrication"></i>
+          {{ src | img : "arrow.png" }}
+        </div>
+        <div class="applications__title">
+          Speciality Fabrication
+        </div>
+        <div class="applications__text">
+          When thinking outside the box, a wide range of in-house capabilities is key.
+        </div>
+      </div>
+      <div class="applications__overlay"></div>
     </a>
   </div>
 </div>

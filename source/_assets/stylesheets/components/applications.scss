@@ -1,43 +1,139 @@
 .applications {
   font-size: 0;
+  margin: -3px;
 
   &__item {
     width: 33.333%;
     display: inline-block;
-    background-color: gray;
-    height: 200px;
+    height: 350px;
     vertical-align: top;
+    text-align: center;
+    padding: 0 3px;
+    margin: 3px 0;
+
+    &--silver {
+
+      .applications__link {
+        background-color: $color-gallery;
+      }
+
+      .applications__text {
+        color: $color-mine-shaft;
+        padding: 0 56px;
+        opacity: 1 !important;
+      }
+
+      .applications__icon {
+
+        i {
+          color: $color-lochmara;
+          opacity: 1 !important;
+        }
+      }
+    }
+  }
+
+  &__link {
+    background-color: $color-gallery;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &:hover {
+
+      .applications__overlay {
+        opacity: 0;
+      }
+
+      .applications__text {
+        opacity: 0;
+      }
+
+      .applications__icon {
+
+        i {
+          opacity: 0;
+        }
+
+        img {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__image {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__box {
+    padding-top: 95px;
+    position: relative;
+    z-index: 2;
   }
 
   &__icon {
+    margin-bottom: 24px;
+    position: relative;
+    padding-bottom: 60px;
 
     i {
       color: $color-white;
-      font-size: 30px;
+      font-size: 60px;
+      opacity: 1;
+      position: absolute;
+      left: 0;
+      right: 0;
+      transition: opacity 350ms ease-in-out;
+    }
+
+    img {
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      transition: opacity 350ms ease-in-out;
     }
   }
 
   &__title {
-    font-size: 20px;
+    font-size: 18px;
+    letter-spacing: 3.5px;
     color: $color-white;
+    margin-bottom: 7px;
   }
 
   &__text {
-    color: $color-black;
+    color: $color-white;
     font-size: 14px;
+    letter-spacing: -.2px;
+    line-height: 23px;
+    padding: 0 30px;
+    opacity: 1;
+    transition: opacity 350ms ease-in-out;
+
   }
 
-  &__table {
-    display: table;
-    text-align: center;
-    width: 100%;
-    height: 100%;
+  &__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,102,157,0.8);
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 350ms ease-in-out;
   }
-
-  &__table-cell {
-    display: table-cell;
-    vertical-align: middle;
-  }
-
-
 }
