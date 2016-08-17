@@ -21,8 +21,10 @@
   </head>
   <body>
     {% include header_navigation.liquid %}
-    {% include breadcrumb.liquid %}
-    {{ content }}
+    <div class="container">
+      {% include breadcrumb.liquid %}
+      {{ content }}
+    </div>
     {% include footer_navigation.liquid %}
     {% include footer.liquid %}
     <script type="text/javascript" src="{% asset_path application.js %}"></script>

@@ -22,10 +22,10 @@
     display: block;
     background-color: $color-nepal;
     text-transform: uppercase;
-    padding: 14px 16px;
+    padding: 14px 12px;
     font-size: 12px;
-    letter-spacing: 2px;
-    font-weight: 600;
+    letter-spacing: 2.5px;
+    @include font-base-medium;
 
     &:hover {
       background-color: $color-white;

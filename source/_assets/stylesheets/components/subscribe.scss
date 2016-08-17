@@ -15,12 +15,13 @@
       font-size: 30px;
       letter-spacing: 2.5px;
       margin: 0 0 2px;
+      @include font-base-regular;
     }
 
     p {
       color: $color-white;
       font-size: 14px;
-      letter-spacing: 2.8px;
+      letter-spacing: 1.4px;
       font-weight: 100;
       margin: 0 0 5px;
     }
@@ -95,7 +96,7 @@
     span {
       color: $color-white;
       font-size: 14px;
-      letter-spacing: 2.2px;
+      letter-spacing: 1px;
       font-weight: 100;
     }
 
