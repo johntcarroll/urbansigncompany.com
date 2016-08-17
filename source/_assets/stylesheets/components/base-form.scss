@@ -1,8 +1,16 @@
 .base-form {
 
+  @include breakpoint ('phone-max') {
+    margin-bottom: 42px;
+  }
+
   &__item {
     position: relative;
     margin-bottom: 20px;
+
+    @include breakpoint ('tablet-max') {
+      margin-bottom: 15px;
+    }
 
     .form-control {
       border: 1px solid $color-mine-shaft;
@@ -18,6 +26,17 @@
       position: relative;
       text-transform: uppercase;
       z-index: 1;
+
+      @include breakpoint ('tablet-max') {
+        @include font-size--a;
+        height: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      &:focus {
+        border-color: $color-lochmara;
+      }
     }
 
     textarea {
@@ -25,6 +44,10 @@
         height: 180px;
         padding-top: 10px;
         resize: none;
+
+        @include breakpoint ('tablet-max') {
+          height: 100px;
+        }
       }
 
     }
@@ -34,7 +57,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 35px;
+    height: 100%;
     width: 31px;
     z-index: 6;
   }
@@ -46,15 +69,29 @@
     height: 100%;
     width: 100%;
 
+    @include breakpoint ('tablet-max') {
+      padding: 0 12px 0 8px;
+    }
+
+    @include breakpoint ('tablet-max') {
+      padding-right: 10px;
+    }
+
     &--textarea {
       padding-top: 6px;
       padding-bottom: 6px;
     }
 
     i {
+      display: inline-block;
       font-size: 11px;
       height: 10px;
+      vertical-align: middle;
       width: 11px;
+
+      @include breakpoint ('tablet-max') {
+        line-height: 20px;
+      }
 
       &.icon-required,
       &.icon-check {
@@ -62,8 +99,22 @@
       }
     }
 
-    .icon-check {
+    .icon-required {
       display: none;
+      @include breakpoint ('tablet-max') {
+        font-size: 8px;
+        height: 9px;
+        width: 8px;
+      }
+    }
+
+    .icon-check {
+
+      @include breakpoint ('tablet-max') {
+        font-size: 12px;
+        height: 10px;
+        width: 12px;
+      }
     }
 
     .icon-x {

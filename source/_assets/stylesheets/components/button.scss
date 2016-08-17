@@ -12,10 +12,31 @@
       @include font-base-regular;
       text-transform: uppercase;
 
+      @include breakpoint ('tablet') {
+        @include font-size--c;
+      }
+
+      @include breakpoint ('phone-max') {
+        @include font-size--a;
+        padding: 3px 16px 2px 16px;
+      }
+
       i {
         font-size: 20px;
         height: 21px;
         width: 20px;
+
+        @include breakpoint ('tablet') {
+          font-size: 18px;
+          height: 16px;
+          width: 15px;
+        }
+
+        @include breakpoint ('phone-max') {
+          font-size: 17px;
+          height: 17px;
+          width: 20px;
+        }
       }
 
       i,
