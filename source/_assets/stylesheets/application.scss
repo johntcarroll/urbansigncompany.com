@@ -1,5 +1,6 @@
 @import "bootstrap/bootstrap";
 @import "mixins/fonts/fonts";
+@import "components/container";
 @import "mixins/breakpoint/breakpoint";
 @import "components/icons";
 @import "fonts/font-face";
@@ -16,4 +17,6 @@
 @import "components/employment-form";
 @import "components/navigation";
 @import "components/applications";
-@import "components/banner"
+@import "components/banner";
+@import "components/project";
+@import "components/about-us"

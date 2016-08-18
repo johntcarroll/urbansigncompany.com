@@ -23,6 +23,11 @@
     font-size: 12px;
     letter-spacing: 2.5px;
 
+    @include breakpoint ('tablet') {
+      font-size: 10px;
+      letter-spacing: 2px;
+    }
+
     &:hover {
       color: $color-lochmara;
     }
@@ -38,6 +43,10 @@
     background-color: $color-black;
     border-radius: 50%;
     margin: 0 8px;
+
+    @include breakpoint ('tablet') {
+      margin: 0 9px;
+    }
   }
 
   &__logo {
