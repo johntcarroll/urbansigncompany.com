@@ -1,7 +1,52 @@
 .employment-form {
+
+  &__title {
+
+  }
+
   &__wrapper {
     margin: 0 -15px;
     font-size: 0;
+  }
+
+  .base-form {
+    margin-bottom: 19px;
+
+    @include breakpoint ('tablet') {
+      margin-bottom: 12px;
+    }
+
+    @include breakpoint ('phone-max') {
+      margin-bottom: 9px;
+    }
+
+    &--address {
+      margin-bottom: 15px;
+
+      @include breakpoint ('phone-max') {
+        margin-bottom: 9px;
+      }
+    }
+
+    &__radio-btn-group {
+      margin-bottom: 22px;
+
+      @include breakpoint ('tablet') {
+        margin-bottom: 15px;
+      }
+
+      @include breakpoint ('phone-max') {
+        margin-bottom: 11px;
+      }
+    }
+
+    &__icon {
+      right: 15px;
+
+      @include breakpoint ('tablet-max') {
+        right: 18px;
+      }
+    }
   }
 
   &__item {
@@ -15,5 +60,7 @@
         width: 100%;
       }
     }
+
+
   }
 }
