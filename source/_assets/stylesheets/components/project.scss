@@ -1,0 +1,17 @@
+.project {
+  text-align: center;
+  padding: 97px 0 77px;
+
+  &__description {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding-right: 20px;
+  }
+
+  &__btn {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

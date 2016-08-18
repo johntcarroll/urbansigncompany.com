@@ -126,7 +126,10 @@
     &--textarea {
       padding-top: 6px;
       padding-bottom: 6px;
-      line-height: 13px;
+
+      i {
+        line-height: 13px;
+      }
     }
 
     i {

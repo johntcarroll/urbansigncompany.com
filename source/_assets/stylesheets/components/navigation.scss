@@ -24,8 +24,8 @@
     text-transform: uppercase;
     padding: 14px 12px;
     font-size: 12px;
-    letter-spacing: 2.5px;
-    @include font-base-medium;
+    letter-spacing: 2.3px;
+    @include font-base-bold;
 
     &:hover {
       background-color: $color-white;

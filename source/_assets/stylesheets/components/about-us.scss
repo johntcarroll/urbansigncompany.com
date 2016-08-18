@@ -1,0 +1,111 @@
+.about-us {
+  padding: 95px 0 50px;
+
+  &__wrapper {
+    width: 100%;
+    max-width: 944px;
+    margin: 0 auto;
+    @include clearfix;
+  }
+
+  &__left {
+    float: left;
+    width: 31%;
+  }
+
+  &__right {
+    float: right;
+    width: 69%;
+  }
+
+  &__image {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border: 10px solid $color-lochmara;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+
+  &__title {
+    color: $color-mine-shaft;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+
+    span {
+      color: $color-lochmara;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    color: $color-boulder;
+    letter-spacing: -.2px;
+    line-height: 24px;
+    margin-bottom: 18px;
+  }
+
+  &__author {
+    color: $color-boulder;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  &__info {
+    text-align: center;
+    font-size: 0;
+    position: relative;
+    margin:45px auto 0;
+    max-width: 1130px;
+    width: 100%;
+
+    &:before {
+      content: " ";
+      background-color: black;
+      width: 100%;
+      position: absolute;
+      height: 1px;
+      top: 33px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+
+    li {
+      width: 28%;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 20px;
+      color: $color-mine-shaft;
+    }
+
+    a {
+      color: $color-mine-shaft;
+      position: relative;
+      z-index: 2;
+      background-color: $color-white;
+      padding: 0 10px;
+      font-size: 48px;
+      @include font-base-medium;
+
+      &:hover {
+        color: $color-lochmara;
+      }
+    }
+
+    span {
+      color: $color-mine-shaft;
+      display: block;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 2px;
+      position: relative;
+      z-index: 3;
+      top: -14px
+    }
+  }
+}

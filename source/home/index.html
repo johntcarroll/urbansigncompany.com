@@ -28,7 +28,29 @@ order: 1
   </div>
 </div>
 
-<div class="about_us">
+
+<div class="about-us">
+  <div class="about-us__wrapper">
+    <div class="about-us__left">
+      <div class="about-us__image" style="background-image: url('{{ src | asset_path : "photo.jpg" }}')"> </div>
+    </div>
+    <div class="about-us__right">
+      <div class="about-us__title">
+        Expertise in <span>quality</span> construction.
+      </div>
+      <div class="about-us__description">
+        Urban Sign brings a value-based approach and expertise in quality construction methodologies to every project. We consider each project a unique opportunity to create a long-term partnership with our client - whether working on a single sign or a complex, multi-tiered signage solution.
+      </div>
+      <div class="about-us__author">
+         - SETH DAVIS, FOUNDER
+      </div>
+    </div>
+  </div>
+  <ul class="about-us__info">
+    <li><a href="">2003</a><span>Founded</span></li>
+    <li><a href="">12</a><span>DESIGN PARTNERS</span></li>
+    <li><a href="">6</a><span>INDUSTRIES</span></li>
+  </ul>
 </div>
 
 {% include down_applications_navigation.liquid %}
