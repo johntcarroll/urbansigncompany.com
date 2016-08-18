@@ -1,13 +1,13 @@
 .header {
   padding: 0 12px;
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
   right: 0;
   z-index: 5;
 
   ul {
-    margin: 0;
+    margin: 0 0 22px;
     text-align: right;
   }
 
@@ -38,6 +38,15 @@
     background-color: $color-black;
     border-radius: 50%;
     margin: 0 8px;
+  }
+
+  &__logo {
+    text-align: center;
+    pa
+
+    a {
+      display: block;
+    }
   }
 }
 

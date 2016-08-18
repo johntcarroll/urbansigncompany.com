@@ -1,7 +1,7 @@
 .banner {
   position: relative;
   height: 700px;
-  padding-top: 50px;
+  padding-top: 106px;
 
   &__image {
     background-position: 50% 50%;
@@ -16,29 +16,56 @@
 
   &__inner {
     max-width: 931px;
+    padding-top: 75px;
     margin: 0 auto;
     @include clearfix;
+    position: relative;
+    height: 100%;
   }
 
   &__box {
     position: relative;
     z-index: 2;
-    max-width: 400px;
+    max-width: 477px;
     float: right;
     text-align: right;
   }
 
   &__title {
+    margin-bottom: 13px;
 
     h1 {
       color: $color-white;
       @include font-base-medium;
       font-size: 34px;
+      letter-spacing: 1.8px;
+      line-height: 40px;
+      margin: 0;
     }
   }
 
   &__description {
     color: $color-white;
     font-size: 14px;
+    letter-spacing: .1px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+
+  &__arrow {
+    position: absolute;
+    z-index: 2;
+    clear: both;
+    bottom: 56px;
+    right: 0;
+
+    a {
+      display: block;
+    }
+
+    i {
+      color: white;
+      font-size: 30px;
+    }
   }
 }
