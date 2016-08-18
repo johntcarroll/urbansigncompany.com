@@ -8,3 +8,18 @@
     {% endif %}
   {% endif %}
 {% endfor %}
+
+{% for node in site.posts %}
+  {% if page.url == node.url %}
+      <ol class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        <li><a href="/applications/">Application</a></li>
+        {% assign my_array = node.url | split: "/"  %}
+          {% for arr in my_array %}
+            {% if forloop.index > 2 %}
+              <li><a href="{{node.url}}">{{arr}}</a></li>
+            {% endif %}
+          {% endfor %}
+      </ol>
+  {% endif %}
+{% endfor %}
