@@ -7,43 +7,108 @@
     margin: 0 auto;
   }
 
-  ul {
+  &__main {
     text-align: center;
     font-size: 0;
+
+    @include breakpoint ('phone-max') {
+      display: none;
+    }
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      border: 1px solid $color-white;
+      border-right: none;
+
+      @include breakpoint ('tablet') {
+        width: 20%;
+      }
+
+      &:last-child {
+        border-right: 1px solid $color-white;
+      }
+    }
+
+    a {
+      display: block;
+      background-color: $color-nepal;
+      text-transform: uppercase;
+      padding: 14px 12px;
+      font-size: 12px;
+      letter-spacing: 2.3px;
+      @include font-base-bold;
+
+      @include breakpoint ('tablet') {
+        font-size: 10px;
+        padding: 3px 10px 1px;
+      }
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-lochmara;
+      }
+    }
   }
 
-  li {
-    display: inline-block;
-    vertical-align: middle;
-    border: 1px solid $color-white;
-    border-right: none;
+  &__dropdown {
+    max-width: 290px;
+    margin: 0 auto;
+    display: none;
 
-    @include breakpoint ('tablet') {
-      width: 20%;
+    @include breakpoint ('phone-max') {
+      display: block;
     }
 
-    &:last-child {
-      border-right: 1px solid $color-white;
+    button {
+      width: 100%;
+      border: 1px solid $color-white;
+      background-color: transparent;
+      color: $color-white;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 2.8px;
+      @include font-base-bold;
+      padding: 5px 12px 4px;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $color-white!important;
+        color: $color-lochmara!important;
+        outline: none!important;
+
+        .caret {
+
+          i {
+            color: $color-lochmara;
+          }
+        }
+      }
     }
-  }
 
-  a {
-    display: block;
-    background-color: $color-nepal;
-    text-transform: uppercase;
-    padding: 14px 12px;
-    font-size: 12px;
-    letter-spacing: 2.3px;
-    @include font-base-bold;
+    .dropdown-menu {
+      width: 100%;
+      border-radius: 0;
+      text-align: center;
 
-    @include breakpoint ('tablet') {
-      font-size: 10px;
-      padding: 3px 10px 1px;
+      a {
+        text-transform: uppercase;
+        font-size: 14px;
+        color: $color-lochmara;
+      }
     }
 
-    &:hover {
-      background-color: $color-white;
-      color: $color-lochmara;
+    .caret {
+      border: none;
+      width: auto;
+      height: auto;
+      position: relative;
+      top: 3px;
+
+      i {
+        color: $color-white;
+      }
     }
   }
 }

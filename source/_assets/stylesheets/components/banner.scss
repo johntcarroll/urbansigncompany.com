@@ -7,6 +7,11 @@
     padding-top: 81px;
   }
 
+  @include breakpoint ('phone-max') {
+    height: 414px;
+    padding-top: 44px;
+  }
+
   &__image {
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -30,10 +35,14 @@
       max-width: 626px;
       padding-top: 76px;
     }
+
+    @include breakpoint ('phone-max') {
+      max-width: 290px;
+      padding-top: 37px;
+    }
   }
 
   &__box {
-    position: relative;
     z-index: 2;
     max-width: 477px;
     float: right;
@@ -42,10 +51,19 @@
     @include breakpoint ('tablet') {
       max-width: 436px;
     }
+
+    @include breakpoint ('phone-max') {
+      max-width: 100%;
+    }
   }
 
   &__title {
     margin-bottom: 13px;
+
+    @include breakpoint ('phone-max') {
+      margin-bottom: 11px;
+      padding-left: 62px;
+    }
 
     h1 {
       color: $color-white;
@@ -60,6 +78,12 @@
         letter-spacing: 1.4px;
         line-height: 36px;
       }
+
+      @include breakpoint ('phone-max') {
+        font-size: 24px;
+        letter-spacing: 1.2px;
+        line-height: 30px;
+      }
     }
   }
 
@@ -70,10 +94,19 @@
     line-height: 25px;
     margin-bottom: 20px;
 
+    @include breakpoint ('phone-max') {
+      margin-bottom: 17px;
+    }
+
     @include breakpoint ('tablet') {
       font-size: 12px;
       line-height: 22px;
       padding-left: 20px;
+    }
+
+    @include breakpoint ('phone-max') {
+      font-size: 12px;
+      line-height: 22px;
     }
   }
 
@@ -84,6 +117,10 @@
     bottom: 56px;
     right: 0;
 
+    @include breakpoint ('phone-max') {
+      bottom: 31px;
+    }
+
     a {
       display: block;
     }
@@ -91,6 +128,10 @@
     i {
       color: white;
       font-size: 30px;
+
+      @include breakpoint ('phone-max') {
+        font-size: 22px;
+      }
     }
   }
 }
