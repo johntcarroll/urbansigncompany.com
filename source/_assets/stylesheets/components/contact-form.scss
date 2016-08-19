@@ -1,4 +1,5 @@
 .contact-form {
+  margin-top: 70px;
   margin-bottom: 69px;
   max-width: 975px;
   width: 100%;
@@ -9,7 +10,12 @@
 
   @include breakpoint ('phone-max') {
     margin-bottom: 28px;
+    margin-top: 40px;
     max-width: 320px;
+  }
+
+  &__btn-group {
+    @include clearfix;
   }
 
   &__title {
