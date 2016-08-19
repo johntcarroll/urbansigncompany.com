@@ -9,31 +9,35 @@
   ul {
     margin: 0 0 22px;
     text-align: right;
+
+    @include breakpoint ('tablet') {
+      margin: 0 0 17px;
+    }
   }
 
   li {
     display: inline-block;
     list-style: none;
     vertical-align: middle;
-  }
 
-  a {
-    display: block;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 2.5px;
+    a {
+      display: block;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 2.5px;
 
-    @include breakpoint ('tablet') {
-      font-size: 10px;
-      letter-spacing: 2px;
-    }
+      @include breakpoint ('tablet') {
+        font-size: 10px;
+        letter-spacing: 2px;
+      }
 
-    &:hover {
-      color: $color-lochmara;
-    }
+      &:hover {
+        color: $color-lochmara;
+      }
 
-    &.active {
-      @include font-base-bold;
+      &.active {
+        @include font-base-bold;
+      }
     }
   }
 
@@ -51,10 +55,21 @@
 
   &__logo {
     text-align: center;
-    pa
+  }
 
-    a {
-      display: block;
+  &__logo-desktop {
+    display: none;
+
+    @include breakpoint ('large') {
+      display: inline-block;
+    }
+  }
+
+  &__logo-tablet {
+    display: none;
+
+    @include breakpoint ('tablet') {
+      display: inline-block;
     }
   }
 }

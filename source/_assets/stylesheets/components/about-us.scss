@@ -27,6 +27,12 @@
     border: 10px solid $color-lochmara;
     border-radius: 50%;
     margin-top: 10px;
+
+    @include breakpoint ('tablet') {
+      width: 150px;
+      height: 150px;
+      border: 7px solid $color-lochmara;
+    }
   }
 
   &__title {
@@ -34,6 +40,10 @@
     font-size: 30px;
     letter-spacing: 3px;
     margin-bottom: 15px;
+
+    @include breakpoint ('tablet') {
+      font-size: 22px;
+    }
 
     span {
       color: $color-lochmara;
@@ -46,6 +56,10 @@
     letter-spacing: -.2px;
     line-height: 24px;
     margin-bottom: 18px;
+
+    @include breakpoint ('tablet') {
+      font-size: 12px;
+    }
   }
 
   &__author {
@@ -53,6 +67,10 @@
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
+
+    @include breakpoint ('tablet') {
+      font-size: 10px;
+    }
   }
 
   &__info {

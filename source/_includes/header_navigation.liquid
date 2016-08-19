@@ -18,8 +18,11 @@
     {% endif %}
   {% endfor %}</ul>
   <div class="header__logo">
-    <a href="">
+    <a href="" class="header__logo-desktop">
       {{ src | img : "logo.png" }}
+    </a>
+    <a href="" class="header__logo-tablet">
+      {{ src | img : "logo-tablet.png" }}
     </a>
   </div>
 </div>
