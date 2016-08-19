@@ -1,0 +1,106 @@
+.input,
+.form-control {
+  background-color: $color-white;
+  border-radius: 0;
+  box-shadow: none;
+  height: 35px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+  padding-right: 31px;
+
+  @include breakpoint ('tablet-max') {
+
+  }
+
+  &--default {
+    border: 1px solid $color-mine-shaft;
+    color: $color-mine-shaft;
+    @include font-size--c;
+    letter-spacing: 2px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+
+
+
+    @include breakpoint ('tablet-max') {
+      @include font-size--a;
+      height: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &:focus {
+      border-color: $color-lochmara;
+    }
+  }
+
+  &--primary{
+    border: 1px solid $color-lochmara;
+  }
+
+  &--upload {
+    color: $color-mine-shaft;
+    display: inline-block;
+    padding: 3px 10px 3px 21px;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    @include font-size--c;
+    height: 20px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 168px;
+
+    @include breakpoint ('tablet-max') {
+      @include font-size--a;
+      width: 130px;
+      padding: 4px 10px 4px 13px;
+    }
+
+    @include breakpoint ('phone-max') {
+      height: 15px;
+      padding: 2px 10px 2px 13px;
+    }
+
+    & > .base-form__icon {
+      right: 19px !important;
+      padding: 0;
+      font-size: 19px;
+
+      @include breakpoint ('tablet-max') {
+        right: 11px !important;
+      }
+
+      i {
+        line-height: 19px;
+
+        @include breakpoint ('tablet-max') {
+          font-size: 9px;
+        }
+
+        @include breakpoint ('phone-max') {
+          line-height: 14px;
+        }
+      }
+
+    }
+  }
+
+  &--upload input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+  }
+}

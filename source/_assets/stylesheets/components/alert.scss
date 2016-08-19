@@ -1,0 +1,63 @@
+.alert {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 0;
+
+  @include breakpoint ('tablet') {
+    margin-bottom: 13px;
+  }
+
+  &--default {
+    color: $color-light-shaft;
+    margin-bottom: 0;
+
+    @include breakpoint ('phone-max') {
+      margin-bottom: 7px;
+    }
+
+    .icon-required {
+      color: $color-curious-blue;
+      font-size: 11px;
+      height: 10px;
+      width: 11px;
+    }
+  }
+
+  &--danger {
+    color: $color-crimson;
+    display: none;
+  }
+
+  i {
+    font-size: 11px;
+    margin-right: 3px;
+    height: 10px;
+    width: 11px;
+
+    @include breakpoint ('tablet') {
+      margin-right: 6px;
+    }
+  }
+
+  &--success {
+    color: $color-lochmara;
+    @include font-size--e;
+
+    @include breakpoint ('tablet-max') {
+      @include font-size--c ;
+    }
+
+    i {
+      color: $color-lochmara;
+    }
+  }
+
+  &--info {
+    margin-bottom: 20px;
+
+    @include breakpoint ('phone-max') {
+      margin-bottom: 12px;
+    }
+  }
+}

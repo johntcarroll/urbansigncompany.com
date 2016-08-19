@@ -1,14 +1,17 @@
 .contact-form {
+  padding-left: 15px;
+  padding-right: 15px;
   margin-bottom: 69px;
   max-width: 975px;
   width: 100%;
 
   @include breakpoint ('tablet') {
-    max-width: 625px;
+    max-width: 655px;
   }
 
   @include breakpoint ('phone-max') {
-    max-width: 290px;
+    margin-bottom: 28px;
+    max-width: 320px;
   }
 
   .row {
@@ -30,6 +33,7 @@
     line-height: 48px;
     letter-spacing: 3px;
     margin-bottom: 9px;
+    text-transform: capitalize;
 
     @include breakpoint ('tablet-max') {
       font-size: 22px;
@@ -51,40 +55,38 @@
     letter-spacing: 4px;
     text-transform: capitalize;
 
-    @include breakpoint ('tablet') {
+    @include breakpoint ('tablet-max') {
       @include font-size--e;
       line-height: 15px;
       letter-spacing: 3px;
       margin-bottom: 26px;
     }
+
+    @include breakpoint ('phone-max') {
+      margin-bottom: 21px;
+    }
   }
 
   &__info {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 
     @include breakpoint ('tablet') {
       margin-bottom: 12px;
     }
 
     @include breakpoint ('phone-max') {
-      margin-bottom: 4px;
+      margin-bottom: 16px;
     }
 
     p {
       color: $color-light-shaft;
       font-size: 14px;
       line-height: 25px;
-      margin-bottom: 15px;
       word-spacing: -1px;
 
       @include breakpoint ('tablet-max') {
         font-size: 12px;
         line-height: 22px;
-        margin-bottom: 21px;
-      }
-
-      @include breakpoint ('phone-max') {
-        margin-bottom: 12px;
       }
 
       a {
@@ -93,67 +95,14 @@
     }
   }
 
-  .message {
-
-    @include breakpoint ('tablet') {
-      margin-bottom: 13px;
-    }
-
-    &--default {
-      color: $color-light-shaft;
-
-      @include breakpoint ('phone-max') {
-        margin-bottom: 7px;
-      }
-
-      .icon-required {
-        color: $color-curious-blue;
-        font-size: 11px;
-        height: 10px;
-        width: 11px;
-      }
-    }
-
-    &--danger {
-      color: $color-crimson;
-      display: none;
-    }
-
-    i {
-      font-size: 11px;
-      margin-right: 3px;
-      height: 10px;
-      width: 11px;
-
-      @include breakpoint ('tablet') {
-        margin-right: 6px;
-      }
-    }
-
-    &--success {
-      color: $color-lochmara;
-      @include font-size--e;
-
-      @include breakpoint ('tablet-max') {
-        @include font-size--c ;
-      }
-
-      i {
-        color: $color-lochmara;
-      }
-    }
-  }
-
-
 
   &__details {
     .address {
       color: $color-light-shaft;
-      @include font-size--e;
       margin-bottom: 25px;
 
-      @include breakpoint ('tablet') {
-        @include font-size--c;
+      @include breakpoint ('phone-max') {
+        margin-bottom: 20px;
       }
 
       &__item {
@@ -162,17 +111,19 @@
       }
     }
 
+    .address,
     .contacts {
-      @include breakpoint ('tablet') {
+      @include font-size--e;
+
+      @include breakpoint ('tablet-max') {
         @include font-size--c;
       }
+    }
+
+    .contacts {
 
       &__item {
-        margin-bottom: 5px;
-
-        @include breakpoint ('tablet') {
-          margin-bottom: 8px;
-        }
+        margin-bottom: 8px;
 
         & > a {
           color: $color-light-shaft;
@@ -185,3 +136,5 @@
     }
   }
 }
+
+

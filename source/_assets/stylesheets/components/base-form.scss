@@ -1,7 +1,25 @@
 .base-form {
 
   @include breakpoint ('phone-max') {
-    margin-bottom: 42px;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    @include font-size--i;
+    letter-spacing: 4px;
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    @include breakpoint ('tablet-max') {
+      @include font-size--e;
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+      word-spacing: -2px;
+    }
+
+    .icon-required {
+      font-size: 12px;
+    }
   }
 
   &__item {
@@ -12,31 +30,31 @@
       margin-bottom: 15px;
     }
 
+    &.is-error,
+    &.is-success {
+      i {
+        display: none;
+      }
+    }
+
+    &.is-error {
+      i {
+        &.icon-x {
+          display: inline-block;
+        }
+      }
+    }
+
+    &.is-success {
+      i {
+        &.icon-check {
+          display: inline-block;
+        }
+      }
+    }
+
     .form-control {
-      border: 1px solid $color-mine-shaft;
-      border-radius: 0;
-      background-color: $color-white;
-      box-shadow: none;
-      color: $color-mine-shaft;
-      @include font-size--c;
-      letter-spacing: 2px;
-      height: 35px;
-      padding-top: 7px;
-      padding-bottom: 6px;
-      position: relative;
-      text-transform: uppercase;
-      z-index: 1;
 
-      @include breakpoint ('tablet-max') {
-        @include font-size--a;
-        height: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-
-      &:focus {
-        border-color: $color-lochmara;
-      }
     }
 
     textarea {
@@ -44,12 +62,47 @@
         height: 180px;
         padding-top: 10px;
         resize: none;
+        border: 1px solid $color-mine-shaft;
+        color: $color-mine-shaft;
+        @include font-size--c;
+        letter-spacing: 2px;
+        padding-top: 7px;
+        padding-bottom: 6px;
 
         @include breakpoint ('tablet-max') {
           height: 100px;
         }
+
       }
 
+    }
+  }
+
+  &__item-dropdown {
+    .input-group {
+      .input-group-addon {
+          background-color: $color-mercury;
+          border-radius: 0;
+          border-color: $color-mine-shaft;
+          padding: 6px 8px;
+
+          @include breakpoint ('tablet-max') {
+            padding-top: 6px;
+            padding-bottom: 4px;
+          }
+
+          i {
+            color: $color-mine-shaft;
+            font-size: 15px;
+          }
+        }
+    }
+
+    .base-form {
+      &__icon {
+        right: 48px !important;
+        padding-right: 11px;
+      }
     }
   }
 
@@ -57,17 +110,10 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 100%;
-    width: 31px;
+    padding: 9px 9px 7px 9px;
+    text-align: center;
     z-index: 6;
-  }
 
-  &__icon-wrapper {
-    padding: 9px;
-    position: relative;
-    text-align: right;
-    height: 100%;
-    width: 100%;
 
     @include breakpoint ('tablet-max') {
       padding: 0 12px 0 8px;
@@ -80,30 +126,39 @@
     &--textarea {
       padding-top: 6px;
       padding-bottom: 6px;
+
+      i {
+        line-height: 13px;
+      }
     }
 
     i {
-      display: inline-block;
+      display: none;
       font-size: 11px;
-      height: 10px;
+      line-height: 19px;
+      height: 100%;
       vertical-align: middle;
       width: 11px;
 
       @include breakpoint ('tablet-max') {
-        line-height: 20px;
+        line-height: 30px;
       }
 
       &.icon-required,
-      &.icon-check {
+      &.icon-check,
+      &.icon-calander {
         color: $color-curious-blue;
+      }
+
+      &.icon-arrow-right {
+        display: block;
       }
     }
 
     .icon-required {
-      display: none;
+      display: inline-block;
       @include breakpoint ('tablet-max') {
-        font-size: 8px;
-        height: 9px;
+        font-size: 10px;
         width: 8px;
       }
     }
@@ -112,7 +167,6 @@
 
       @include breakpoint ('tablet-max') {
         font-size: 12px;
-        height: 10px;
         width: 12px;
       }
     }
@@ -121,8 +175,152 @@
       color: $color-crimson;
       display: none;
     }
+
+    .icon-calander {
+      display: inline-block;
+      font-size: 20px;
+      position: relative;
+      right: 9px;
+
+      @include breakpoint ('tablet-max') {
+        font-size: 16px;
+        right: 2px;
+      }
+
+      @include breakpoint ('phone-max') {
+        font-size: 15px;
+      }
+    }
+  }
+
+
+  &__radio-btn-group {
+
+    .title {
+      @include font-size--c;
+      line-height: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 11px;
+
+      @include breakpoint ('tablet-max') {
+        @include font-size--a;
+        margin-bottom: 7px;
+      }
+    }
+  }
+
+  &__radio-btn-item {
+    margin-bottom: 8px;
+
+    @include breakpoint ('tablet') {
+      margin-bottom: 1px;
+    }
+
+    @include breakpoint ('phone-max') {
+      margin-bottom: 2px;
+    }
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    opacity: 0;
+    margin-top: 0;
+  }
+
+  input[type="radio"] +  .radio-btn__icon .icon-check,
+  input[type="checkbox"] + .radio-btn__icon .icon-check {
+    display: none;
+  }
+
+  input[type="radio"]:checked + .radio-btn__icon .icon-check,
+  input[type="checkbox"]:checked + .radio-btn__icon .icon-check {
+    display: block;
+    color: $color-curious-blue;
+    font-size: 10px;
+  }
+
+  .radio input[type="radio"],
+  .radio-inline input[type="radio"],
+  .checkbox input[type="checkbox"],
+  .checkbox-inline input[type="checkbox"] {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .radio-label {
+    position: relative;
+  }
+
+  .radio-inline {
+    margin-top: 0;
+  }
+
+  input[type="radio"] + span.radio-btn__icon {
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 0;
+    top: 0;
+    border: 1px solid $color-mine-shaft;
+    border-radius: 0;
+    background-color: $color-white;
+    overflow: hidden;
+
+    @include breakpoint ('tablet-max') {
+      width: 8px;
+      height: 8px;
+    }
   }
 
 
 
+  .radio-btn {
+    color: $color-mine-shaft;
+    @include font-size--c;
+    padding-left: 0;
+
+    label {
+      padding-left: 10px;
+
+      @include breakpoint ('tablet-max') {
+        padding-left: 13px !important;
+      }
+    }
+
+    &__label {
+      display: inline-block;
+      vertical-align: top;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+
+      @include breakpoint ('tablet-max') {
+        @include font-size--a;
+      }
+     }
+  }
+
+  .type-file {
+    color: $color-mine-shaft;
+    display: inline-block;
+    @include font-size--e;
+    margin-left: 4px;
+    margin-top: 1px;
+    vertical-align: middle;
+
+    i {
+      font-size: 20px;
+    }
+
+    i, span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .icon-required,
+  .icon-resume-file {
+    color: $color-curious-blue;
+  }
 }
