@@ -4,9 +4,23 @@
   height: 75px;
   @include clearfix;
 
+  @include breakpoint ('tablet') {
+    padding: 0 14px;
+    height: 60px;
+  }
+
+  @include breakpoint ('phone-max') {
+    padding: 17px 14px;
+    height: auto;
+  }
+
   ul {
     margin: 0;
     float: left;
+
+    @include breakpoint ('phone-max') {
+      float: none;
+    }
   }
 
   li {
@@ -19,11 +33,31 @@
       margin-right: 0;
     }
 
+    @include breakpoint ('tablet') {
+      margin-right: 24px;
+    }
+
+    @include breakpoint ('phone-max') {
+      margin-right: 24px;
+    }
+
     a {
       display: block;
       font-size: 14px;
       letter-spacing: 2.8px;
       padding: 28px 0;
+
+      @include breakpoint ('tablet') {
+        font-size: 12px;
+        letter-spacing: 2.2px;
+        padding: 21px 0;
+      }
+
+      @include breakpoint ('phone-max') {
+        font-size: 12px;
+        letter-spacing: 2.2px;
+        padding: 5px 0;
+      }
 
       &:hover {
         color: $color-lochmara;
@@ -40,6 +74,16 @@
     width: 44px;
     height: 44px;
     margin-top: 15px;
+
+    @include breakpoint ('tablet') {
+      width: 30px;
+      height: 30px;
+    }
+
+    @include breakpoint ('phone-max') {
+      display: none;
+      float: none;
+    }
 
     a {
       display: block;

@@ -88,5 +88,11 @@
         letter-spacing: 2.5px;
         padding: 6px 26px;
       }
+
+      @include breakpoint ('phone-max') {
+        font-size: 10px;
+        letter-spacing: 2px;
+        padding: 4px 22px 2px;
+      }
     }
   }

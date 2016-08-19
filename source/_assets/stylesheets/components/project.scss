@@ -2,16 +2,38 @@
   text-align: center;
   padding: 97px 0 77px;
 
+  @include breakpoint ('phone-max') {
+    padding: 33px 0 43px;
+  }
+
   &__description {
     display: inline-block;
     vertical-align: middle;
     font-size: 30px;
     letter-spacing: 3px;
     padding-right: 20px;
+
+    @include breakpoint ('tablet') {
+      font-size: 22px;
+      letter-spacing: 2.2px;
+      padding-right: 8px;
+    }
+
+    @include breakpoint ('phone-max') {
+      font-size: 20px;
+      letter-spacing: 2px;
+      padding-right: 0;
+      display: block;
+      margin-bottom: 18px;
+    }
   }
 
   &__btn {
     display: inline-block;
     vertical-align: middle;
+
+    @include breakpoint ('phone-max') {
+      display: block;
+    }
   }
 }

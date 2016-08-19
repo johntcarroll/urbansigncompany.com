@@ -1,14 +1,31 @@
 .subscribe {
   @include clearfix;
-  padding: 0 45px;
+  padding: 46px 45px 66px;
   background-color: $color-mine-shaft;
-  padding-top: 46px;
-  padding-bottom: 66px;
+  position: relative;
+
+  @include breakpoint ('tablet') {
+    padding: 46px 14px 40px;
+  }
+
+  @include breakpoint ('phone-max') {
+    padding: 20px 17px 35px;
+  }
 
   // LEFT BAR
 
   &__left {
     float: left;
+
+    @include breakpoint ('tablet') {
+      width: 34%;
+    }
+
+    @include breakpoint ('phone-max') {
+      float: none;
+      width: 100%;
+      margin-bottom: 20px;
+    }
 
     h3 {
       color: $color-white;
@@ -16,6 +33,15 @@
       letter-spacing: 2.5px;
       margin: 0 0 2px;
       @include font-base-regular;
+
+      @include breakpoint ('tablet') {
+        font-size: 22px;
+      }
+
+      @include breakpoint ('phone-max') {
+        font-size: 20px;
+        letter-spacing: 2px;
+      }
     }
 
     p {
@@ -24,6 +50,18 @@
       letter-spacing: 1.4px;
       font-weight: 100;
       margin: 0 0 5px;
+
+      @include breakpoint ('tablet') {
+        font-size: 12px;
+        letter-spacing: .2px;
+        margin: 0 0 10px;
+      }
+
+      @include breakpoint ('phone-max') {
+        font-size: 12px;
+        letter-spacing: .1px;
+        margin: 0 0 10px;
+      }
     }
 
     form {
@@ -45,19 +83,44 @@
       &:focus {
         outline: none;
       }
+
+      @include breakpoint ('tablet') {
+        width: 156px;
+        font-size: 10px;
+        padding: 9px 10px 7px;
+        line-height: 12px;
+        letter-spacing: 1px;
+      }
+
+      @include breakpoint ('phone-max') {
+        width: 156px;
+        font-size: 10px;
+        padding: 9px 10px 7px;
+        line-height: 12px;
+        letter-spacing: 1px;
+      }
     }
 
     button {
       border: none;
       box-shadow: none;
-      font-size: 12px;
-      font-weight: 100;
-      letter-spacing: 1.8px;
-      line-height: 14px;
       padding: 0 37px;
       height: 34px;
+      line-height: 16px;
       background-color: $color-lochmara;
       float: left;
+
+      @include breakpoint ('tablet') {
+        height: 28px;
+        padding: 0 24px;
+        line-height: 34px;
+      }
+
+      @include breakpoint ('phone-max') {
+        height: 28px;
+        padding: 0 24px;
+        line-height: 34px;
+      }
 
       &:hover {
         background-color: $color-deep-cerulean;
@@ -66,6 +129,14 @@
       i {
         font-size: 22px;
         color: $color-white;
+
+        @include breakpoint ('tablet') {
+          font-size: 16px;
+        }
+
+        @include breakpoint ('phone-max') {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -75,17 +146,53 @@
   &__right {
     float: right;
 
+    @include breakpoint ('tablet') {
+      width: 66%;
+    }
+
+    @include breakpoint ('phone-max') {
+      float: none;
+      width: 100%;
+    }
+
     ul {
       display: inline-block;
       vertical-align: top;
 
+      @include breakpoint ('phone-max') {
+        display: block;
+      }
+
       &:first-child {
         padding-right: 65px;
+
+        @include breakpoint ('phone-max') {
+          padding-right: 0;
+        }
+      }
+
+      @include breakpoint ('phone-max') {
+        margin-bottom: 8px;
+      }
+
+      &:last-child {
+
+        @include breakpoint ('phone-max') {
+          margin-bottom: 0;
+        }
       }
     }
 
     li {
       margin-bottom: 15px;
+
+      @include breakpoint ('tablet') {
+        margin-bottom: 9px;
+      }
+
+      @include breakpoint ('phone-max') {
+        margin-bottom: 9px;
+      }
 
       &:last-child {
         margin-bottom: 0;
@@ -98,11 +205,29 @@
       font-size: 14px;
       letter-spacing: 1px;
       font-weight: 100;
+
+      @include breakpoint ('tablet') {
+        font-size: 12px;
+        letter-spacing: .2px;
+      }
+
+      @include breakpoint ('phone-max') {
+        font-size: 12px;
+        letter-spacing: .2px;
+      }
     }
 
     span {
       display: block;
       line-height: 22px;
+
+      @include breakpoint ('tablet') {
+        line-height: 20px;
+      }
+
+      @include breakpoint ('phone-max') {
+        line-height: 20px;
+      }
     }
 
     a {
@@ -110,6 +235,17 @@
       &:hover {
         color: $color-lochmara;
       }
+    }
+  }
+
+  &__logo {
+    display: none;
+
+    @include breakpoint ('phone-max') {
+      display: block;
+      position: absolute;
+      right: 17px;
+      bottom: 35px;
     }
   }
 }

@@ -11,6 +11,15 @@
     padding: 0 3px;
     margin: 3px 0;
 
+    @include breakpoint ('tablet') {
+      height: 230px;
+    }
+
+    @include breakpoint ('phone-max') {
+      width: 100%;
+      height: 186px;
+    }
+
     &--silver {
 
       .applications__link {
@@ -21,6 +30,10 @@
         color: $color-mine-shaft;
         padding: 0 56px;
         opacity: 1 !important;
+
+        @include breakpoint ('tablet') {
+          padding: 0 28px;
+        }
       }
 
       .applications__icon {
@@ -78,12 +91,29 @@
     padding-top: 95px;
     position: relative;
     z-index: 2;
+
+    @include breakpoint ('tablet') {
+      padding-top: 48px;
+    }
+
+    @include breakpoint ('phone-max') {
+      padding-top: 40px;
+    }
   }
 
   &__icon {
     margin-bottom: 24px;
     position: relative;
     padding-bottom: 60px;
+
+    @include breakpoint ('tablet') {
+      padding-bottom: 40px;
+    }
+
+    @include breakpoint ('phone-max') {
+      padding-bottom: 35px;
+      margin-bottom: 10px;
+    }
 
     i {
       color: $color-white;
@@ -93,6 +123,14 @@
       left: 0;
       right: 0;
       transition: opacity 350ms ease-in-out;
+
+      @include breakpoint ('tablet') {
+        font-size: 46px;
+      }
+
+      @include breakpoint ('phone-max') {
+        font-size: 35px;
+      }
     }
 
     img {
@@ -102,6 +140,16 @@
       right: 0;
       margin: 0 auto;
       transition: opacity 350ms ease-in-out;
+
+      @include breakpoint ('tablet') {
+        width: 46px;
+        height: 46px;
+      }
+
+      @include breakpoint ('phone-max') {
+        width: 35px;
+        height: 35px;
+      }
     }
   }
 
@@ -110,6 +158,16 @@
     letter-spacing: 3.5px;
     color: $color-white;
     margin-bottom: 7px;
+
+    @include breakpoint ('tablet') {
+      font-size: 14px;
+      letter-spacing: 2.8px;
+    }
+
+    @include breakpoint ('phone-max') {
+      font-size: 14px;
+      letter-spacing: 2.8px;
+    }
   }
 
   &__text {
@@ -121,6 +179,17 @@
     opacity: 1;
     transition: opacity 350ms ease-in-out;
 
+    @include breakpoint ('tablet') {
+      font-size: 12px;
+      line-height: 22px;
+      padding: 0 25px;
+    }
+
+    @include breakpoint ('phone-max') {
+      font-size: 12px;
+      line-height: 22px;
+      padding: 0 18px;
+    }
   }
 
   &__overlay {
