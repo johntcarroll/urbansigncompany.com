@@ -90,7 +90,7 @@
   }
 
   @else if $breakpoint == "large" {
-    @media (min-width: 1200px) {
+    @media (min-width: $screen-md-min) {
       @content;
     }
   }

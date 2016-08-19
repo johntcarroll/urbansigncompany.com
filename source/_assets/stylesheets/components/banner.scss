@@ -3,6 +3,10 @@
   height: 700px;
   padding-top: 106px;
 
+  @include breakpoint ('tablet') {
+    padding-top: 81px;
+  }
+
   &__image {
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -21,6 +25,11 @@
     @include clearfix;
     position: relative;
     height: 100%;
+
+    @include breakpoint ('tablet') {
+      max-width: 626px;
+      padding-top: 76px;
+    }
   }
 
   &__box {
@@ -29,6 +38,10 @@
     max-width: 477px;
     float: right;
     text-align: right;
+
+    @include breakpoint ('tablet') {
+      max-width: 436px;
+    }
   }
 
   &__title {
@@ -41,6 +54,12 @@
       letter-spacing: 1.8px;
       line-height: 40px;
       margin: 0;
+
+      @include breakpoint ('tablet') {
+        font-size: 30px;
+        letter-spacing: 1.4px;
+        line-height: 36px;
+      }
     }
   }
 
@@ -50,6 +69,12 @@
     letter-spacing: .1px;
     line-height: 25px;
     margin-bottom: 20px;
+
+    @include breakpoint ('tablet') {
+      font-size: 12px;
+      line-height: 22px;
+      padding-left: 20px;
+    }
   }
 
   &__arrow {

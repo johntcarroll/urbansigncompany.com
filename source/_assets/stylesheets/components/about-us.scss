@@ -6,16 +6,28 @@
     max-width: 944px;
     margin: 0 auto;
     @include clearfix;
+
+    @include breakpoint ('tablet') {
+      max-width: 624px;
+    }
   }
 
   &__left {
     float: left;
     width: 31%;
+
+    @include breakpoint ('tablet') {
+      width: 30%;
+    }
   }
 
   &__right {
     float: right;
     width: 69%;
+
+    @include breakpoint ('tablet') {
+      width: 70%;
+    }
   }
 
   &__image {
@@ -27,6 +39,13 @@
     border: 10px solid $color-lochmara;
     border-radius: 50%;
     margin-top: 10px;
+
+    @include breakpoint ('tablet') {
+      width: 150px;
+      height: 150px;
+      border: 7px solid $color-lochmara;
+      margin-top: 5px;
+    }
   }
 
   &__title {
@@ -34,6 +53,11 @@
     font-size: 30px;
     letter-spacing: 3px;
     margin-bottom: 15px;
+
+    @include breakpoint ('tablet') {
+      font-size: 22px;
+      letter-spacing: 2.2px;
+    }
 
     span {
       color: $color-lochmara;
@@ -46,6 +70,12 @@
     letter-spacing: -.2px;
     line-height: 24px;
     margin-bottom: 18px;
+
+    @include breakpoint ('tablet') {
+      font-size: 12px;
+      line-height: 22px;
+      margin-bottom: 20px;
+    }
   }
 
   &__author {
@@ -53,6 +83,11 @@
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
+
+    @include breakpoint ('tablet') {
+      font-size: 10px;
+      letter-spacing: 1.8px;
+    }
   }
 
   &__info {
@@ -62,6 +97,10 @@
     margin:45px auto 0;
     max-width: 1130px;
     width: 100%;
+
+    @include breakpoint ('tablet') {
+      max-width: 710px;
+    }
 
     &:before {
       content: " ";
@@ -73,6 +112,10 @@
       left: 0;
       right: 0;
       z-index: 1;
+
+      @include breakpoint ('tablet') {
+        top: 26px;
+      }
     }
 
     li {
@@ -81,6 +124,10 @@
       vertical-align: middle;
       font-size: 20px;
       color: $color-mine-shaft;
+
+      @include breakpoint ('tablet') {
+        width: 26%;
+      }
     }
 
     a {
@@ -91,6 +138,10 @@
       padding: 0 10px;
       font-size: 48px;
       @include font-base-medium;
+
+      @include breakpoint ('tablet') {
+        font-size: 40px;
+      }
 
       &:hover {
         color: $color-lochmara;
@@ -105,7 +156,12 @@
       letter-spacing: 2px;
       position: relative;
       z-index: 3;
-      top: -14px
+      top: -14px;
+
+      @include breakpoint ('tablet') {
+        font-size: 10px;
+        top: -8px;
+      }
     }
   }
 }

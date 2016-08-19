@@ -82,5 +82,11 @@
         background-color: $color-deep-cerulean;
         color: $color-white;
       }
+
+      @include breakpoint ('tablet') {
+        font-size: 12px;
+        letter-spacing: 2.5px;
+        padding: 6px 26px;
+      }
     }
   }
