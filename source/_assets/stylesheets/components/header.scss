@@ -6,6 +6,10 @@
   right: 0;
   z-index: 5;
 
+  @include breakpoint ('phone-max') {
+    display: none;
+  }
+
   ul {
     margin: 0 0 22px;
     text-align: right;

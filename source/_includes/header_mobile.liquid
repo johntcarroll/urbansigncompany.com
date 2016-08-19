@@ -1,28 +1,10 @@
-<div class="header">
-  <ul>{% assign sorted_pages = site.pages | sort:"order" %}
-    {% for node in sorted_pages %}
-    {% if node.title != null %}
-      {% if group != node.group %}
-        {% if page.url == node.url %}
-          <li><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
-          {% if node.url != "/contact-form/" %}
-            <li class="header__circle"></li>
-          {% endif %}
-        {% else %}
-          <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
-          {% if node.url != "/contact-form/" %}
-            <li class="header__circle"></li>
-          {% endif %}
-        {% endif %}
-      {% endif %}
-    {% endif %}
-  {% endfor %}</ul>
-  <div class="header__logo">
-    <a href="" class="header__logo-desktop">
-      {{ src | img : "logo.png" }}
+<div class="header-mobile">
+  <div class="header-mobile__logo">
+    <a href="">
+      {{ src | img : "logo-mobile.png" }}
     </a>
-    <a href="" class="header__logo-tablet">
-      {{ src | img : "logo-tablet.png" }}
-    </a>
+  </div>
+  <div class="header-mobile__menu">
+    <a href=""><span>Menu</span><i class="icon-menu"></i></a>
   </div>
 </div>

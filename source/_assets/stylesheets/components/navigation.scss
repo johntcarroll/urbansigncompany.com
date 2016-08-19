@@ -11,7 +11,7 @@
     text-align: center;
     font-size: 0;
 
-    @include breakpoint ('phone') {
+    @include breakpoint ('phone-max') {
       display: none;
     }
 
@@ -47,6 +47,67 @@
       &:hover {
         background-color: $color-white;
         color: $color-lochmara;
+      }
+    }
+  }
+
+  &__dropdown {
+    max-width: 290px;
+    margin: 0 auto;
+    display: none;
+
+    @include breakpoint ('phone-max') {
+      display: block;
+    }
+
+    button {
+      width: 100%;
+      border: 1px solid $color-white;
+      background-color: transparent;
+      color: $color-white;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 2.8px;
+      @include font-base-bold;
+      padding: 5px 12px 4px;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $color-white!important;
+        color: $color-lochmara!important;
+        outline: none!important;
+
+        .caret {
+
+          i {
+            color: $color-lochmara;
+          }
+        }
+      }
+    }
+
+    .dropdown-menu {
+      width: 100%;
+      border-radius: 0;
+      text-align: center;
+
+      a {
+        text-transform: uppercase;
+        font-size: 14px;
+        color: $color-lochmara;
+      }
+    }
+
+    .caret {
+      border: none;
+      width: auto;
+      height: auto;
+      position: relative;
+      top: 3px;
+
+      i {
+        color: $color-white;
       }
     }
   }
