@@ -1,23 +1,22 @@
-.header {
-  padding: 0 12px;
+.header-inside {
+  padding: 4px 12px;
   position: absolute;
   top: 5px;
   left: 0;
   right: 0;
   z-index: 5;
-  display: none;
+  background-color: $color-mine-shaft;
+  @include clearfix;
 
   @include breakpoint ('phone-max') {
     display: none;
   }
 
   ul {
-    margin: 0 0 22px;
+    float: right;
+    margin: 0;
     text-align: right;
-
-    @include breakpoint ('tablet') {
-      margin: 0 0 17px;
-    }
+    width: 50%;
   }
 
   li {
@@ -49,7 +48,7 @@
   &__circle {
     width: 3px;
     height: 3px;
-    background-color: $color-black;
+    background-color: $color-white;
     border-radius: 50%;
     margin: 0 8px;
 
@@ -59,23 +58,8 @@
   }
 
   &__logo {
-    text-align: center;
-  }
-
-  &__logo-desktop {
-    display: none;
-
-    @include breakpoint ('large') {
-      display: inline-block;
-    }
-  }
-
-  &__logo-tablet {
-    display: none;
-
-    @include breakpoint ('tablet') {
-      display: inline-block;
-    }
+    float: left;
+    width: 50%;
   }
 }
 
