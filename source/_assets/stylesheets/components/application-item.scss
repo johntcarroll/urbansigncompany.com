@@ -1,0 +1,164 @@
+.application-item {
+  margin-top: 70px;
+
+  &__container {
+    max-width: 780px;
+    text-align: left;
+    width: 100%;
+
+    @include breakpoint ('tablet') {
+      max-width: 654px;
+    }
+
+    @include breakpoint ('phone-max') {
+      max-width: 320px;
+    }
+  }
+
+  &__content {
+    @include font-size--e;
+    line-height: 23px;
+    word-spacing: 1px;
+
+    @include breakpoint ('tablet-max') {
+      @include font-size--c;
+      line-height: 21px;
+    }
+
+    &--top {
+      color: $color-mine-shaft;
+      @include font-base-medium;
+      margin-bottom: 23px;
+
+      @include breakpoint ('phone-max') {
+        margin-bottom: 18px;
+      }
+    }
+
+    &--bottom {
+      color: $color-black;
+      @include font-base-light;
+      margin-bottom: 25px;
+
+      @include breakpoint ('phone-max') {
+        margin-bottom: 23px;
+      }
+    }
+  }
+
+  &__icon-slider {
+    color: $color-black;
+    font-size: 35px;
+    margin-bottom: 20px;
+
+    i {
+      display: block;
+      height: 35px;
+      width: 35px;
+    }
+  }
+
+  &__slider {
+    margin-bottom: 23px;
+
+    @include breakpoint ('phone-max') {
+      margin-bottom: 9px;
+    }
+
+    .fotorama {
+
+      &__arr {
+
+        &--next,
+        &--prev,
+        &--disabled {
+          @include breakpoint ('phone-max') {
+            display: none !important;
+            opacity: 0 !important;
+          }
+        }
+
+        &--next,
+        &--prev {
+          background-color: $color-lochmara;
+          background: none;
+          bottom: 24%;
+          top: auto;
+          padding: 0 8px;
+          position: absolute;
+          height: 109px;
+          width: 30px;
+        }
+
+        &--next {
+          &:before {
+            content: "\e91e";
+            font-family: 'icomoon' !important;
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: absolute;
+            top: 50%;
+          }
+        }
+
+      }
+      &__nav {
+        margin-top: 10px;
+
+        @include breakpoint ('phone-max') {
+          display: none;
+        }
+      }
+
+      &__arr {
+        &--disabled {
+          opacity: 1;
+        }
+
+        &--no-controls {
+          &.fotorama__wrap--toggle-arrows {
+            .fotorama__arr {
+              opacity: 1 !important;
+            }
+          }
+        }
+      }
+
+      &__wrap {
+        &--css3 {
+          &.fotorama__wrap {
+            &--no-controls {
+              &.fotorama__wrap--slide.fotorama__wrap--toggle-arrows {
+                .fotorama__arr--next:not(:focus),
+                .fotorama__arr--prev:not(:focus) {
+                  -moz-transform: translate3d(48px, 0, 0);
+                  -webkit-transform: translate3d(48px, 0, 0);
+                  transform: translate3d(0, 0, 0);
+                }
+              }
+
+              &.fotorama__wrap--toggle-arrows .fotorama__arr {
+                opacity: 1;
+
+                @include breakpoint ('phone-max') {
+                  opacity: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &__stage {
+        overflow: visible;
+      }
+    }
+
+  }
+}
