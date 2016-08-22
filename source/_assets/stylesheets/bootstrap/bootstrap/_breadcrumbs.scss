@@ -4,25 +4,43 @@
 
 
 .breadcrumb {
-  padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
-  margin-bottom: $line-height-computed;
+  padding: 8px 0;
+  margin-bottom: 25px;
   list-style: none;
-  background-color: $breadcrumb-bg;
   border-radius: $border-radius-base;
+  background-color: transparent;
+  text-align: right;
+  margin-top: 7px;
+
+  @include breakpoint ('phone-max') {
+    padding: 0 0 4px;
+    margin-bottom: 0;
+    margin-bottom: 4px;
+  }
 
   > li {
     display: inline-block;
-
-    + li:before {
-      // [converter] Workaround for https://github.com/sass/libsass/issues/1115
-      $nbsp: "\00a0";
-      content: "#{$breadcrumb-separator}#{$nbsp}"; // Unicode space added since inline-block means non-collapsing white-space
-      padding: 0 5px;
-      color: $breadcrumb-color;
-    }
+    vertical-align: middle;
   }
 
   > .active {
     color: $breadcrumb-active-color;
+  }
+
+  a {
+    color: $color-mine-shaft;
+    font-size: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  i {
+    font-size: 10px;
+    color: $color-white;
   }
 }

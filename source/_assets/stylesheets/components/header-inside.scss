@@ -1,0 +1,65 @@
+.header-inside {
+  padding: 4px 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background-color: $color-mine-shaft;
+  @include clearfix;
+
+  @include breakpoint ('phone-max') {
+    display: none;
+  }
+
+  ul {
+    float: right;
+    margin: 0;
+    text-align: right;
+    width: 50%;
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
+    vertical-align: middle;
+
+    a {
+      display: block;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 2.5px;
+
+      @include breakpoint ('tablet') {
+        font-size: 10px;
+        letter-spacing: 2px;
+      }
+
+      &:hover {
+        color: $color-lochmara;
+      }
+
+      &.active {
+        @include font-base-bold;
+      }
+    }
+  }
+
+  &__circle {
+    width: 3px;
+    height: 3px;
+    background-color: $color-white;
+    border-radius: 50%;
+    margin: 0 8px;
+
+    @include breakpoint ('tablet') {
+      margin: 0 9px;
+    }
+  }
+
+  &__logo {
+    float: left;
+    width: 50%;
+  }
+}
+

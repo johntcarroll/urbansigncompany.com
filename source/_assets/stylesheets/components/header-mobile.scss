@@ -5,7 +5,16 @@
   right: 0;
   z-index: 2;
   @include clearfix;
-  padding: 3px 13px 0;
+  padding: 4px 13px;
+  display: none;
+
+  @include breakpoint ('phone-max') {
+    display: block;
+  }
+
+  &--black {
+    background-color: $color-black;
+  }
 
   &__logo {
     float: left;
