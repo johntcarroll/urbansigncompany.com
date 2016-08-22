@@ -1,10 +1,10 @@
+@import "mixins/breakpoint/breakpoint";
+@import "components/colors";
 @import "bootstrap/bootstrap";
 @import "mixins/fonts/fonts";
 @import "components/container";
-@import "mixins/breakpoint/breakpoint";
 @import "components/icons";
 @import "fonts/font-face";
-@import "components/colors";
 @import "components/button";
 @import "components/input";
 @import "variables/base";
@@ -24,5 +24,9 @@
 @import "components/about-us";
 @import "components/about-page";
 @import "components/header-mobile";
-@import "components/header-inside"
+@import "components/header-inside";
+@import "components/applications-page";
+@import "components/hat";
+@import "components/hat-nav";
+@import "components/exterior"
 

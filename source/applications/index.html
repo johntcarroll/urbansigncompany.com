@@ -6,7 +6,21 @@ group: navigation
 order: 3
 ---
 
-<h2>Applications</h2>
-{% include down_applications_navigation.liquid %}
+<div class="applications-page">
 
-{% include have_project.liquid %}
+  <div class="hat">
+    <div class="hat__wrapper">
+      {% include up_applications_navigation.liquid %}
+
+      {% include breadcrumb.liquid %}
+      <div class="hat__title">
+        <h2>Applications</h2>
+      </div>
+    </div>
+  </div>
+
+  {% include down_applications_navigation.liquid %}
+
+  {% include have_project.liquid %}
+  {% include header_inside_mobile.liquid %}
+</div>

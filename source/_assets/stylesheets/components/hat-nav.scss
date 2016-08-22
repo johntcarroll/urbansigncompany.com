@@ -1,0 +1,73 @@
+.hat-nav {
+  background-color: $color-lochmara;
+  padding-top: 78px;
+  padding-bottom: 40px;
+  margin-bottom: 5px;
+  margin-bottom: 5px;
+
+  @include breakpoint ('tablet') {
+    padding-top: 54px;
+  }
+
+  @include breakpoint ('phone-max') {
+    padding-top: 20px;
+    padding-bottom: 4px;
+  }
+
+  &__wrapper {
+    max-width: 925px;
+    margin: 0 auto;
+    position: relative;
+
+    @include breakpoint ('tablet') {
+      max-width: 626px;
+    }
+
+    @include breakpoint ('phone-max') {
+      max-width: 290px;
+    }
+  }
+
+  &__title {
+    position: relative;
+
+    h2 {
+      font-size: 34px;
+      color: $color-white;
+      letter-spacing: 1.6px;
+      @include font-base-bold;
+
+      @include breakpoint ('tablet') {
+        font-size: 30px;
+      }
+
+      @include breakpoint ('phone-max') {
+        font-size: 24px;
+        letter-spacing: 1.2px;
+      }
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 0;
+
+    i {
+      font-size: 30px;
+    }
+
+    &--right {
+      right: 0;
+    }
+
+    &--left {
+      left: 0;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    color: $color-white;
+    letter-spacing: 1.6px;
+  }
+}
