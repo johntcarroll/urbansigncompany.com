@@ -6,6 +6,11 @@
   z-index: 2;
   @include clearfix;
   padding: 3px 13px 0;
+  display: none;
+
+  @include breakpoint ('phone-max') {
+    display: block;
+  }
 
   &__logo {
     float: left;
