@@ -1,6 +1,11 @@
 .application-item {
   margin-top: 70px;
 
+  @include breakpoint ('phone-max') {
+    margin-top: 30px;
+  }
+
+
   &__container {
     max-width: 780px;
     text-align: left;
@@ -14,9 +19,32 @@
       max-width: 320px;
     }
 
+    &--border {
+      border: 1px solid $color-tundora;
+      border-right: 0;
+      padding: 20px 43px;
+      margin-bottom: 30px;
+
+      @include breakpoint ('tablet') {
+        padding-left: 11px;
+        padding-right: 11px;
+      }
+
+      @include breakpoint ('phone-max') {
+        border: 0;
+        padding: 0;
+      }
+    }
+
     &--full-width {
       max-width: 100%;
       padding: 0 20px;
+
+      @include breakpoint ('phone-max') {
+        margin-top: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
     }
   }
 
@@ -112,6 +140,7 @@
             -moz-osx-font-smoothing: grayscale;
             position: absolute;
             top: 50%;
+            margin-top: -15px;
 
 
             @include breakpoint ('tablet') {
@@ -199,14 +228,99 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 80px;
+
+    @include breakpoint ('phone-max') {
+      letter-spacing: 1px;
+      margin-bottom: 55px;
+    }
+
+    a {
+
+      @include font-size--e;
+
+      @include breakpoint ('tablet') {
+        @include font-size--c;
+      }
+
+      @include breakpoint ('phone-max') {
+        @include font-size--a;
+      }
+    }
   }
 
   &__post-nav {
+    a {
+      @include font-size--i;
+      text-transform: capitalize;
 
+      @include breakpoint ('tablet-max') {
+        @include font-size--e;
+      }
+
+      i {
+        font-size: 24px;
+
+        @include breakpoint ('tablet') {
+          font-size: 21px;
+        }
+
+        @include breakpoint ('phone-max') {
+          font-size: 14px;
+          margin-bottom: 13px;
+        }
+      }
+
+      i,
+      span {
+        display: inline-block;
+        vertical-align: middle;
+
+        @include breakpoint ('phone-max') {
+          display: block;
+        }
+      }
+    }
+
+    .text-left {
+      a {
+        i {
+          padding-right: 13px;
+
+          @include breakpoint ('tablet-max') {
+            padding-right: 2px;
+          }
+
+          @include breakpoint ('phone-max') {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+
+    .text-right {
+      a {
+        i {
+          padding-left: 13px;
+
+          @include breakpoint ('tablet-max') {
+            padding-left: 2px;
+          }
+
+          @include breakpoint ('phone-max') {
+            padding-left: 0;
+          }
+        }
+      }
+    }
   }
 
   &__social-links {
-    text-align: right;
+
+    span {
+      @include breakpoint ('phone-max') {
+        @include font-size--a;
+      }
+    }
 
     span,
     ul {
@@ -217,10 +331,19 @@
     ul {
       margin-left: 20px;
 
+      @include breakpoint ('phone-max') {
+        margin-left: 10px;
+      }
+
       & > li {
         display: inline-block;
         padding: 0 6px;
         vertical-align: middle;
+
+        @include breakpoint ('phone-max') {
+          padding-left: 4px;
+          padding-right: 4px;
+        }
 
         & > a {
           display: block;
@@ -228,11 +351,21 @@
           height: 25px;
           width: 25px;
 
+          @include breakpoint ('phone-max') {
+            font-size: 20px;
+            height: 20px;
+            width: 20px;
+          }
+
           i {
             display: block;
             font-size: 25px;
             height: 100%;
             width: 100%;
+
+            @include breakpoint ('phone-max') {
+              font-size: 20px;
+            }
 
             &.icon-facebook {
               color: $color-lochmara;
