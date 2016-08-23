@@ -246,4 +246,14 @@
       background-color: $color-lochmara;
     }
   }
+
+  &--clear {
+    border: 0;
+    background-color: transparent;
+    color: $color-mine-shaft;
+    @include font-size--e;
+    padding: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
 }
