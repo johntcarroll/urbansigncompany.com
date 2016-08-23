@@ -16,7 +16,7 @@ folder: applications
 
       {% include breadcrumb.liquid %}
       <div class="hat-nav__title">
-        <h2>Exterior Sign</h2>
+        <h2>Exterior Signs</h2>
         <a href="" class="hat-nav__arrow hat-nav__arrow--left"><i class="icon-angle-left"></i></a>
         <a href="" class="hat-nav__arrow hat-nav__arrow--right"><i class="icon-angle-right"></i></a>
       </div>

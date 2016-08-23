@@ -50,24 +50,26 @@
 
   &__arrow {
     position: absolute;
-    top: 0;
+    top: 5px;
 
     i {
-      font-size: 30px;
+      font-size: 25px;
     }
 
     &--right {
-      right: 0;
+      right: -50px;
     }
 
     &--left {
-      left: 0;
+      left: -50px;
     }
   }
 
   &__description {
     font-size: 14px;
     color: $color-white;
-    letter-spacing: 1.6px;
+    letter-spacing: -.3px;
+    padding-right: 270px;
+    line-height: 24px;
   }
 }

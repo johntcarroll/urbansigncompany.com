@@ -71,9 +71,7 @@
       @include font-base-bold;
       padding: 5px 12px 4px;
 
-      &:hover,
-      &:active,
-      &:focus {
+      &:hover {
         background-color: $color-white!important;
         color: $color-lochmara!important;
         outline: none!important;
@@ -82,6 +80,20 @@
 
           i {
             color: $color-lochmara;
+          }
+        }
+      }
+
+      &:active,
+      &:focus {
+        background-color: $color-white!important;
+        color: $color-black!important;
+        outline: none!important;
+
+        .caret {
+
+          i {
+            display: none;
           }
         }
       }
