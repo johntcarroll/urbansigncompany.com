@@ -17,8 +17,7 @@ folder: applications
       {% include breadcrumb.liquid %}
       <div class="hat-nav__title">
         <h2>Exterior Sign</h2>
-        <a href="" class="hat-nav__arrow hat-nav__arrow--left"><i class="icon-angle-left"></i></a>
-        <a href="" class="hat-nav__arrow hat-nav__arrow--right"><i class="icon-angle-right"></i></a>
+         {% include app_slider.liquid %}
       </div>
       <div class="hat-nav__description">
         Exterior signage brings an organization’s brand to the street and helps visitors find their way. Urban Sign marries fabrication & engineering experience with project management expertise to bring large-scale projects in on-time and on- budget.
