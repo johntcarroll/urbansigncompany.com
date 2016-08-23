@@ -19,3 +19,5 @@ baseurl: ""
 
 # Build settings
 markdown: kramdown
+
+exclude: ['vendor']

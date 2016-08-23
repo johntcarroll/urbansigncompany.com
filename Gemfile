@@ -10,3 +10,9 @@ gem "octopress-autoprefixer"
 gem "sass"
 gem "uglifier"
 gem "mini_magick"
+gem 'fotoramajs'
+
+gem 'rake'
+gem 'foreman'
+gem 'thin'
+gem 'rack-contrib'

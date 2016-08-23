@@ -1,6 +1,7 @@
 @import "mixins/breakpoint/breakpoint";
 @import "components/colors";
 @import "bootstrap/bootstrap";
+@import "fotorama/fotorama";
 @import "mixins/fonts/fonts";
 @import "components/container";
 @import "components/icons";
@@ -19,6 +20,7 @@
 @import "components/employment-form";
 @import "components/navigation";
 @import "components/applications";
+@import "components/application-item";
 @import "components/banner";
 @import "components/project";
 @import "components/about-us";
