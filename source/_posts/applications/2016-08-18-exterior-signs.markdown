@@ -58,6 +58,7 @@ folder: applications
         </div>
       </div>
 
+<<<<<<< HEAD
       <div class="exterior__item">
         <div class="exterior__image" style="background-image: url('{{ src | asset_path : "plate-2.jpg" }}')">
           <div class="exterior__photo"><span>4</span><i class="icon-camera"></i></div>
@@ -71,6 +72,12 @@ folder: applications
         <div class="exterior__btn">
           <a href="" class="btn btn--project"><span>see project</span><i class="icon-arrow-right"></i></a>
         </div>
+=======
+      {% include breadcrumb.liquid %}
+      <div class="hat-nav__title">
+        <h2>Exterior Sign</h2>
+         {% include app_slider.liquid %}
+>>>>>>> 6b76e691c0d06a06d9d01517bde8004a4762db55
       </div>
 
       <div class="exterior__item">

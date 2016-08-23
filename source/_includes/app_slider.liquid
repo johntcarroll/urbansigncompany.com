@@ -1,0 +1,9 @@
+{% assign my_array = site.categories.application %}
+{% for post in my_array %}
+  {% if post.url == page.url %}
+    <li>
+      <a href="{{ my_array[forloop.index0].url }}" class="hat-nav__arrow hat-nav__arrow--left"><i class="icon-angle-left">{{ my_array[forloop.index0].title }}</i></a>
+      <a href="{{ my_array[forloop.index].url }}" class="hat-nav__arrow hat-nav__arrow--right"><i class="icon-angle-right">{{ my_array[forloop.index].title }}</i></a>
+    </li>
+  {% endif %}
+{% endfor %}

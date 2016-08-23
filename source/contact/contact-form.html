@@ -72,16 +72,21 @@ order: 4
         </div>
         <div class="form-group base-form__item is-error">
           <textarea class="form-control" rows="3" placeholder="alert"></textarea>
-          <div class="base-form__icon base-form__icon--textarea"">
+          <div class="base-form__icon base-form__icon--textarea">
             <i class="icon-required"></i>
             <i class="icon-check"></i>
             <i class="icon-x"></i>
           </div>
         </div>
-        <p class="alert alert--success">
-          <i class="icon-check"></i>
-          Your message has been successfully send
-        </p>
+        <div class="g-recaptcha" data-sitekey="6LdiTCgTAAAAAJ3TtsOPj2PQvve_qkHDLksb4fIp"></div>
+        
+        {% if recaptcha_valid? %}
+          <p class="alert alert--success">
+            <i class="icon-check"></i>
+            Your message has been successfully send
+          </p>
+        {% endif %}
+
         <button type="submit" class="btn btn-primary btn--sent">
           <span>Send</span>
           <i class="icon-send"></i>
