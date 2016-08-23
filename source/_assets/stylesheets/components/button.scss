@@ -88,6 +88,115 @@
       letter-spacing: 2.5px;
       padding: 6px 26px;
     }
+
+    @include breakpoint ('phone-max') {
+      font-size: 10px;
+      letter-spacing: 2px;
+      padding: 5px 22px 3px;
+    }
+  }
+
+  &--project {
+    color: $color-mine-shaft;
+    border: 1px solid $color-lochmara;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    padding:0 17px;
+    background-color: $color-white;
+
+    @include breakpoint('tablet') {
+      font-size: 10px;
+      letter-spacing: 1.8px;
+      padding: 0 11px;
+    }
+
+    @include breakpoint('phone-max') {
+      font-size: 10px;
+      letter-spacing: 1.8px;
+      padding: 0 14px;
+    }
+
+    span {
+      padding-right: 7px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    i {
+      color: $color-mine-shaft;
+      font-size: 12px;
+      display: inline-block;
+      vertical-align: middle;
+      transition: color 350ms ease;
+
+      @include breakpoint('tablet') {
+        font-size: 10px;
+      }
+
+      @include breakpoint('phone-max') {
+        font-size: 10px;
+      }
+    }
+
+    &:hover {
+      background-color: $color-lochmara;
+      color: $color-white;
+
+      i {
+        color: $color-white;
+      }
+    }
+  }
+
+  &--more {
+    color: $color-white;
+    border: 1px solid $color-lochmara;
+    font-size: 14px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    padding: 6px 37px;
+    background-color: $color-lochmara;
+
+    @include breakpoint('tablet') {
+      font-size: 12px;
+      letter-spacing: 2.4px;
+      padding: 4px 26px;
+    }
+
+    @include breakpoint('phone-max') {
+      font-size: 10px;
+      letter-spacing: 2.1px;
+      padding: 5px 16px 3px;
+    }
+
+    span {
+      padding-right: 5px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      color: $color-white;
+      font-size: 14px;
+      transition: color 350ms ease;
+      position: relative;
+      top: -1px;
+
+      @include breakpoint('phone-max') {
+        font-size: 10px;
+      }
+    }
+
+    &:hover {
+      color: $color-lochmara;
+      background-color: transparent;
+
+      i {
+        color: $color-lochmara;
+      }
+    }
   }
 
   &--default-blue {
