@@ -13,6 +13,11 @@
     @include breakpoint ('phone-max') {
       max-width: 320px;
     }
+
+    &--full-width {
+      max-width: 100%;
+      padding: 0 20px;
+    }
   }
 
   &__content {
@@ -194,6 +199,10 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 80px;
+  }
+
+  &__post-nav {
+
   }
 
   &__social-links {
