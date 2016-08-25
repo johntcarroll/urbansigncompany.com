@@ -4,7 +4,11 @@
 
     {% include breadcrumb.liquid %}
     <div class="hat__title">
-      <h2>Applications</h2>
+      {% for node in site.pages %}
+        {% if node.url == page.url %}
+          <h2>{{ node.title }}</h2>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </div>
