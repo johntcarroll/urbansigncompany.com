@@ -190,12 +190,7 @@
     }
 
     &:hover {
-      color: $color-lochmara;
-      background-color: transparent;
-
-      i {
-        color: $color-lochmara;
-      }
+      background-color: $color-deep-cerulean;
     }
   }
 

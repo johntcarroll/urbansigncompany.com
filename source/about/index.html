@@ -6,60 +6,63 @@ group: navigation
 order: 2
 ---
 
-{% include hat.liquid %}
-<div class="container about__container about">
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-6 ol-lg-6">
-      <div class="about__wrapper about__wrapper--left">
-        <div class="about__title">2003</div>
-        <div class="about__subtitle">founded</div>
-        <p class="about__description">
-          Seth Davis founded Urban Sign to fill a growing need for quality-crafted architectural signage.
-        </p>
+<div class="about">
+  {% include header_inside_mobile.liquid %}
+  {% include hat.liquid %}
+  <div class="container about__container about">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 ol-lg-6">
+        <div class="about__wrapper about__wrapper--left">
+          <div class="about__title">2003</div>
+          <div class="about__subtitle">founded</div>
+          <p class="about__description">
+            Seth Davis founded Urban Sign to fill a growing need for quality-crafted architectural signage.
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-sm-offset-6 col-md-6 col-md-offset-6 col-lg-6 col-lg-offset-6">
+        <div class="about__wrapper about__wrapper--right">
+          <div class="about__title">2007</div>
+          <div class="about__subtitle">Expanding</div>
+          <p class="about__description">
+            Seth moved the business to its current 35,000 sq. ft. facility. The large space opened new opportunities to expand the company’s equipment and expertise, providing clients with a full complement of signage solutions.
+          </p>
+        </div>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-6 col-sm-offset-6 col-md-6 col-md-offset-6 col-lg-6 col-lg-offset-6">
-      <div class="about__wrapper about__wrapper--right">
-        <div class="about__title">2007</div>
-        <div class="about__subtitle">Expanding</div>
-        <p class="about__description">
-          Seth moved the business to its current 35,000 sq. ft. facility. The large space opened new opportunities to expand the company’s equipment and expertise, providing clients with a full complement of signage solutions.
-        </p>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="about__wrapper about__wrapper--left">
+          <div class="about__title">Today</div>
+          <div class="about__subtitle">What we do</div>
+          <p class="about__description">
+            Urban Sign has established a reputation for quality engineering and fabrication excellence, founded on our architectural signage solutions. In recent years, we have applied these same principles to interior and exterior wayfinding, do nor recognition, interpretive elements and more. Urban Sign is a Union shop.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-      <div class="about__wrapper about__wrapper--left">
-        <div class="about__title">Today</div>
-        <div class="about__subtitle">What we do</div>
-        <p class="about__description">
-          Urban Sign has established a reputation for quality engineering and fabrication excellence, founded on our architectural signage solutions. In recent years, we have applied these same principles to interior and exterior wayfinding, do nor recognition, interpretive elements and more. Urban Sign is a Union shop.
-        </p>
-      </div>
+   <!-- /.container -->
+   <div class="visible-xs">
+      <div class="about__img"></div>
     </div>
-  </div>
-</div>
- <!-- /.container -->
- <div class="visible-xs">
-    <div class="about__img"></div>
-  </div>
- <div class="about about__container about__container--full-width about__info">
-    <div class="container about__container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <div class="about__wrapper-full-width">
-            <div class="about__title">Seth Davis</div>
-            <div class="about__subtitle">founder</div>
-            <p class="about__description">Seth grew up in the sign business and loved to build things. At a young age he was doing metal work and went on to pursue a degree in Industrial Design from Philadelphia University. Seth quick a niche helping creative people build there visions. With over 20 years in the sign industry, Seth constantly monitors new fabrication trends, integrating them into his business plan when a quality result can be consistently guaranteed. He is a presenter and sponsor at industry conferences and is considered a resource to design firms, corporate clients and other sign fabricators.</p>
+   <div class="about about__container about__container--full-width about__info">
+      <div class="container about__container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="about__wrapper-full-width">
+              <div class="about__title">Seth Davis</div>
+              <div class="about__subtitle">founder</div>
+              <p class="about__description">Seth grew up in the sign business and loved to build things. At a young age he was doing metal work and went on to pursue a degree in Industrial Design from Philadelphia University. Seth quick a niche helping creative people build there visions. With over 20 years in the sign industry, Seth constantly monitors new fabrication trends, integrating them into his business plan when a quality result can be consistently guaranteed. He is a presenter and sponsor at industry conferences and is considered a resource to design firms, corporate clients and other sign fabricators.</p>
+            </div>
+          </div>
+          <div class="hidden-xs col-sm-6 col-md-6 col-lg-6">
+            <div class="about__img"></div>
           </div>
         </div>
-        <div class="hidden-xs col-sm-6 col-md-6 col-lg-6">
-          <div class="about__img"></div>
-        </div>
       </div>
-    </div>
+     </div>
    </div>
- </div>
 
-{% include have_project.liquid %}
+  {% include have_project.liquid %}
+</div>
