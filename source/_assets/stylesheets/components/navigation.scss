@@ -7,6 +7,21 @@
     margin: 0 auto;
   }
 
+  &--inside {
+
+    .navigation__main {
+
+      a {
+        background-color: $color-lochmara;
+
+        &:hover {
+          background-color: $color-white;
+          color: $color-lochmara;
+        }
+      }
+    }
+  }
+
   &__main {
     text-align: center;
     font-size: 0;
@@ -45,8 +60,8 @@
       }
 
       &:hover {
-        background-color: $color-white;
-        color: $color-lochmara;
+        background-color: $color-lochmara;
+        color: $color-white;
       }
     }
   }

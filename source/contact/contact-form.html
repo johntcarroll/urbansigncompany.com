@@ -7,114 +7,119 @@ permalink: /contact-form/
 order: 4
 ---
 
-{% include hat.liquid %}
-<div class="container contact-form">
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <div class="btn-group contact-form__btn-group" role="group" aria-label="...">
-        <a class="btn btn--default-blue  is-active">
+<div class="contact">
+  {% include header_inside_pages.liquid %}
+  {% include header_inside_mobile.liquid %}
+  {% include hat.liquid %}
+  <div class="container contact-form">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="btn-group contact-form__btn-group" role="group" aria-label="...">
+          <a class="btn btn--default-blue  is-active">
             <span>Contact form</span>
-            <!-- <i class="icon-arrow-down"></i> -->
-        </a>
-        <a class="btn btn--default-blue" href="{{ BASE_PATH }}/employment-form/">
-          <span>Employment Form</span>
-         <!--  <i class="icon-arrow-down"></i> -->
-        </a>
+          </a>
+          <a class="btn btn--default-blue" href="{{ BASE_PATH }}/employment-form/">
+            <span>Employment Form</span>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-  <!--  /.row -->
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <div class="contact-form__info">
-        <h2 class="contact-form__title">Contact form</h2>
-        <p class="alert alert--info">
-          Fill in the form below or call us on
-          <a href="tel:856 691 8388">856 691 8388</a>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
-        </p>
-        <p class="alert alert--default">
-          <i class="icon-required"></i>
-          <span>Required fields!</span>
-        </p>
-        <p class="alert alert--danger">
-          <i class="icon-x"></i>
-          <span>Required fieldsnot filled out!</span>
-        </p>
-      </div>
-      <!-- /.contact-info -->
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-      <form class="contact-form__form-container base-form">
-        <div class="form-group base-form__item">
-          <input type="text" class="form-control input input--default" placeholder="Seth Devis">
-          <div class="base-form__icon">
-            <i class="icon-required"></i>
-            <i class="icon-check"></i>
-            <i class="icon-x"></i>
-          </div>
-        </div>
-        <div class="form-group base-form__item">
-          <input type="text" class="form-control input input--default" placeholder="Company">
-        </div>
-        <div class="form-group base-form__item">
-          <input type="email" class="form-control input input--default" placeholder="Email">
-        </div>
-        <div class="form-group base-form__item">
-          <input type="tel" class="form-control input input--default" placeholder="Phone">
-          <div class="base-form__icon">
-            <i class="icon-required"></i>
-            <i class="icon-check"></i>
-            <i class="icon-x"></i>
-          </div>
-        </div>
-        <div class="form-group base-form__item is-error">
-          <textarea class="form-control" rows="3" placeholder="Message"></textarea>
-          <div class="base-form__icon base-form__icon--textarea">
-            <i class="icon-required"></i>
-            <i class="icon-check"></i>
-            <i class="icon-x"></i>
-          </div>
-        </div>
-        <div class="g-recaptcha" data-sitekey="6LdiTCgTAAAAAJ3TtsOPj2PQvve_qkHDLksb4fIp"></div>
-
-        {% if recaptcha_valid? %}
-          <p class="alert alert--success">
-            <i class="icon-check"></i>
-            Your message has been successfully send
+    <!--  /.row -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="contact-form__info">
+          <h2 class="contact-form__title">Contact form</h2>
+          <p class="alert alert--info">
+            Fill in the form below or call us on
+            <a href="tel:856 691 8388">856 691 8388</a>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
           </p>
-        {% endif %}
-
-        <button type="sent" class="btn btn-primary btn--sent">
-          <span>Send</span>
-          <i class="icon-send"></i>
-        </button>
-
-      </form>
-
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-      <div class="contact-form__details">
-        <h4 class="contact-form__subtitle">Urban sign</h4>
-        <div class="address">
-          <span class="address__item">527 East Chestnut Avenue,</span>
-          <span class="address__item">PO Box 640</span>
-          <span class="address__item">New Jersey, 08362</span>
+          <p class="alert alert--default">
+            <i class="icon-required"></i>
+            <span>Required fields!</span>
+          </p>
+          <p class="alert alert--danger">
+            <i class="icon-x"></i>
+            <span>Required fieldsnot filled out!</span>
+          </p>
         </div>
-        <ul class="list-unstyled contacts">
-          <li class="contacts__item">
-            Phone: <a href="tel:856 691 8388">856 691 8388</a>
-          </li>
-          <li class="contacts__item">
-            Fax <a href="tel:856 692 8688">856 692 8688</a>
-          </li>
-          <li class="contacts__item">
-            Email: <a class="text-email" href="mailto:info@urbansigncompany.com">info@urbansigncompany.com</a>
-          </li>
-        </ul>
+        <!-- /.contact-info -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <form class="contact-form__form-container base-form">
+          <div class="form-group base-form__item">
+            <input type="text" class="form-control input input--default" placeholder="Seth Devis">
+            <div class="base-form__icon">
+              <i class="icon-required"></i>
+              <i class="icon-check"></i>
+              <i class="icon-x"></i>
+            </div>
+          </div>
+          <div class="form-group base-form__item">
+            <input type="text" class="form-control input input--default" placeholder="Company">
+          </div>
+          <div class="form-group base-form__item">
+            <input type="email" class="form-control input input--default" placeholder="Email">
+          </div>
+          <div class="form-group base-form__item">
+            <input type="tel" class="form-control input input--default" placeholder="Phone">
+            <div class="base-form__icon">
+              <i class="icon-required"></i>
+              <i class="icon-check"></i>
+              <i class="icon-x"></i>
+            </div>
+          </div>
+          <div class="form-group base-form__item is-error">
+            <textarea class="form-control" rows="3" placeholder="alert"></textarea>
+            <div class="base-form__icon base-form__icon--textarea">
+              <i class="icon-required"></i>
+              <i class="icon-check"></i>
+              <i class="icon-x"></i>
+            </div>
+          </div>
+          <div class="g-recaptcha" data-sitekey="6LdiTCgTAAAAAJ3TtsOPj2PQvve_qkHDLksb4fIp"></div>
+
+          {% if recaptcha_valid? %}
+            <p class="alert alert--success">
+              <i class="icon-check"></i>
+              Your message has been successfully send
+            </p>
+          {% endif %}
+
+          <button type="submit" class="btn btn-primary btn--sent">
+            <span>Send</span>
+            <i class="icon-send"></i>
+          </button>
+
+        </form>
+
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+        <div class="contact-form__details">
+          <h4 class="contact-form__subtitle">Urban sign</h4>
+          <div class="address">
+            <span class="address__item">527 East Chestnut Avenue,</span>
+            <span class="address__item">PO Box 640</span>
+            <span class="address__item">New Jersey, 08362</span>
+          </div>
+          <ul class="list-unstyled contacts">
+            <li class="contacts__item">
+              Phone: <a href="tel:856 691 8388">856 691 8388</a>
+            </li>
+            <li class="contacts__item">
+              Fax <a href="tel:856 692 8688">856 692 8688</a>
+            </li>
+            <li class="contacts__item">
+              Email: <a class="text-email" href="mailto:info@urbansigncompany.com">info@urbansigncompany.com</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+
+

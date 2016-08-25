@@ -75,7 +75,6 @@
       font-weight: 100;
       letter-spacing: 1.8px;
       width: 260px;
-      line-height: 34px;
       padding: 0 14px;
       height: 34px;
       background-color: $color-white;
@@ -91,7 +90,6 @@
         font-size: 10px;
         padding: 0 10px;
         height: 28px;
-        line-height: 28px;
         letter-spacing: 1px;
       }
 
@@ -100,7 +98,6 @@
         font-size: 10px;
         padding: 0 10px;
         height: 28px;
-        line-height: 28px;
         letter-spacing: 1px;
       }
     }
@@ -244,6 +241,8 @@
 
   &__logo {
     display: none;
+    width: 25px;
+    height: 25px;
 
     @include breakpoint ('phone-max') {
       display: block;

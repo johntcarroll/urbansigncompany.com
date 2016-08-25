@@ -23,7 +23,8 @@
     }
 
     @include breakpoint ('phone-max') {
-      max-width: 290px;
+      max-width: 100%;
+      padding: 0 15px;
     }
   }
 
@@ -33,7 +34,8 @@
       font-size: 34px;
       color: $color-white;
       letter-spacing: 1.6px;
-      @include font-base-bold;
+      @include font-base-medium;
+      font-weight: 600;
 
       @include breakpoint ('tablet') {
         font-size: 30px;

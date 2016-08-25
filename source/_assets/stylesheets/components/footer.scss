@@ -74,6 +74,7 @@
     width: 44px;
     height: 44px;
     margin-top: 15px;
+    position: relative;
 
     @include breakpoint ('tablet') {
       width: 30px;
@@ -85,8 +86,32 @@
       float: none;
     }
 
+    &:hover {
+
+      .footer__logo-main {
+        opacity: 0;
+      }
+
+      .footer__logo-hover {
+        opacity: 1;
+      }
+    }
+
     a {
       display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
     }
+  }
+
+  &__logo-main {
+    opacity: 1;
+  }
+
+  &__logo-hover {
+    opacity: 0;
   }
 }
