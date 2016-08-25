@@ -43,8 +43,12 @@
     &__icon {
       right: 15px;
 
-      @include breakpoint ('tablet-max') {
+      @include breakpoint ('tablet') {
         right: 18px;
+      }
+
+      @include breakpoint ('phone-max') {
+        right: 16px;
       }
     }
   }

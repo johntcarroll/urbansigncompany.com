@@ -9,8 +9,20 @@
   z-index: 1;
   padding-right: 31px;
 
-  @include breakpoint ('tablet-max') {
+  &::-webkit-input-placeholder {
+   color: $color-mine-shaft;
+  }
 
+  &::-moz-placeholder {
+     color: $color-mine-shaft;
+  }
+
+  &::-moz-placeholder {
+     color: $color-mine-shaft;
+  }
+
+  &::-ms-input-placeholder {
+     color: $color-mine-shaft;
   }
 
   &--default {
@@ -20,7 +32,7 @@
     letter-spacing: 2px;
     padding-top: 7px;
     padding-bottom: 6px;
-
+    padding-left: 9px;
 
 
     @include breakpoint ('tablet-max') {
@@ -32,11 +44,22 @@
 
     &:focus {
       border-color: $color-lochmara;
+      box-shadow: none;
     }
+
+
   }
 
-  &--primary{
+  &--primary {
     border: 1px solid $color-lochmara;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-white;
+      background-color: $color-lochmara;
+    }
   }
 
   &--upload {

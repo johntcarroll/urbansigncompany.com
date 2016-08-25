@@ -2,6 +2,7 @@
   border: 0;
   border-radius: 0;
   padding: 0;
+  @include font-base-light;
   margin-bottom: 0;
 
   @include breakpoint ('tablet') {
@@ -25,7 +26,7 @@
   }
 
   &--danger {
-    color: $color-crimson;
+    color: $color-crimson !important;
     display: none;
   }
 
@@ -54,7 +55,7 @@
   }
 
   &--info {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     @include breakpoint ('phone-max') {
       margin-bottom: 12px;
