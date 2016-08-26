@@ -2,24 +2,11 @@
   <div class="card__container">
     <div class="card__box">
       {% for post in site.categories.exterior-signs | limit: 6 %}
-
-        <div class="card__item">
-          <div class="card__image" style="background-image:">
-            <img src="{{site.baseurl}}/images/fotorama/{{post.image}}">
-            <div class="card__photo"><span>4</span><i class="icon-camera"></i></div>
-          </div>
-          <div class="card__title">
-            {{ post.title }}
-          </div>
-          <div class="card__description">
-            {{ post.title }}
-          </div>
-          <div class="card__btn">
-            <a href="{{ post.url }}" class="btn btn--project"><span>see project</span><i class="icon-arrow-right"></i></a>
-          </div>
-        </div>
-
+        {% include card_box_generator.liquid %}
       {% endfor %}
+    </div>
+    <div class="card__more">
+      <a href="" class="btn btn--more"><span>More Projects</span><i class="icon-arrow-down"></i></a>
     </div>
   </div>
 </div>
