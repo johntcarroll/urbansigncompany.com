@@ -1,7 +1,11 @@
 .project {
   text-align: center;
-  padding: 97px 0 77px;
+  padding: 97px 0 72px;
   position: relative;
+
+  @include breakpoint ('tablet') {
+    padding-bottom: 81px;
+  }
 
   @include breakpoint ('phone-max') {
     padding: 33px 0 43px;
