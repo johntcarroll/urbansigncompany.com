@@ -6,13 +6,28 @@ permalink: /employment-form/
 order: 4
 ---
 
-{% include header_inside_pages.liquid %}
-{% include header_inside_mobile.liquid %}
-<div class="hat">
-  <div class="hat__wrapper">
-    {% include hat.liquid %}
+<div class="line line__contact-form">
+  {% include header_inside_pages.liquid %}
+  {% include header_mobile.liquid %}
+  <div class="hat">
+    <div class="separator-wrapper separator-wrapper--header">
+      <div class="separator separator--left-header ">
+        <div class="hat__wrapper">
+          <div class="hat__container">
+            {% include hat.liquid %}
+
+            {% include hat_nav.liquid %}
+          </div>
+        </div>
+        <!-- /.hat__wrapper -->
+        <div class="separator separator--white separator--top-header hidden-xs"></div>
+        <div class="separator separator--white separator--right-small hidden-xs"></div>
+      </div>
   </div>
 </div>
+
+
+
 <div class="employment">
   <div class="container contact-form">
     <div class="row">
