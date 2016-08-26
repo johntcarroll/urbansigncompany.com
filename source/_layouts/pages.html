@@ -7,8 +7,9 @@ layout: default
 <div class="hat">
   <div class="hat__wrapper">
     {% include hat.liquid %}
-
-    {% include hat_nav.liquid %}
+    {% unless page.url == '/applications/' %}
+      {% include hat_nav.liquid %}
+    {% endunless %}
   </div>
 </div>
 

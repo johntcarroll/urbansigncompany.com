@@ -4,6 +4,10 @@
   position: relative;
   margin: 0 17px;
 
+  @include breakpoint ('tablet') {
+    padding-bottom: 81px;
+  }
+
   @include breakpoint ('phone-max') {
     padding: 33px 0 43px;
     margin: 0;
