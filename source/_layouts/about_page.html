@@ -6,11 +6,23 @@ layout: default
   {% include header_inside_pages.liquid %}
   {% include header_mobile.liquid %}
   <div class="hat">
-    <div class="hat__wrapper">
-      {% include hat.liquid %}
+    <div class="separator-wrapper separator-wrapper--header">
+      <div class="separator separator--left-header ">
+        <div class="hat__wrapper">
+          <div class="hat__container">
+            {% include hat.liquid %}
 
-      {% include hat_nav.liquid %}
+            {% include hat_nav.liquid %}
+          </div>
+        </div>
+        <!-- /.hat__wrapper -->
+        <div class="separator-wrapper--w-50 hidden-xs">
+          <div class="separator separator--white separator--top-header hidden-xs"></div>
+           <div class="separator separator--white separator--right-small hidden-xs"></div>
+        </div>
+      </div>
     </div>
+
   </div>
 </div>
 {{ content }}
