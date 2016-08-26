@@ -4,7 +4,6 @@
 
   @include breakpoint ('phone-max') {
     margin: -3px auto;
-    max-width: 320px;
   }
 
   &__item {

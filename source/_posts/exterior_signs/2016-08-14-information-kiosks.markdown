@@ -11,7 +11,7 @@ slides: simple
   <p class="application-item__content application-item__content--top">
     At its industrial-era peak, the Borough of Phoenixville was an important manufacturing hub and the site of great iron and steel mills. In recent years, the Borough has experienced revitalization—with an active arts scene, dining and nightlife. In addition, the Schuylkill River Trail is undergoing expansion in Southeastern Pennsylvania bringing more outdoor enthusiasts to Phoenixville. The Borough was looking for a series of kiosks to inform and guide both visitors and locals to the events and attractions Phoenixville has to offer.
   </p>
-  <div class="fotorama application-item__slider" data-nav="thumbs">
+  <div class="fotorama application-item__slider" data-nav="thumbs" data-thumbheight="109" border-width="3">
     <a {{ href | img : "fotorama/1.jpg" }}>{{ src | img : "fotorama/1_thumb.jpg" }}</a>
   </div>
   <div class="visible-xs application-item__icon-slider">

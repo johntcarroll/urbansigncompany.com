@@ -4,7 +4,7 @@
       <ol class="breadcrumb">
         <li><a href="/">Home</a></li>
         <li><i class="icon-angle-right"></i></li>
-        <li><a href="{{node.url}}">{{node.title}}</a></li>
+        <li class="active"><a href="{{node.url}}">{{node.title}}</a></li>
       </ol>
     {% endif %}
   {% endif %}
@@ -20,7 +20,7 @@
           {% for arr in my_array %}
             {% if forloop.index > 2 %}
               <li><i class="icon-angle-right"></i></li>
-              <li><a href="{{node.url}}">{{arr}}</a></li>
+              <li class="active"><a href="{{node.url}}">{{arr}}</a></li>
             {% endif %}
           {% endfor %}
       </ol>

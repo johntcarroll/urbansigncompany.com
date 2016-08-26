@@ -23,8 +23,18 @@
     vertical-align: middle;
   }
 
+  li {
+
+    &.active {
+
+      a {
+        color: $color-white;
+      }
+    }
+  }
+
   > .active {
-    color: $breadcrumb-active-color;
+    color: $color-white;
   }
 
   a {
@@ -33,6 +43,7 @@
     display: inline-block;
     vertical-align: middle;
     letter-spacing: 1px;
+    text-transform: capitalize;
 
     &:hover {
       color: $color-white;
