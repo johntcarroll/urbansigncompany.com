@@ -8,6 +8,11 @@ order: 1
 ---
 <div class="banner">
   {% include up_applications_navigation.liquid %}
+  <div class="banner__line-box">
+    <hr class="banner__line-first">
+    <div class="banner__text">architectural sign FABRICATION</div>
+    <hr class="banner__line-second">
+  </div>
   <div class="banner__image" style="background-image: url('{{ src | asset_path : "banner.jpg" }}')"></div>
   <div class="banner__inner">
     <div class="banner__box">
@@ -27,6 +32,14 @@ order: 1
   </div>
 </div>
 <div class="about-us" id="about-us">
+  <div class="about-us__line-box">
+    <hr class="about-us__line-first">
+    <hr class="about-us__line-second">
+    <hr class="about-us__line-third">
+    <div class="about-us__text">About us</div>
+    <hr class="about-us__line-fourth">
+    <hr class="about-us__line-fifth">
+  </div>
   <div class="about-us__wrapper">
     <div class="about-us__left">
       <div class="about-us__image" style="background-image: url('{{ src | asset_path : "photo.jpg" }}')"> </div>
@@ -51,5 +64,3 @@ order: 1
 </div>
 
 {% include down_applications_navigation.liquid %}
-
-{% include have_project.liquid %}

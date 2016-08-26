@@ -1,6 +1,7 @@
 ---
 # Layouts must stay in HTML
 ---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,6 +22,7 @@
   </head>
   <body>
     {{ content }}
+    {% include have_project.liquid %}
     {% include footer_navigation.liquid %}
     {% include footer.liquid %}
     <script type="text/javascript" src="{% asset_path application.js %}"></script>
