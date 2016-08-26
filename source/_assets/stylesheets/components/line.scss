@@ -36,4 +36,14 @@
   .hat-nav {
     display: none;
   }
+
+  &__contact-form {
+    .separator--top-header:before {
+      width: 99.95%;
+
+      @include breakpoint ('tablet') {
+        width: 99.79%;
+      }
+    }
+  }
 }
