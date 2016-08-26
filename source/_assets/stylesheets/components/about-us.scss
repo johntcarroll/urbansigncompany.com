@@ -251,42 +251,140 @@
       }
     }
 
-    li {
-      width: 28%;
-      display: inline-block;
-      vertical-align: middle;
-      font-size: 20px;
-      color: $color-mine-shaft;
+    .dropdown {
 
-      @include breakpoint ('tablet') {
-        width: 26%;
+      button {
+        color: $color-mine-shaft;
+        position: relative;
+        z-index: 2;
+        background-color: $color-white;
+        padding: 0 10px;
+        font-size: 48px;
+        @include font-base-medium;
+        font-weight: 600;
+        border: none;
+
+        @include breakpoint ('tablet') {
+          font-size: 40px;
+        }
+
+        @include breakpoint ('phone-max') {
+          font-size: 24px;
+        }
+
+        &:hover {
+          color: $color-lochmara;
+        }
+
+        &:active,
+        &:focus {
+          outline: none;
+          background-color: $color-white;
+          box-shadow: none;
+        }
       }
 
-      @include breakpoint ('phone-max') {
-        width: 33.333%;
+      li {
+        display: block;
+        position: relative;
       }
     }
 
-    button {
-      color: $color-mine-shaft;
-      position: relative;
-      z-index: 2;
-      background-color: $color-white;
-      padding: 0 10px;
-      font-size: 48px;
-      @include font-base-medium;
-      font-weight: 600;
+    .dropdown-menu {
+      top: -126px;
+      min-width: 142px;
+      left: -28px;
+      padding: 5px;
+      border-radius: 0;
+      border: none;
+      box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.4);
 
       @include breakpoint ('tablet') {
-        font-size: 40px;
+        top: -127px;
+        left: -98px;
       }
 
       @include breakpoint ('phone-max') {
-        font-size: 24px;
+        top: 52px;
       }
 
-      &:hover {
-        color: $color-lochmara;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 14px;
+        right: -16px;
+        box-sizing: border-box;
+        border: 8px solid #fff;
+        border-color: transparent transparent #fff #fff;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(224deg);
+        box-shadow: -3px 3px 3px 0 rgba(130, 130, 130, 0.3);
+        margin: 0 0 0 14px;
+        z-index: 6;
+
+        @include breakpoint ('phone-max') {
+          display: none;
+        }
+      }
+
+      &.dropdown-menu-1 {
+
+        @include breakpoint ('phone-max') {
+          left: 50%;
+          margin-left: -52px;
+        }
+      }
+
+      &.dropdown-menu-2 {
+
+        @include breakpoint ('phone-max') {
+          left: 50%;
+          margin-left: -71px;
+        }
+      }
+
+      &.dropdown-menu-3 {
+
+        @include breakpoint ('phone-max') {
+          left: 50%;
+          margin-left: -89px;
+        }
+      }
+
+      li {
+        border-bottom: 1px solid $color-alto;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      a {
+        font-size: 12px;
+        padding: 6px 0;
+        color: $color-silver-chalice;
+
+        &:hover {
+          color: $color-black;
+          background-color: transparent;
+
+          i {
+            color: $color-lochmara;
+          }
+        }
+
+        i {
+          font-size:14px;
+          display: inline-block;
+          vertical-align: middle;
+          position: relative;
+          top:-2px;
+          margin-right: 5px;
+        }
       }
     }
 
@@ -310,5 +408,29 @@
         top: -7px;
       }
     }
+  }
+
+  &__item {
+    width: 28%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    color: $color-mine-shaft;
+
+    @include breakpoint ('tablet') {
+      width: 26%;
+    }
+
+    @include breakpoint ('phone-max') {
+      width: 33.333%;
+    }
+  }
+
+  .open > .btn-default.dropdown-toggle {
+    background-color: $color-white!important;
+    color: $color-lochmara!important;
+    outline: none!important;
+    border: none;
+    border-bottom: none;
   }
 }
