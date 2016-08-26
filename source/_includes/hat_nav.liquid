@@ -1,32 +1,28 @@
-<div class="hat-nav">
-  <div class="hat-nav__wrapper">
-    <div class="hat-nav__title">
-      {% for node in site.categories.application  %}
-        {% if node.url == page.url %}
-          <h2>{{ node.title }}</h2>
+<div class="hat-nav__title">
+  {% for node in site.categories.application  %}
+    {% if node.url == page.url %}
+      <h2>{{ node.title }}</h2>
+    {% endif %}
+  {% endfor %}
+    {% for node in site.categories.application  %}
+      {% if page.next.url %}
+        {% if node.url == page.next.url %}
+          <a href="{{page.next.url}}" class="hat-nav__arrow hat-nav__arrow--left"><i class="icon-angle-left"></i></a>
         {% endif %}
-      {% endfor %}
-        {% for node in site.categories.application  %}
-          {% if page.next.url %}
-            {% if node.url == page.next.url %}
-              <a href="{{page.next.url}}" class="hat-nav__arrow hat-nav__arrow--left"><i class="icon-angle-left"></i></a>
-            {% endif %}
-        {% endif %}
-      {% endfor %}
-      {% for node in site.categories.application  %}
-        {% if page.previous.url %}
-          {% if node.url == page.previous.url %}
-            <a href="{{page.previous.url}}" class="hat-nav__arrow hat-nav__arrow--right"><i class="icon-angle-right"></i></a>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </div>
-    <div class="hat-nav__description">
-      {% for node in site.categories.application  %}
-        {% if node.url == page.url %}
-          {{ node.meta }}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
+    {% endif %}
+  {% endfor %}
+  {% for node in site.categories.application  %}
+    {% if page.previous.url %}
+      {% if node.url == page.previous.url %}
+        <a href="{{page.previous.url}}" class="hat-nav__arrow hat-nav__arrow--right"><i class="icon-angle-right"></i></a>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>
+<div class="hat-nav__description">
+  {% for node in site.categories.application  %}
+    {% if node.url == page.url %}
+      {{ node.meta }}
+    {% endif %}
+  {% endfor %}
 </div>
