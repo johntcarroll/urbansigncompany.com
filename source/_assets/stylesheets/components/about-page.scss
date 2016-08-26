@@ -298,6 +298,10 @@
         @include breakpoint ('tablet') {
           height: 44px;
         }
+
+        @include breakpoint ('phone-max') {
+          display: none;
+        }
       }
     }
 

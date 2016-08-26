@@ -1,0 +1,39 @@
+.line {
+  .hat {
+    background-color: $color-lochmara;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &__wrapper {
+      padding-top: 106px;
+      padding-bottom: 42px;
+
+      @include breakpoint ('tablet') {
+        padding-top: 82px;
+      }
+
+      @include breakpoint ('phone-max') {
+        padding-top: 20px;
+      }
+    }
+
+    &__container {
+      max-width: 925px;
+      margin: 0 auto;
+      position: relative;
+
+      @include breakpoint ('tablet') {
+        max-width: 626px;
+      }
+
+      @include breakpoint ('phone-max') {
+        max-width: 100%;
+        padding: 0 15px;
+      }
+    }
+  }
+
+  .hat-nav {
+    display: none;
+  }
+}

@@ -1,0 +1,187 @@
+.separator-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 100%;
+  width: 100%;
+
+  @include breakpoint ('phone-max') {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &--w-50 {
+    max-width: 50%;
+    width: 50%;
+  }
+
+  &--header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.separator {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: $color-mine-shaft;
+    right: 0;
+    width: 1px;
+    height: 100%;
+
+    @include breakpoint ('phone-max') {
+      display: none;
+    }
+  }
+
+  &--white {
+    &:before {
+      background-color: $color-white;
+    }
+  }
+
+  &--right {
+    &:before {
+      right: -16px;
+
+      @include breakpoint ('tablet') {
+        right: -15px;
+      }
+    }
+  }
+
+  &--right-bottom {
+    &:before {
+      right: 0;
+      left: auto;
+      height: 192px;
+      top: -78px;
+
+      @include breakpoint ('tablet') {
+        bottom: 190px;
+      }
+    }
+  }
+
+  &--right-top {
+    &:before {
+      top: -5px;
+      right: -21px;
+      left: auto;
+      bottom: auto;
+      height: 100px;
+
+      @include breakpoint ('tablet') {
+        right: -20px;
+        height: 30px;
+      }
+    }
+  }
+
+  &--right-text {
+    @include breakpoint ('tablet') {
+      padding-bottom: 52px;
+    }
+  }
+
+  &--right-small {
+    &:before {
+      right: -1px;
+      height: 30px;
+      top: -30px;
+
+      @include breakpoint ('tablet') {
+        right: 0;
+      }
+    }
+  }
+
+  &--left {
+    &:before {
+      left: -15px;
+
+      @include breakpoint ('tablet') {
+        left: -16px;
+      }
+
+      @include breakpoint ('phone-max') {
+        display: none;
+      }
+    }
+  }
+
+  &--left-small {
+    &:before {
+      left: 0;
+      height: 20px;
+    }
+  }
+
+  &--left-white {
+    &:before {
+      background-color: $color-white;
+      left: 0;
+      right: auto;
+      z-index: 1;
+      height: 403px;
+
+      @include breakpoint ('tablet') {
+        height: 441px;
+      }
+    }
+  }
+
+  &--left-header {
+    &:before {
+      background-color: $color-white;
+      left: 2px;
+      right: auto;
+      top: 0;
+      height: 90%;
+
+      @include breakpoint ('tablet') {
+        height: 90%;
+      }
+    }
+  }
+
+  &--top {
+    &:before {
+      height: 1px;
+      width: 50%;
+      bottom: auto;
+      top: -1px;
+      left: 0;
+
+      @include breakpoint ('tablet') {
+        top: 0px;
+      }
+    }
+  }
+
+  &--top-header {
+    &:before {
+      width: 99.9%;
+      height: 1px;
+      top: -31px;
+      left: 2px;
+
+      @include breakpoint ('tablet') {
+        width: 99.599%;
+      }
+    }
+  }
+
+  &--top-full-width {
+    &:before {
+      width: 100%;
+      height: 1px;
+      top: 19px;
+    }
+  }
+}
