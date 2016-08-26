@@ -1,13 +1,12 @@
 ---
-title: Trail Signage
+title: Information Kiosks
 date:   2014-10-22 17:26:19
 categories: exterior-signs
 layout: posts
 permalink: /application/:categories/:title/
 folder: exterior-signs
-image: 2.jpg
+image: 1.jpg
 ---
-Sample content Trail Signage
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <p class="application-item__content application-item__content--top">
     At its industrial-era peak, the Borough of Phoenixville was an important manufacturing hub and the site of great iron and steel mills. In recent years, the Borough has experienced revitalization—with an active arts scene, dining and nightlife. In addition, the Schuylkill River Trail is undergoing expansion in Southeastern Pennsylvania bringing more outdoor enthusiasts to Phoenixville. The Borough was looking for a series of kiosks to inform and guide both visitors and locals to the events and attractions Phoenixville has to offer.
