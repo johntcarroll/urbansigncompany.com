@@ -1,10 +1,10 @@
 ---
-title: Information Kiosks
-date:   2014-10-22 17:26:19
+title: Information Kiosks 2
+date: 2016-08-12 17:26:19
 categories: exterior-signs
 breadcrumb: Exterior Signs
 layout: posts
-permalink: /application/:categories/:title/
+permalink: /application/:categories/information-kiosks-2/
 folder: exterior-signs
 image: 1.jpg
 ---
