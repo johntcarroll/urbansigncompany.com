@@ -1,8 +1,5 @@
 <div class="hat-nav">
   <div class="hat-nav__wrapper">
-    {% include navigation.liquid %}
-
-    {% include breadcrumb.liquid %}
     <div class="hat-nav__title">
       {% for node in site.categories.application  %}
         {% if node.url == page.url %}

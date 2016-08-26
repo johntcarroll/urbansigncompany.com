@@ -1,15 +1,24 @@
-<div class="project">
-  <div class="project__line-box">
-    <hr class="project__line-first">
-    <hr class="project__line-second">
-    <hr class="project__line-third">
-    <div class="project__text">Contact</div>
-    <hr class="project__line-fourth">
+{% if page.url == "/contact-form/" %}
+{% elsif page.url == "/employment-form/"%}
+{% else %}
+  <div class="project">
+    <div class="project__line-box">
+      <hr class="project__line-first">
+      <hr class="project__line-second">
+      <hr class="project__line-third">
+      <div class="project__text">Contact</div>
+      <hr class="project__line-fourth">
+    </div>
+    <div class="about__separator-wrapper hidden-xs">
+      <div class="about__separator about__separator--right-bottom hidden-xs">
+        <div class="about__title-vertical about__title-vertical--right about__title-vertical--black"><span>Contact</span></div>
+      </div>
+    </div>
+    <div class="project__description">
+      Have a project in mind?
+    </div>
+    <div class="project__btn">
+      <a href="/contact-form/" class="btn btn--main">Get in touch</a>
+    </div>
   </div>
-  <div class="project__description">
-    Have a project in mind?
-  </div>
-  <div class="project__btn">
-    <a href="/contact-form/" class="btn btn--main">Get in touch</a>
-  </div>
-</div>
+{% endif%}

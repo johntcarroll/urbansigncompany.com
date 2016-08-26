@@ -1,0 +1,65 @@
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $color-mine-shaft;
+  z-index: 200;
+  transform: translateX(100%);
+  transform: translate3d(100%,0,0);
+  transition: transform 500ms ease-in-out;
+
+  .menu-active & {
+    display: block;
+    transform: translateX(0);
+    transform: translate3d(0,0,0);
+  }
+
+  &__btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+
+    span {
+      padding-right: 5px;
+      letter-spacing: 2px;
+    }
+
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 12px;
+    }
+  }
+
+  li {
+    display: block;
+
+    a {
+      display: block;
+      font-size: 14px;
+      text-transform: uppercase;
+      padding: 10px 0;
+      letter-spacing: 2px;
+
+      &:hover {
+        color: $color-lochmara;
+      }
+    }
+  }
+
+  &__table {
+    display: table;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

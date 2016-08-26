@@ -2,12 +2,101 @@
 .about {
   color: $color-light-shaft;
   @include clearfix;
-  margin-top: 68px;
 
-  @include breakpoint ('tablet') {
-    margin-top: 41px;
+  &__separator-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+    width: 100%;
   }
 
+  &__separator {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      background-color: $color-mine-shaft;
+      right: 0;
+      width: 1px;
+      height: 100%;
+    }
+
+    &--right {
+      &:before {
+        right: -16px;
+
+        @include breakpoint ('tablet') {
+          right: -14px;
+        }
+
+        @include breakpoint ('phone-max') {
+          display: none;
+        }
+      }
+    }
+
+    &--right-bottom {
+      &:before {
+        right: 0;
+        left: auto;
+        height: 192px;
+        top: -78px;
+      }
+    }
+
+    &--left {
+      &:before {
+        left: -15px;
+
+        @include breakpoint ('tablet') {
+          left: -14px;
+        }
+
+        @include breakpoint ('phone-max') {
+          display: none;
+        }
+      }
+    }
+
+    &--left-small {
+      &:before {
+        left: 0;
+        height: 20px;
+      }
+    }
+
+    &--left-white {
+      &:before {
+        background-color: $color-white;
+        left: 0;
+        right: auto;
+        z-index: 1;
+        height: 403px;
+      }
+    }
+
+    &--top {
+      &:before {
+        height: 1px;
+        width: 50%;
+        bottom: auto;
+        top: -1px;
+        left: 0
+      }
+    }
+
+    &--top-full-width {
+      &:before {
+        width: 100%;
+        height: 1px;
+        top: 19px;
+      }
+    }
+  }
 
   &__img {
     background-position: 100% 30%;
@@ -34,10 +123,12 @@
   }
 
   &__container {
+    margin-top: 68px;
     max-width: 955px;
     width: 100%;
 
     @include breakpoint ('tablet') {
+      margin-top: 41px;
       max-width: 656px;
     }
 
@@ -52,6 +143,8 @@
       padding-left: 0;
       padding-right: 0;
       position: relative;
+      margin-top: -48px;
+      min-height: 403px;
 
       @include breakpoint ('phone-max') {
         margin-top: 0;
@@ -155,10 +248,23 @@
           top: 2px;
         }
       }
+
+      &:before {
+        content: '';
+        position: absolute;
+        height: 50px;
+        width: 40px;
+        background-color: $color-white;
+
+        @include breakpoint ('tablet') {
+          height: 44px;
+        }
+      }
     }
 
     &--left {
       padding-right: 17%;
+      padding-bottom: 78px;
 
       @include breakpoint ('phone-max') {
         padding-right: 0;
@@ -166,7 +272,7 @@
       }
 
       &:after {
-        right: -39px;
+        right: -31px;
 
         @include breakpoint ('tablet') {
           right: -27px;
@@ -174,21 +280,8 @@
       }
 
       &:before {
-        content: '';
-        position: absolute;
-        background-color: $color-mine-shaft;
-        right: 0;
-        width: 1px;
-        height: 100%;
-        right: -24px;
-
-        @include breakpoint ('tablet') {
-          right: -14px;
-        }
-
-        @include breakpoint ('phone-max') {
-          display: none;
-        }
+        right: -36px;
+        top: -11px;
       }
     }
 
@@ -204,11 +297,16 @@
       }
 
       &:after {
-        left: -21px;
+        left: -28px;
 
         @include breakpoint ('tablet') {
           left: -28px;
         }
+      }
+
+      &:before {
+        left: -36px;
+        top: -11px;
       }
     }
   }
@@ -252,6 +350,56 @@
       @include breakpoint ('tablet-max') {
         margin-bottom: 0;
       }
+    }
+  }
+
+  &__title-vertical {
+    font-size: 12px;
+    letter-spacing: 2px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    text-transform: uppercase;
+
+
+    &--left {
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      left: -14px;
+      margin-top: -10px;
+    }
+
+    &--right {
+      right: -43px;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+
+    &--white {
+      color: $color-white;
+
+      span {
+        background-color: $color-lochmara;
+      }
+    }
+
+    &--black {
+      color: $color-mine-shaft;
+
+      span {
+        background-color: $color-white;
+      }
+    }
+
+    span {
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 
