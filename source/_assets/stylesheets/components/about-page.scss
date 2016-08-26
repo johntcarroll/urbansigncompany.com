@@ -39,6 +39,15 @@
       }
     }
 
+    &--right-bottom {
+      &:before {
+        right: 0;
+        left: auto;
+        height: 192px;
+        top: -78px;
+      }
+    }
+
     &--left {
       &:before {
         left: -15px;
@@ -246,6 +255,10 @@
         height: 50px;
         width: 40px;
         background-color: $color-white;
+
+        @include breakpoint ('tablet') {
+          height: 44px;
+        }
       }
     }
 
@@ -360,7 +373,7 @@
     }
 
     &--right {
-      right: 0;
+      right: -43px;
       -webkit-transform: rotate(90deg);
       -moz-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -377,7 +390,7 @@
     }
 
     &--black {
-      color: $color-mine-shaftl;
+      color: $color-mine-shaft;
 
       span {
         background-color: $color-white;
