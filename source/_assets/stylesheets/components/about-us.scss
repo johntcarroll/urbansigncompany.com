@@ -9,6 +9,14 @@
 
   @include breakpoint ('phone-max') {
     padding: 40px 0 26px;
+    margin: 0;
+  }
+
+  &__line-box {
+
+    @include breakpoint ('phone-max') {
+      display: none;
+    }
   }
 
   &__line-first {
@@ -51,6 +59,11 @@
     z-index: 3;
     text-transform: uppercase;
     letter-spacing: 2.4px;
+
+    @include breakpoint ('tablet') {
+      font-size: 10px;
+      top: 215px;
+    }
   }
 
   &__line-fourth {
@@ -62,6 +75,10 @@
     position: absolute;
     z-index: 3;
     border-top: 1px solid $color-black;
+
+    @include breakpoint ('tablet') {
+      width: 147px;
+    }
   }
 
   &__line-fifth{

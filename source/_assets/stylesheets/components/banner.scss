@@ -12,7 +12,14 @@
     padding-top: 44px;
   }
 
- &__line-first {
+  &__line-box {
+
+    @include breakpoint ('phone-max') {
+      display: none;
+    }
+  }
+
+  &__line-first {
     transform: rotate(-90deg);
     transform-origin: 0 0;
     width: 198px;
@@ -21,6 +28,11 @@
     position: absolute;
     z-index: 3;
     border-top: 1px solid $color-white;
+
+    @include breakpoint ('tablet') {
+      width: 238px;
+      top: 218px;
+    }
   }
 
   &__text {
@@ -34,6 +46,11 @@
     z-index: 3;
     text-transform: uppercase;
     letter-spacing: 2.4px;
+
+    @include breakpoint ('tablet') {
+      font-size: 10px;
+      left: 15px;
+    }
   }
 
   &__line-second {
