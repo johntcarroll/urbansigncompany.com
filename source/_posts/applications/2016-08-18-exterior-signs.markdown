@@ -9,6 +9,5 @@ meta: Exterior signage brings an organization’s brand to the street and helps 
 ---
 {% include card.liquid %}
 
-Exterior signage brings an organization’s brand to the street and helps visitors find their way. Urban Sign marries fabrication & engineering experience with project management expertise to bring large-scale projects in on-time and on- budget.
 
 

@@ -1,8 +1,8 @@
 <div class="card">
+  <div class="card__container">
+    <div class="card__box">
+      {% for post in site.categories.exterior-signs | limit: 6 %}
 
-  {% for post in site.categories.exterior-signs %}
-    <div class="card__container">
-      <div class="card__box">
         <div class="card__item">
           <div class="card__image" style="background-image:">
             <img src="{{site.baseurl}}/images/fotorama/{{post.image}}">
@@ -18,7 +18,8 @@
             <a href="{{ post.url }}" class="btn btn--project"><span>see project</span><i class="icon-arrow-right"></i></a>
           </div>
         </div>
-      </div>
+
+      {% endfor %}
     </div>
-  {% endfor %}
+  </div>
 </div>
