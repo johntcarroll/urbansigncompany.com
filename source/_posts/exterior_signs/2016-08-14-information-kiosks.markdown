@@ -5,7 +5,7 @@ categories: exterior-signs
 layout: posts
 permalink: /application/:categories/:title/
 folder: exterior-signs
-slides: simple
+image: 1.jpg
 ---
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <p class="application-item__content application-item__content--top">
