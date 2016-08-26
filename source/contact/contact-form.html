@@ -7,10 +7,16 @@ permalink: /contact-form/
 order: 4
 ---
 
+{% include header_inside_pages.liquid %}
+{% include header_inside_mobile.liquid %}
+<div class="hat">
+  <div class="hat__wrapper">
+    {% include hat.liquid %}
+  </div>
+</div>
 <div class="contact">
-  {% include header_inside_pages.liquid %}
-  {% include header_inside_mobile.liquid %}
-  {% include hat.liquid %}
+
+
   <div class="container contact-form">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -81,7 +87,9 @@ order: 4
               <i class="icon-x"></i>
             </div>
           </div>
-          <div class="g-recaptcha" data-sitekey="6LdiTCgTAAAAAJ3TtsOPj2PQvve_qkHDLksb4fIp"></div>
+
+          <span id="recaptcha-failed-alert" class="help-block small hide">* Anti-spam check failed. Are you a robot?</span>
+      <div class="g-recaptcha" data-sitekey="6LdiTCgTAAAAAJ3TtsOPj2PQvve_qkHDLksb4fIp"></div>
 
           {% if recaptcha_valid? %}
             <p class="alert alert--success">

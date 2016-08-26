@@ -1,14 +1,10 @@
-<div class="hat">
-  <div class="hat__wrapper">
-    {% include up_applications_navigation.liquid %}
+{% include up_applications_navigation.liquid %}
 
-    {% include breadcrumb.liquid %}
-    <div class="hat__title">
-      {% for node in site.pages %}
-        {% if node.url == page.url %}
-          <h2>{{ node.title }}</h2>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
+{% include breadcrumb.liquid %}
+<div class="hat__title">
+  {% for node in site.pages %}
+    {% if node.url == page.url %}
+      <h2>{{ node.title }}</h2>
+    {% endif %}
+  {% endfor %}
 </div>

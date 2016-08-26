@@ -1,8 +1,12 @@
-<div class="project">
-  <div class="project__description">
-    Have a project in mind?
+{% if page.url == "/contact-form/" %}
+{% elsif page.url == "/employment-form/"%}
+{% else %}
+  <div class="project">
+    <div class="project__description">
+      Have a project in mind?
+    </div>
+    <div class="project__btn">
+      <a href="/contact-form/" class="btn btn--main">Get in touch</a>
+    </div>
   </div>
-  <div class="project__btn">
-    <a href="/contact-form/" class="btn btn--main">Get in touch</a>
-  </div>
-</div>
+{% endif%}

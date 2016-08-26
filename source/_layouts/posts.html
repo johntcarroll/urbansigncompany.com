@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
+{% include header_inside_pages.liquid %}
+{% include header_mobile.liquid %}
+<div class="hat">
+  <div class="hat__wrapper">
+    {% include hat.liquid %}
+
+  </div>
+</div>
+
 <div class="container application-item application-item__container">
   <div class="row">
     {{ content }}
