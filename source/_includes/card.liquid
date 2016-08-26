@@ -4,7 +4,8 @@
     <div class="card__container">
       <div class="card__box">
         <div class="card__item">
-          <div class="card__image" style="background-image: url('{{ src | asset_path : "plate-1.jpg" }}')">
+          <div class="card__image" style="background-image:">
+            <img src="{{site.baseurl}}/images/fotorama/{{post.image}}">
             <div class="card__photo"><span>4</span><i class="icon-camera"></i></div>
           </div>
           <div class="card__title">

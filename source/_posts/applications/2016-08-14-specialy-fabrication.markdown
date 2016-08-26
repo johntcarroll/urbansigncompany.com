@@ -5,6 +5,7 @@ categories: application
 layout: pages
 permalink: /:categories/:title/
 folder: applications
+meta: Specialy
 ---
 
 {% include card.liquid %}
