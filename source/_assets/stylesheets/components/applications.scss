@@ -25,8 +25,8 @@
     border-top: 1px solid $color-black;
 
     @include breakpoint ('tablet') {
-      width: 71px;
-      top: 54px;
+      width: 67px;
+      top: 50px;
     }
   }
 
@@ -54,13 +54,13 @@
     transform: rotate(-90deg);
     transform-origin: 0 0;
     width: 469px;
-    left: 20px;
+    left: 23px;
     bottom: -18px;
     position: absolute;
     z-index: 3;
 
     @include breakpoint ('tablet') {
-      width: 292px;
+      width: 288px;
       bottom: -17px;
     }
   }
