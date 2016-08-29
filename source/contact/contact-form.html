@@ -68,9 +68,9 @@ order: 4
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <form class="contact-form__form-container base-form">
+            <form class="contact-form__form-container base-form" action="https://getsimpleform.com/messages?form_api_token=cf3234bb0cf33ba5d786c4c19c93aab2" method="post">
               <div class="form-group base-form__item">
-                <input type="text" class="form-control input input--default" placeholder="Seth Devis">
+                <input type="text" class="form-control input input--default" placeholder="Seth Devis" id="name" required="true">
                 <div class="base-form__icon">
                   <i class="icon-required"></i>
                   <i class="icon-check"></i>
@@ -81,10 +81,10 @@ order: 4
                 <input type="text" class="form-control input input--default" placeholder="Company">
               </div>
               <div class="form-group base-form__item">
-                <input type="email" class="form-control input input--default" placeholder="Email">
+                <input type="email" class="form-control input input--default" placeholder="Email" id="email">
               </div>
               <div class="form-group base-form__item">
-                <input type="tel" class="form-control input input--default" placeholder="Phone">
+                <input type="tel" class="form-control input input--default" placeholder="Phone" id="phone" required="true">
                 <div class="base-form__icon">
                   <i class="icon-required"></i>
                   <i class="icon-check"></i>
@@ -100,15 +100,7 @@ order: 4
                 </div>
               </div>
 
-              <span id="recaptcha-failed-alert" class="help-block small hide">* Anti-spam check failed. Are you a robot?</span>
           <div class="g-recaptcha" data-sitekey="6LdiTCgTAAAAAJ3TtsOPj2PQvve_qkHDLksb4fIp"></div>
-
-              {% if recaptcha_valid? %}
-                <p class="alert alert--success">
-                  <i class="icon-check"></i>
-                  Your message has been successfully send
-                </p>
-              {% endif %}
 
               <button type="submit" class="btn btn-primary btn--sent">
                 <span>Send</span>
