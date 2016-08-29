@@ -113,5 +113,9 @@
 
   &__logo-hover {
     opacity: 0;
+
+    img {
+      height: auto;
+    }
   }
 }
