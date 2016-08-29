@@ -43,6 +43,13 @@
       &:last-child {
         border-right: 1px solid $color-white;
       }
+
+      &.active {
+
+        a {
+          @include font-base-bold;
+        }
+      }
     }
 
     a {
@@ -52,7 +59,7 @@
       padding: 14px 12px;
       font-size: 12px;
       letter-spacing: 2.3px;
-      @include font-base-bold;
+      @include font-base-medium;
 
       @include breakpoint ('tablet') {
         font-size: 10px;
