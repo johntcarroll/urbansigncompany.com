@@ -16,6 +16,12 @@ $(document).ready(function(){
     });
 
 
+    $("input:file").change(function (){
+       var fileName = $(this).val().split('\\').pop();
+       $(".js-filename").html(fileName);
+     });
+
+
     var showMore = $(".js-show-more");
         showMore.attr('data-pagination', 0);
     var perPage = 6;
