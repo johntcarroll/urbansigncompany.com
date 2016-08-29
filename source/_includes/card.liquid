@@ -1,14 +1,18 @@
 <div class="card">
   <div class="card__container">
     <div class="card__box">
-      {% for post in site.posts | limit: 6 %}
+      {% assign size = 0 %}
+      {% for post in site.posts %}
         {% if page.url contains post.folder %}
+          {% assign size = forloop.index %}
           {% include card_box_generator.liquid %}
-        {% endif%}
+        {% endif %}
       {% endfor %}
     </div>
-    <div class="card__more">
-      <a href="" class="btn btn--more"><span>More Projects</span><i class="icon-arrow-down"></i></a>
-    </div>
+    {% if size > 6 %}
+      <div class="card__more">
+        <button class="btn btn--more"><span>More Projects</span><i class="icon-arrow-down"></i></button>
+      </div>
+    {% endif %}
   </div>
 </div>
