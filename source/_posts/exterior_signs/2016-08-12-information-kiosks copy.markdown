@@ -4,7 +4,7 @@ date: 2016-08-12 17:26:19
 categories: exterior-signs
 breadcrumb: Exterior Signs
 layout: posts
-permalink: /application/:categories/information-kiosks-22/
+permalink: /application/:categories/information-kiosks-2/
 folder: exterior-signs
 image: 1.jpg
 ---

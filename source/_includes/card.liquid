@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card js-card">
   <div class="card__container">
     <div class="card__box">
       {% assign size = 0 %}
@@ -11,7 +11,7 @@
     </div>
     {% if size > 6 %}
       <div class="card__more">
-        <button class="btn btn--more"><span>More Projects</span><i class="icon-arrow-down"></i></button>
+        <button class="btn btn--more js-show-more"><span>More Projects</span><i class="icon-arrow-down"></i></button>
       </div>
     {% endif %}
   </div>
