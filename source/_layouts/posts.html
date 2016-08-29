@@ -1,20 +1,37 @@
 ---
 layout: default
 ---
-{% include header_inside_pages.liquid %}
-{% include header_mobile.liquid %}
-<div class="hat">
-  <div class="hat__wrapper">
-    {% include hat.liquid %}
+
+<div class="line line__applications-wrapper">
+  {% include header_inside_pages.liquid %}
+  {% include header_mobile.liquid %}
+  <div class="hat">
+    <div class="separator-wrapper separator-wrapper--header">
+      <div class="separator separator--left-header ">
+        <div class="hat__wrapper">
+          <div class="hat__container">
+            {% include hat.liquid %}
+          </div>
+        </div>
+        <div class="separator separator--white separator--top-header hidden-xs"></div>
+        <div class="separator separator--white separator--right-small hidden-xs"></div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="container application-item application-item__container">
-  <div class="row">
-    {{ content }}
+
+
+<div class="separator-wrapper separator-wrapper--content">
+  <div class="separator separator--black separator--left-content separator--left-employment">
+    <div class="about__title-vertical about__title-vertical--right about__title-vertical--right-app about__title-vertical--black"><span>Case Study</span></div>
+    <div class="container application-item application-item__container">
+      <div class="row">
+        {{ content }}
+      </div>
+    </div>
   </div>
 </div>
-
 <div class="PageNavigation container application-item application-item__container--full-width">
   <div class="application-item__container--border application-item__post-nav">
     <div class="row">
@@ -40,17 +57,3 @@ layout: default
   </div>
 </div>
 
-
-<!-- <div class="container application-item application-item__container--full-width">
-      <div class="row application-item__post-nav post-nav">
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-          <a href="" class="btn btn--clear">
-            <span>
-              <i class="icon-angle-left"></i>
-              <span class="post-nav__title"></span>
-            </span>
-          </a>
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"></div>
-      </div>
-    </div> -->

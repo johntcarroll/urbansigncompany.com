@@ -10,6 +10,7 @@
 
       @include breakpoint ('tablet') {
         padding-top: 82px;
+        padding-bottom: 3px;
       }
 
       @include breakpoint ('phone-max') {
@@ -39,10 +40,28 @@
 
   &__contact-form {
     .separator--top-header:before {
-      width: 99.95%;
+      width: 99.94%;
 
       @include breakpoint ('tablet') {
-        width: 99.79%;
+        width: 99.87%;
+      }
+    }
+  }
+
+  &__applications-wrapper {
+    .separator {
+      &--left-employment {
+        &:before {
+          height: 100%;
+        }
+      }
+
+      &--top-header {
+        &:before {
+          @include breakpoint ('tablet') {
+             width: 99.899%;
+          }
+        }
       }
     }
   }

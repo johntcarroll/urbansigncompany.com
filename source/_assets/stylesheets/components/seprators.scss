@@ -103,7 +103,7 @@
       top: -30px;
 
       @include breakpoint ('tablet') {
-        right: 0;
+        right: 14x;
       }
     }
   }
@@ -152,13 +152,14 @@
   &--left-header {
     &:before {
       background-color: $color-white;
+      bottom: auto;
       left: 2px;
       right: auto;
-      top: 0;
-      height: 91%;
+      top: -31px;
+      height: 100%;
 
       @include breakpoint ('tablet') {
-        height: 90%;
+        height: 100%;
       }
     }
   }
@@ -173,6 +174,16 @@
 
       @include breakpoint ('tablet') {
         height: 98.1%;
+      }
+    }
+  }
+
+  &--left-employment{
+    &:before {
+      height: 98.9%;
+
+      @include breakpoint ('tablet') {
+        height: 98.7%;
       }
     }
   }
@@ -199,7 +210,7 @@
       left: 2px;
 
       @include breakpoint ('tablet') {
-        width: 99.599%;
+        width: 99.699%;
       }
     }
   }

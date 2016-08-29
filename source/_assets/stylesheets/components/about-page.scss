@@ -442,6 +442,14 @@
       }
     }
 
+    &--right-app {
+      right: -58px;
+
+      @include breakpoint ('tablet') {
+        right: -49px;
+      }
+    }
+
     &--white {
       color: $color-white;
 
