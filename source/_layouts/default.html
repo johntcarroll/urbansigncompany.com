@@ -21,11 +21,13 @@
   <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body>
-    {{ content }}
-    {% include menu.liquid %}
-    {% include have_project.liquid %}
-    {% include footer_navigation.liquid %}
-    {% include footer.liquid %}
-    <script type="text/javascript" src="{% asset_path application.js %}"></script>
+    <div class="{% assign my_array = page.url | split: '/' %}{% for i in my_array %}{% if forloop.last %}{{ i }}{% endif %}{% endfor %}">
+      {{ content }}
+      {% include menu.liquid %}
+      {% include have_project.liquid %}
+      {% include footer_navigation.liquid %}
+      {% include footer.liquid %}
+      <script type="text/javascript" src="{% asset_path application.js %}"></script>
+    </div>
   </body>
 </html>
