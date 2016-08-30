@@ -4,7 +4,7 @@
       {% assign size = 0 %}
       {% for post in site.posts %}
         {% if page.url contains post.folder %}
-          {% assign size = forloop.index %}
+          {% assign size = size | plus:1 %}  
           {% include card_box_generator.liquid %}
         {% endif %}
       {% endfor %}

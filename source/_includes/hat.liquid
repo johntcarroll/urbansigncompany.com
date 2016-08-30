@@ -12,10 +12,24 @@
 
 {% for post in site.posts %}
   {% if post.url == page.url %}
-    {% unless post.folder == applications %}
+    {% if post.folder contains 'applications' %}
       <div class="hat__title">
         <h2>{{ post.title }}</h2>
       </div>
-    {% endunless %}
+    {% else %}
+      <div class="hat__title">
+        <h2>{{ post.title }}</h2>
+      </div>
+      <div class="hat__client">
+        <p>CLIENT</p>
+        <h4>{{ post.client.name }}</h4>
+        <p>{{ post.client.site }}</p>
+      </div>
+      <div class="hat__design">
+        <p>DESIGN</p>
+        <h4>{{ post.design.name }}</h4>
+        <p>{{ post.design.site }}</p>
+      </div>
+    {% endif %}
   {% endif %}
 {% endfor %}
