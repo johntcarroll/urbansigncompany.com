@@ -28,34 +28,4 @@ Sample content Trail Signage
   <p class="application-item__content application-item__content--bottom">
     Urban re-created the historic column profiles with modern fabrication techniques as a structural component of the kiosks. Additional elements of historical detailing in the kiosk design are machined finials and arched canopy overhangs. , inspired by the “Phoenix Bridge” on the Foundry property. Tamper-resistant frames house CHPL panels providing Trail and Borough information and covered brochure holders keep event information safe from the elements.
   </p>
-
-</div>
-<div class="clearfix"></div>
-<div class="application-item__page-nav">
-  <div class="col-xs-5 col-sm-6 col-md-6 col-lg-6">
-    <a href="" class="btn btn--clear">
-      <i class="icon-angle-left"></i>
-      <span>Back</span>
-    </a>
-  </div>
-  <div class="col-xs-7 col-sm-6 col-md-6 col-lg-6 application-item__social-links text-right">
-    <span>share</span>
-    <ul class="list-unstyled">
-      <li>
-        <a href="">
-            <i class="icon-facebook"></i>
-        </a>
-      </li>
-      <li>
-        <a href="">
-            <i class="icon-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <i class="icon-linkedin"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
 </div>

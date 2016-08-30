@@ -28,6 +28,35 @@ layout: default
     <div class="container application-item application-item__container">
       <div class="row">
         {{ content }}
+        <div class="clearfix"></div>
+        <div class="application-item__page-nav">
+          <div class="col-xs-5 col-sm-6 col-md-6 col-lg-6">
+            <a href="{% for node in site.posts %}{% if node.url == page.url %}/application/{{ node.folder }}/{% endif %}{% endfor %}" class="btn btn--clear">
+              <i class="icon-angle-left"></i>
+              <span>Back</span>
+            </a>
+          </div>
+          <div class="col-xs-7 col-sm-6 col-md-6 col-lg-6 application-item__social-links text-right">
+            <span>share</span>
+            <ul class="list-unstyled">
+              <li>
+                <a href="">
+                    <i class="icon-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                    <i class="icon-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="icon-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
