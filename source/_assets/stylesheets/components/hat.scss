@@ -49,17 +49,45 @@
   &__client,
   &__design {
     display: inline-block;
+    vertical-align: top;
+    max-width: 314px;
 
     p {
       color: $color-white;
+      font-size: 12px;
+      margin: 0 0 8px;
+      letter-spacing: 1px;
+
+      @include breakpoint ('tablet') {
+        font-size: 10px;
+      }
     }
 
     h4 {
       color: $color-white;
+      font-size: 18px;
+      margin: 0;
+      letter-spacing: 3.5px;
+      line-height: 24px;
+
+      @include breakpoint ('tablet') {
+        font-size: 14px;
+      }
+    }
+
+    a {
+      font-size:14px;
+      display: block;
+      @include font-base-light;
+      letter-spacing: .2px;
+
+      @include breakpoint ('tablet') {
+        font-size: 12px;
+      }
     }
   }
 
   &__client {
-
+    margin-right: 95px;
   }
 }
