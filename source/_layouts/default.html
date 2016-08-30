@@ -21,7 +21,7 @@
   <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body>
-    <div class="{% assign my_array = page.url | split: '/' %}{% for i in my_array %}{% if forloop.last %}{{ i }}{% endif %}{% endfor %}">
+    <div class="{% assign my_array = page.url | split: '/' %}{% for i in my_array %}{% if forloop.last %}{{ i }}-page{% endif %}{% endfor %}">
       {{ content }}
       {% include menu.liquid %}
       {% include have_project.liquid %}
