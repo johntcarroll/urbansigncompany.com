@@ -46,11 +46,26 @@
     }
   }
 
+  &__info-box {
+
+    @include breakpoint ('phone-max') {
+      margin-top: 18px;
+    }
+  }
+
   &__client,
   &__design {
     display: inline-block;
     vertical-align: top;
     max-width: 314px;
+
+    @include breakpoint ('tablet') {
+      width: 228px;
+    }
+
+    @include breakpoint ('phone-max') {
+      width: 124px;
+    }
 
     p {
       color: $color-white;
@@ -60,6 +75,12 @@
 
       @include breakpoint ('tablet') {
         font-size: 10px;
+      }
+
+      @include breakpoint ('phone-max') {
+        font-size: 10px;
+        line-height: 9px;
+        margin: 0;
       }
     }
 
@@ -72,6 +93,15 @@
 
       @include breakpoint ('tablet') {
         font-size: 14px;
+        letter-spacing: 2.8px;
+        line-height: 20px;
+      }
+
+      @include breakpoint ('phone-max') {
+        font-size: 14px;
+        letter-spacing: 2.8px;
+        line-height: 20px;
+        line-height: 19px;
       }
     }
 
@@ -83,11 +113,29 @@
 
       @include breakpoint ('tablet') {
         font-size: 12px;
+        letter-spacing: .1px;
+      }
+
+      @include breakpoint ('phone-max') {
+        font-size: 12px;
+        letter-spacing: .1px;
+      }
+
+      i {
+        margin-left: 4px;
       }
     }
   }
 
   &__client {
     margin-right: 95px;
+
+    @include breakpoint ('tablet') {
+      margin-right: 63px;
+    }
+
+    @include breakpoint ('phone-max') {
+      margin-right: 36px;
+    }
   }
 }
