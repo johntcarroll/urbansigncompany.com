@@ -1,4 +1,4 @@
-<div class="card__item js-card {% if forloop.index > 6 %} is-hidden {% endif %}">
+<div class="card__item js-card {% if size > 6 %} {{size}} is-hidden {% endif %}">
   <a  href="{{ post.url }}" class="card__image" style="background-image:">
     <img src="{{site.baseurl}}/images/fotorama/{{post.image}}">
     <div class="card__photo"><span>4</span><i class="icon-camera"></i></div>
