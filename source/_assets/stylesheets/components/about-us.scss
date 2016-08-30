@@ -251,6 +251,37 @@
       }
     }
 
+    a {
+      color: $color-mine-shaft;
+      position: relative;
+      z-index: 2;
+      background-color: $color-white;
+      padding: 0 10px;
+      font-size: 48px;
+      @include font-base-medium;
+      font-weight: 600;
+      border: none;
+
+      @include breakpoint ('tablet') {
+        font-size: 40px;
+      }
+
+      @include breakpoint ('phone-max') {
+        font-size: 24px;
+      }
+
+      &:hover {
+        color: $color-lochmara;
+      }
+
+      &:active,
+      &:focus {
+        outline: none;
+        background-color: $color-white;
+        box-shadow: none;
+      }
+    }
+
     .dropdown {
 
       button {
