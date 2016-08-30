@@ -6,6 +6,12 @@ breadcrumb: Exterior Signs
 layout: posts
 permalink: /application/:categories/information-kiosks-1/
 folder: exterior-signs
+client:
+  name: Borough Of Phoenixville
+  site: http://www.phoenixville.org
+design: 
+  name: KRD Design, Delve Associates LLC
+  site: http://www.krddesign.com
 image: 1.jpg
 ---
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
