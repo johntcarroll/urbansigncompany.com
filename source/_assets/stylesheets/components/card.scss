@@ -2,6 +2,13 @@
   position: relative;
   overflow: hidden;
 
+  &__line-box {
+
+    @include breakpoint('phone-max') {
+      display: none;
+    }
+  }
+
   &__line {
     position: absolute;
     top: 0;
@@ -14,8 +21,8 @@
 
   &__line-text {
     position: absolute;
-    right: 8px;
-    top: 139px;
+    right: 29px;
+    top: 50%;
     transform: rotate(90deg);
     transform-origin: 100% 100%;
     color: $color-black;
@@ -23,6 +30,9 @@
     z-index: 3;
     text-transform: uppercase;
     letter-spacing: 2.4px;
+    background-color: $color-white;
+    padding: 0 6px 0 9px;
+    margin-top: 30px;
   }
 
   &__container {
