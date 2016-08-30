@@ -45,4 +45,21 @@
       }
     }
   }
+
+  &__client,
+  &__design {
+    display: inline-block;
+
+    p {
+      color: $color-white;
+    }
+
+    h4 {
+      color: $color-white;
+    }
+  }
+
+  &__client {
+
+  }
 }
