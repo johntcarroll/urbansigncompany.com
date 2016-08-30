@@ -16,8 +16,13 @@
 
   &--header,
   &--content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include breakpoint ('phone-max') {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 }
 

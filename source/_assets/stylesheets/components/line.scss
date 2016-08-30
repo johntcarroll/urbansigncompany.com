@@ -10,7 +10,6 @@
 
       @include breakpoint ('tablet') {
         padding-top: 82px;
-        padding-bottom: 3px;
       }
 
       @include breakpoint ('phone-max') {
