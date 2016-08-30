@@ -20,15 +20,19 @@
       <div class="hat__title">
         <h2>{{ post.title }}</h2>
       </div>
-      <div class="hat__client">
-        <p>CLIENT</p>
-        <h4>{{ post.client.name }}</h4>
-        <a href="">{{ post.client.site }}</a>
-      </div>
-      <div class="hat__design">
-        <p>DESIGN</p>
-        <h4>{{ post.design.name }}</h4>
-        <a href="">{{ post.design.site }}</a>
+      <div class="hat__info-box">
+        <div class="hat__client">
+          <p>CLIENT</p>
+          <h4>{{ post.client.name }}</h4>
+          <a class="hidden-xs" href="">{{ post.client.site }}</a>
+          <a class="visible-xs" href="{{ post.client.site }}">Website<i class="icon-chain"></i></a>
+        </div>
+        <div class="hat__design">
+          <p>DESIGN</p>
+          <h4>{{ post.design.name }}</h4>
+          <a class="hidden-xs" href="">{{ post.design.site }}</a>
+          <a class="visible-xs" href="{{ post.design.site }}">Website<i class="icon-chain"></i></a>
+        </div>
       </div>
     {% endif %}
   {% endif %}
