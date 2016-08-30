@@ -7,6 +7,10 @@
     left: auto;
     top: 92px;
     border-top: 1px solid $color-white;
+
+    @include breakpoint('tablet') {
+      top: 46px;
+    }
   }
 
   .applications__line-second {
@@ -25,6 +29,10 @@
     transform: rotate(90deg);
     color: $color-white;
     transform-origin: 100% 100%;
+
+    @include breakpoint('tablet') {
+      top: 156px;
+    }
   }
 
   .project__line-first {
@@ -41,6 +49,11 @@
     right: auto;
     left: -7px;
     top: 153px;
+
+    @include breakpoint('tablet') {
+      left: -5px;
+      top: 144px;
+    }
   }
 
   .project__line-third {

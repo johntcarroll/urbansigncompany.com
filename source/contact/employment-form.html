@@ -26,252 +26,255 @@ order: 4
   </div>
 </div>
 
+<div class="separator-wrapper separator-wrapper--content">
+  <div class="separator separator--black separator--left-content">
+    <div class="about__title-vertical about__title-vertical--right about__title-vertical--black"><span>Contact</span></div>
 
-
-<div class="employment">
-  <div class="container contact-form">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div class="btn-group contact-form__btn-group" role="group" aria-label="...">
-          <a href="{{ BASE_PATH }}/contact-form/" class="btn btn--default-blue">
-            <span>Contact form</span>
-          </a>
-          <a class="btn btn--default-blue is-active">
-            <span>Employment Form</span>
-          </a>
+    <div class="employment">
+      <div class="container contact-form">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="btn-group contact-form__btn-group" role="group" aria-label="...">
+              <a href="{{ BASE_PATH }}/contact-form/" class="btn btn--default-blue">
+                <span>Contact form</span>
+              </a>
+              <a class="btn btn--default-blue is-active">
+                <span>Employment Form</span>
+              </a>
+            </div>
+          </div>
         </div>
+        <!--  /.row -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="contact-form__info ">
+              <h2 class="contact-form__title">Employment form</h2>
+              <p class="alert alert--info">
+                Want to work for us? Fill in the employment form and weâ€™ll contact you. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+              </p>
+              <p class="alert alert--default">
+                <i class="icon-required"></i>
+                <span>Required fields!</span>
+              </p>
+              <p class="alert alert--danger">
+                <span class="icon-x"></span>
+                <span>Required fieldsnot filled out!</span>
+              </p>
+            </div>
+            <!-- /.contact-info -->
+          </div>
+        </div>
+        <form class="form employment-form" action="https://getsimpleform.com/messages?form_api_token=cf3234bb0cf33ba5d786c4c19c93aab2" method="post">
+
+          <div class="base-form">
+            <h3 class="base-form__title">Personal information</h3>
+            <div class="row">
+              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+                <input type="text" class="form-control input input--default" placeholder="First name" name="first name" required="true">
+                <div class="base-form__icon">
+                  <i class="icon-required"></i>
+                </div>
+              </div>
+              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+                <input type="text" class="form-control input input--default" placeholder="M.I." name="M.I.">
+              </div>
+              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+                <input type="text" class="form-control input input--default" placeholder="Last Name" name="last name" required="true">
+                <div class="base-form__icon">
+                  <i class="icon-required"></i>
+                  <i class="icon-check"></i>
+                </div>
+              </div>
+              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+                <input type="phone" class="form-control input input--default" placeholder="Phone" name="phone" required="true">
+                <div class="base-form__icon">
+                  <i class="icon-required"></i>
+                  <i class="icon-check"></i>
+                </div>
+              </div>
+              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+                <input type="email" class="form-control input input--default" placeholder="Email" name="email">
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.base-form -->
+          <div class="base-form base-form--address">
+            <h3 class="base-form__title">Address</h3>
+            <div class="row">
+              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item is-error">
+                <input type="text" class="form-control input input--default" placeholder="Street address" name="Street address" required="true">
+                <div class="base-form__icon">
+                  <i class="icon-required"></i>
+                </div>
+              </div>
+              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+                <input type="text" class="form-control input input--default" placeholder="Address line 2" name="Address line 2">
+              </div>
+              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+                <input type="text" class="form-control input input--default" placeholder="City" name="city" required="true">
+                <div class="base-form__icon">
+                  <i class="icon-required"></i>
+                  <i class="icon-check"></i>
+                  <i class="icon-x"></i>
+                </div>
+              </div>
+              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item is-success">
+                <input type="text" class="form-control input input--default" placeholder="State/ province/ region" name="State/ province/ region" required="true">
+                <div class="base-form__icon">
+                  <i class="icon-check"></i>
+                  <i class="icon-required"></i>
+                </div>
+              </div>
+              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+                <input type="integer" class="form-control input input--default" placeholder="zip/ postal code" name="zip" required="true">
+                <div class="base-form__icon">
+                  <i class="icon-required"></i>
+                  <i class="icon-check"></i>
+                </div>
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.base-form -->
+
+          <div class="row">
+            <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+              <input type="text" class="form-control input input--default" placeholder="Date avaiLable" name="date available">
+              <div class="base-form__icon">
+                <i class="icon-calander"></i>
+              </div>
+            </div>
+            <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+              <input type="text" class="form-control input input--default" placeholder="REFFERED BY" name="reffered">
+            </div>
+            <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+              <input type="text" class="form-control input input--default" placeholder="DESIRED SALARY" name="desired salary">
+            </div>
+            <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item base-form__item-dropdown">
+              <div class="input-group">
+                <input type="text" class="form-control input input--default" placeholder="POSITION APPLIED FOR" name="position" required="true">
+                <span class="input-group-addon">
+                  <i class="icon-arrow-down"></i>
+                </span>
+              </div>
+              <div class="base-form__icon">
+                <i class="icon-required"></i>
+                <i class="icon-check"></i>
+              </div>
+            </div>
+          </div>
+          <!-- /.row -->
+
+          <div class="base-form base-form__radio-btn-group">
+            <div class="row">
+              <div class="base-form__radio-btn-item col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="title">
+                  <span>ARE YOU A CITIZEN OF THE UNITED STATES?</span>
+                  <i class="icon-required"></i>
+                </div>
+                <div class="radio radio-inline radio-btn">
+                  <label class="radio-bth__label-wrapper">
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" required="true">
+                    <span class="radio-btn__icon">
+                      <i class="icon-check"></i>
+                    </span>
+                    <span class="radio-btn__label">Yes</span>
+                  </label>
+                </div>
+                <div class="radio radio-inline radio-btn">
+                  <label class="radio-bth__label-wrapper">
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1">
+                    <span class="radio-btn__icon">
+                      <i class="icon-check"></i>
+                    </span>
+                    <span class="radio-btn__label">No</span>
+                  </label>
+                </div>
+              </div>
+              <div class="base-form__radio-btn-item  col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="title">
+                  <span>Have you ever worked for this company?</span>
+                  <i class="icon-required"></i>
+                </div>
+                <div class="radio radio-inline radio-btn">
+                  <label class="radio-bth__label-wrapper">
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" required="true">
+                    <span class="radio-btn__icon">
+                      <i class="icon-check"></i>
+                    </span>
+                    <span class="radio-btn__label">Yes</span>
+                  </label>
+                </div>
+                <div class="radio radio-inline radio-btn">
+                  <label class="radio-bth__label-wrapper">
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option1">
+                    <span class="radio-btn__icon">
+                      <i class="icon-check"></i>
+                    </span>
+                    <span class="radio-btn__label">No</span>
+                  </label>
+                </div>
+              </div>
+              <div class="base-form__radio-btn-item col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="title">
+                  <span>Have you ever been convicted of a felony?</span>
+                  <i class="icon-required"></i>
+                </div>
+                <div class="radio radio-inline radio-btn">
+                  <label class="radio-bth__label-wrapper">
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" required="true">
+                    <span class="radio-btn__icon">
+                      <i class="icon-check"></i>
+                    </span>
+                    <span class="radio-btn__label">Yes</span>
+                  </label>
+                </div>
+                <div class="radio radio-inline radio-btn">
+                  <label class="radio-bth__label-wrapper">
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option1">
+                    <span class="radio-btn__icon">
+                      <i class="icon-check"></i>
+                    </span>
+                    <span class="radio-btn__label">No</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.base-form -->
+
+          <div class="base-form">
+            <h3 class="base-form__title">
+              Upload resume
+              <i class="icon-required"></i>
+            </h3>
+            <div class="form-group base-form__item">
+              <span class="form-control input input--primary input--upload">
+                Choose file <input id="uploadFile" type="file" name="uploadFile">
+                <div class="base-form__icon">
+                  <i class="icon-arrow-right"></i>
+                </div>
+              </span>
+              <span class="type-file">
+                <i class="icon-resume-file"></i>
+                <span class="js-filename" name="uploadFile"></span>
+              </span>
+            </div>
+
+
+
+            <button type="submit" class="btn btn-primary btn--submit">
+              <span>Submit</span>
+              <i class="icon-send"></i>
+            </button>
+          </div>
+      </span>
+
+
+        </form>
       </div>
     </div>
-    <!--  /.row -->
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <div class="contact-form__info ">
-          <h2 class="contact-form__title">Employment form</h2>
-          <p class="alert alert--info">
-            Want to work for us? Fill in the employment form and weâ€™ll contact you. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
-          </p>
-          <p class="alert alert--default">
-            <i class="icon-required"></i>
-            <span>Required fields!</span>
-          </p>
-          <p class="alert alert--danger">
-            <span class="icon-x"></span>
-            <span>Required fieldsnot filled out!</span>
-          </p>
-        </div>
-        <!-- /.contact-info -->
-      </div>
-    </div>
-    <form class="form employment-form" action="https://getsimpleform.com/messages?form_api_token=cf3234bb0cf33ba5d786c4c19c93aab2" method="post">
-
-      <div class="base-form">
-        <h3 class="base-form__title">Personal information</h3>
-        <div class="row">
-          <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
-            <input type="text" class="form-control input input--default" placeholder="First name" name="first name" required="true">
-            <div class="base-form__icon">
-              <i class="icon-required"></i>
-            </div>
-          </div>
-          <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
-            <input type="text" class="form-control input input--default" placeholder="M.I." name="M.I.">
-          </div>
-          <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
-            <input type="text" class="form-control input input--default" placeholder="Last Name" name="last name" required="true">
-            <div class="base-form__icon">
-              <i class="icon-required"></i>
-              <i class="icon-check"></i>
-            </div>
-          </div>
-          <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
-            <input type="phone" class="form-control input input--default" placeholder="Phone" name="phone" required="true">
-            <div class="base-form__icon">
-              <i class="icon-required"></i>
-              <i class="icon-check"></i>
-            </div>
-          </div>
-          <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
-            <input type="email" class="form-control input input--default" placeholder="Email" name="email">
-          </div>
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.base-form -->
-      <div class="base-form base-form--address">
-        <h3 class="base-form__title">Address</h3>
-        <div class="row">
-          <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item is-error">
-            <input type="text" class="form-control input input--default" placeholder="Street address" name="Street address" required="true">
-            <div class="base-form__icon">
-              <i class="icon-required"></i>
-            </div>
-          </div>
-          <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
-            <input type="text" class="form-control input input--default" placeholder="Address line 2" name="Address line 2">
-          </div>
-          <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
-            <input type="text" class="form-control input input--default" placeholder="City" name="city" required="true">
-            <div class="base-form__icon">
-              <i class="icon-required"></i>
-              <i class="icon-check"></i>
-              <i class="icon-x"></i>
-            </div>
-          </div>
-          <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item is-success">
-            <input type="text" class="form-control input input--default" placeholder="State/ province/ region" name="State/ province/ region" required="true">
-            <div class="base-form__icon">
-              <i class="icon-check"></i>
-              <i class="icon-required"></i>
-            </div>
-          </div>
-          <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
-            <input type="integer" class="form-control input input--default" placeholder="zip/ postal code" name="zip" required="true">
-            <div class="base-form__icon">
-              <i class="icon-required"></i>
-              <i class="icon-check"></i>
-            </div>
-          </div>
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.base-form -->
-
-      <div class="row">
-        <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
-          <input type="text" class="form-control input input--default" placeholder="Date avaiLable" name="date available">
-          <div class="base-form__icon">
-            <i class="icon-calander"></i>
-          </div>
-        </div>
-        <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
-          <input type="text" class="form-control input input--default" placeholder="REFFERED BY" name="reffered">
-        </div>
-        <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
-          <input type="text" class="form-control input input--default" placeholder="DESIRED SALARY" name="desired salary">
-        </div>
-        <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item base-form__item-dropdown">
-          <div class="input-group">
-            <input type="text" class="form-control input input--default" placeholder="POSITION APPLIED FOR" name="position" required="true">
-            <span class="input-group-addon">
-              <i class="icon-arrow-down"></i>
-            </span>
-          </div>
-          <div class="base-form__icon">
-            <i class="icon-required"></i>
-            <i class="icon-check"></i>
-          </div>
-        </div>
-      </div>
-      <!-- /.row -->
-
-      <div class="base-form base-form__radio-btn-group">
-        <div class="row">
-          <div class="base-form__radio-btn-item col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="title">
-              <span>ARE YOU A CITIZEN OF THE UNITED STATES?</span>
-              <i class="icon-required"></i>
-            </div>
-            <div class="radio radio-inline radio-btn">
-              <label class="radio-bth__label-wrapper">
-                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" required="true">
-                <span class="radio-btn__icon">
-                  <i class="icon-check"></i>
-                </span>
-                <span class="radio-btn__label">Yes</span>
-              </label>
-            </div>
-            <div class="radio radio-inline radio-btn">
-              <label class="radio-bth__label-wrapper">
-                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1">
-                <span class="radio-btn__icon">
-                  <i class="icon-check"></i>
-                </span>
-                <span class="radio-btn__label">No</span>
-              </label>
-            </div>
-          </div>
-          <div class="base-form__radio-btn-item  col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="title">
-              <span>Have you ever worked for this company?</span>
-              <i class="icon-required"></i>
-            </div>
-            <div class="radio radio-inline radio-btn">
-              <label class="radio-bth__label-wrapper">
-                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" required="true">
-                <span class="radio-btn__icon">
-                  <i class="icon-check"></i>
-                </span>
-                <span class="radio-btn__label">Yes</span>
-              </label>
-            </div>
-            <div class="radio radio-inline radio-btn">
-              <label class="radio-bth__label-wrapper">
-                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option1">
-                <span class="radio-btn__icon">
-                  <i class="icon-check"></i>
-                </span>
-                <span class="radio-btn__label">No</span>
-              </label>
-            </div>
-          </div>
-          <div class="base-form__radio-btn-item col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="title">
-              <span>Have you ever been convicted of a felony?</span>
-              <i class="icon-required"></i>
-            </div>
-            <div class="radio radio-inline radio-btn">
-              <label class="radio-bth__label-wrapper">
-                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" required="true">
-                <span class="radio-btn__icon">
-                  <i class="icon-check"></i>
-                </span>
-                <span class="radio-btn__label">Yes</span>
-              </label>
-            </div>
-            <div class="radio radio-inline radio-btn">
-              <label class="radio-bth__label-wrapper">
-                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option1">
-                <span class="radio-btn__icon">
-                  <i class="icon-check"></i>
-                </span>
-                <span class="radio-btn__label">No</span>
-              </label>
-            </div>
-          </div>
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.base-form -->
-
-      <div class="base-form">
-        <h3 class="base-form__title">
-          Upload resume
-          <i class="icon-required"></i>
-        </h3>
-        <div class="form-group base-form__item">
-          <span class="form-control input input--primary input--upload">
-            Choose file <input id="uploadFile" type="file" name="uploadFile">
-            <div class="base-form__icon">
-              <i class="icon-arrow-right"></i>
-            </div>
-          </span>
-          <span class="type-file">
-            <i class="icon-resume-file"></i>
-            <span class="js-filename" name="uploadFile"></span>
-          </span>
-        </div>
-
-
-
-        <button type="submit" class="btn btn-primary btn--submit">
-          <span>Submit</span>
-          <i class="icon-send"></i>
-        </button>
-      </div>
-  </span>
-
-
-    </form>
   </div>
 </div>
-
