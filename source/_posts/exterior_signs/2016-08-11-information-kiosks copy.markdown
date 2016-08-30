@@ -19,7 +19,8 @@ image: 1.jpg
     At its industrial-era peak, the Borough of Phoenixville was an important manufacturing hub and the site of great iron and steel mills. In recent years, the Borough has experienced revitalization—with an active arts scene, dining and nightlife. In addition, the Schuylkill River Trail is undergoing expansion in Southeastern Pennsylvania bringing more outdoor enthusiasts to Phoenixville. The Borough was looking for a series of kiosks to inform and guide both visitors and locals to the events and attractions Phoenixville has to offer.
   </p>
   <div class="fotorama application-item__slider" data-nav="thumbs" data-thumbheight="109" border-width="3">
-    <a {{ href | img : "fotorama/1.jpg" }}>{{ src | img : "fotorama/1_thumb.jpg" }}</a>
+    <a {{ href | img : "fotorama/1.jpg" }}></a>
+    <a {{ href | img : "fotorama/2.jpg" }}></a>
   </div>
   <div class="visible-xs application-item__icon-slider">
       <i class="icon-swipe"></i>
@@ -33,4 +34,6 @@ image: 1.jpg
   <p class="application-item__content application-item__content--bottom">
     Urban re-created the historic column profiles with modern fabrication techniques as a structural component of the kiosks. Additional elements of historical detailing in the kiosk design are machined finials and arched canopy overhangs. , inspired by the “Phoenix Bridge” on the Foundry property. Tamper-resistant frames house CHPL panels providing Trail and Borough information and covered brochure holders keep event information safe from the elements.
   </p>
+
 </div>
+

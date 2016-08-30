@@ -1,7 +1,7 @@
 <div class="card__item js-card{% if size > 6 %} is-hidden {% endif %}">
   <a  href="{{ post.url }}" class="card__image" style="background-image:">
-    <div class="card__image" style="background-image: url('{{ src | asset_path : post.image }}')"></div>
-    <div class="card__photo"><span>4</span><i class="icon-camera"></i></div>
+    <div class="card__image" style="background-image: url('/assets/fotorama/{{ post.image }}')"></div>
+    <div class="card__photo"><span>{{ post.image.size }}</span><i class="icon-camera"></i></div>
   </a>
   <div class="card__title">
     {{ post.title }}
