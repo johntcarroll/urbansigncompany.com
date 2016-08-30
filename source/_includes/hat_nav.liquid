@@ -19,10 +19,11 @@
     {% endif %}
   {% endfor %}
 </div>
-<div class="hat-nav__description">
-  {% for node in site.categories.application  %}
-    {% if node.url == page.url %}
+
+{% for node in site.categories.application  %}
+  {% if node.url == page.url %}
+    <div class="hat-nav__description">
       {{ node.meta }}
-    {% endif %}
-  {% endfor %}
-</div>
+    </div>
+  {% endif %}
+{% endfor %}
