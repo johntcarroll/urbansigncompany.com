@@ -65,7 +65,7 @@
   }
 
   &__image {
-    background-position: 50% 0;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -160,6 +160,11 @@
     @include breakpoint ('phone-max') {
       font-size: 12px;
       line-height: 22px;
+    }
+
+    span {
+      background-color: rgba(64,78,114,.6);
+      padding: 0 4px;
     }
   }
 

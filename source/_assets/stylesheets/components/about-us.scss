@@ -261,6 +261,7 @@
       @include font-base-medium;
       font-weight: 600;
       border: none;
+      cursor: default;
 
       @include breakpoint ('tablet') {
         font-size: 40px;
@@ -271,14 +272,7 @@
       }
 
       &:hover {
-        color: $color-lochmara;
-      }
-
-      &:active,
-      &:focus {
-        outline: none;
-        background-color: $color-white;
-        box-shadow: none;
+        color: $color-mine-shaft;
       }
     }
 
