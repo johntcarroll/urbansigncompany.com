@@ -1,16 +1,11 @@
 
-$(document).ready(function(){
-    $('.banner__arrow-link').click( function(){
-    var scroll_el = $(this).attr('href');
-        if ($(scroll_el).length != 0) {
-        $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 700);
-        }
-        return false;
-    });
-});
 
+// Menu
 
 $(document).ready(function(){
+
+    // Menu
+
     $(".js-menu").click(function(){
         $("body").toggleClass("menu-active"); return false;
     });
@@ -33,7 +28,7 @@ $(document).ready(function(){
 
 
         if (length / perPage > pagination) {
-            showMore.attr('data-pagination', pagination );        
+            showMore.attr('data-pagination', pagination );
             card.each(function(i, c) {
                 if (i <= (pagination * perPage) + perPage) {
                     card.eq(i).removeClass('is-hidden');
@@ -46,7 +41,31 @@ $(document).ready(function(){
         } else {
             showMore.remove();
         }
+    });
 
+    // Arrow
+
+
+    $('.banner__arrow-link').click( function(){
+    var scroll_el = $(this).attr('href');
+        if ($(scroll_el).length != 0) {
+        $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 700);
+        }
+        return false;
+    });
+
+    // Calendar
+
+
+    $("#datepicker").datepicker();
+
+
+    // Select
+
+    $('select').selectize({
+       placeholder: "position applied for"
     });
 });
+
+
 

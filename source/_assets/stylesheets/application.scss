@@ -1,3 +1,4 @@
+@import "jquery-ui/jquery-ui";
 @import "mixins/breakpoint/breakpoint";
 @import "components/colors";
 @import "bootstrap/bootstrap";
@@ -40,4 +41,5 @@
 @import "components/post-page";
 @import "components/employment-form-page";
 @import "components/project-page";
+@import "components/selectize";
 

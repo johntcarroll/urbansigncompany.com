@@ -141,7 +141,7 @@ order: 4
 
           <div class="row">
             <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
-              <input type="text" class="form-control input input--default" placeholder="Date avaiLable" name="date available">
+              <input id="datepicker" type="text" class="form-control input input--default" placeholder="Date avaiLable" name="date available">
               <div class="base-form__icon">
                 <i class="icon-calander"></i>
               </div>
@@ -152,21 +152,17 @@ order: 4
             <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
               <input type="text" class="form-control input input--default" placeholder="DESIRED SALARY" name="desired salary">
             </div>
-            <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item base-form__item-dropdown">
-              <div class="input-group">
-                <input type="text" class="form-control input input--default" placeholder="POSITION APPLIED FOR" name="position" required="true">
-                <span class="input-group-addon">
-                  <i class="icon-arrow-down"></i>
-                </span>
-              </div>
-              <div class="base-form__icon">
-                <i class="icon-required"></i>
-                <i class="icon-check"></i>
-              </div>
+            <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+              <select class="select">
+                <option value="" disabled selected>POSITION APPLIED FOR</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
             </div>
           </div>
           <!-- /.row -->
-
           <div class="base-form base-form__radio-btn-group">
             <div class="row">
               <div class="base-form__radio-btn-item col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -263,17 +259,11 @@ order: 4
                 <span class="js-filename" name="uploadFile"></span>
               </span>
             </div>
-
-
-
             <button type="submit" class="btn btn-primary btn--submit">
               <span>Submit</span>
               <i class="icon-send"></i>
             </button>
           </div>
-      </span>
-
-
         </form>
       </div>
     </div>
