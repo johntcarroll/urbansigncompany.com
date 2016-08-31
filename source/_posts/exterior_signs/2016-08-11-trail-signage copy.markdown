@@ -7,6 +7,7 @@ layout: posts
 permalink: /application/:categories/trail-signage-1/
 folder: exterior-signs
 image: 2.jpg
+count_of_image: 2
 ---
 Sample content Trail Signage
 

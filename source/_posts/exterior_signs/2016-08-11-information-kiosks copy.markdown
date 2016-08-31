@@ -13,6 +13,7 @@ design:
   name: KRD Design, Delve Associates LLC
   site: http://www.krddesign.com
 image: 1.jpg
+count_of_image: 3
 ---
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <p class="application-item__content application-item__content--top">
@@ -20,6 +21,7 @@ image: 1.jpg
   </p>
   <div class="fotorama application-item__slider" data-nav="thumbs" data-thumbheight="109" border-width="3">
     <a {{ href | img : "fotorama/1.jpg" }}></a>
+    <a {{ href | img : "fotorama/2.jpg" }}></a>
     <a {{ href | img : "fotorama/2.jpg" }}></a>
   </div>
   <div class="visible-xs application-item__icon-slider">
