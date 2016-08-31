@@ -100,21 +100,21 @@ order: 4
                 </div>
               </div>
 
-          <div class="g-recaptcha" data-sitekey="6LdiTCgTAAAAAJ3TtsOPj2PQvve_qkHDLksb4fIp" data-callback=""></div>
-              <input type='hidden' name='redirect_to' value='http://127.0.0.1:4000/contact-form/?success=true'/>
-              <button type="submit" class="btn btn-primary btn--sent">
+              <div class="g-recaptcha" data-sitekey="6LdiTCgTAAAAAJ3TtsOPj2PQvve_qkHDLksb4fIp" data-callback="" required="true"></div>
+                <input type='hidden' name='redirect_to' value='http://127.0.0.1:4000/contact-form/?success=true'/>
 
-                <span>Send</span>
-                <i class="icon-send"></i>
-              </button>
-
+                {% if page.url == '/contact-form/' %}
+                  <button type="submit" class="btn btn-primary btn--sent">
+                    <span>Send</span>
+                    <i class="icon-send"></i>
+                  </button>
+                {% else %}
+                  <p class="alert alert--success">
+                    <i class="icon-check"></i>
+                    Your message has been successfully send
+                  </p>
+                {% endif %}
             </form>
-
-
-            <p class="alert alert--success">
-              <i class="icon-check"></i>
-              Your message has been successfully send
-            </p>
 
           </div>
           <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
