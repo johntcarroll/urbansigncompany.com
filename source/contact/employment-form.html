@@ -249,7 +249,7 @@ order: 4
             </h3>
             <div class="form-group base-form__item">
               <span class="form-control input input--primary input--upload">
-                Choose file <input id="uploadFile" type="file" name="uploadFile">
+                Choose file <input id="uploadFile" type="file" name="uploadFile" required="true">
                 <div class="base-form__icon">
                   <i class="icon-arrow-right"></i>
                 </div>
@@ -259,12 +259,23 @@ order: 4
                 <span class="js-filename" name="uploadFile"></span>
               </span>
             </div>
+            <div class="g-recaptcha" data-sitekey="6LdiTCgTAAAAAJ3TtsOPj2PQvve_qkHDLksb4fIp" data-callback="" required="true"></div>
+              <input type='hidden' name='redirect_to' value='http://127.0.0.1:4000/employment-form/?success=true'/>
+
             <button type="submit" class="btn btn-primary btn--submit">
               <span>Submit</span>
               <i class="icon-send"></i>
             </button>
           </div>
+      </span>
+
         </form>
+
+            <p class="alert alert--success">
+              <i class="icon-check"></i>
+              Your message has been successfully send
+            </p>
+
       </div>
     </div>
     <div class="separator separator--bottom-content hidden-xs"></div>

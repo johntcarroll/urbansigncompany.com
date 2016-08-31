@@ -7,6 +7,7 @@ layout: posts
 permalink: /application/:categories/trail-signage-44/
 folder: exterior-signs
 image: 2.jpg
+count_of_image: 2
 ---
 Sample content Trail Signage
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

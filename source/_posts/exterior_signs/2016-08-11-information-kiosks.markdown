@@ -7,6 +7,7 @@ layout: posts
 permalink: /application/:categories/information-kiosks-11/
 folder: exterior-signs
 image: 1.jpg
+count_of_image: 2
 ---
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <p class="application-item__content application-item__content--top">
