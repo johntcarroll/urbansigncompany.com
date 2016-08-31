@@ -64,24 +64,47 @@ layout: default
 <div class="PageNavigation container application-item application-item__container--full-width">
   <div class="application-item__container--border application-item__post-nav">
     <div class="row">
-      {% if page.previous.url %}
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
-        <a class="prev иtn btn--clear" href="{{page.previous.url}}">
-          <i class="icon-angle-left"></i>
-          <span>{{page.previous.title}}</span>
-        </a>
+      {% for post in site.posts %}
+        {% if page.previous.url == post.url %}
+          {% assign my_array = page.previous.url | split: '/' %}
+          {% if my_array.size == 4 %}
+            {% if page.url contains post.folder %}
+              <a class="prev btn btn--clear" href="{{page.previous.url}}">
+                <i class="icon-angle-left"></i>
+                  <span>{{page.previous.title}}</span>
+              </a>
+            {% else %}
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
+                  <span></span>
+                </a>
+              </div>
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
       </div>
-
-      {% endif %}
-      {% if page.next.url %}
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
-          <a class="next btn btn--clear" href="{{page.next.url}}">
-            <i class="icon-angle-right visible-xs text-right"></i>
-            <span>{{page.next.title}} </span>
-            <i class="icon-angle-right hidden-xs"></i>
-          </a>
-        </div>
-      {% endif %}
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+        {% for post in site.posts %}
+          {% if page.next.url == post.url %}
+            {% assign my_array = page.next.url | split: '/' %}
+            {% if my_array.size == 4 %}
+              {% if page.url contains post.folder %}
+                <a class="next btn btn--clear" href="{{page.next.url}}">
+                  <i class="icon-angle-right visible-xs text-right"></i>
+                  <span>{{page.next.title}}</span>
+                  <i class="icon-angle-right hidden-xs"></i>
+                </a>
+              {% else %}
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
+                    <span></span>
+                  </a>
+                </div>
+              {% endif %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>
