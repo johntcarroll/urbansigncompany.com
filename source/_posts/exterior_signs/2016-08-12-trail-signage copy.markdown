@@ -6,6 +6,14 @@ breadcrumb: Exterior Signs
 layout: posts
 permalink: /application/:categories/trail-signage-2/
 folder: exterior-signs
+client:
+  name: Borough Of Phoenixville
+  site: http://www.phoenixville.org
+design: 
+  name: KRD Design, Delve Associates LLC
+  site: http://www.krddesign.com
+image: 1.jpg
+count_of_image: 3
 image: 2.jpg
 count_of_image: 2
 ---

@@ -192,6 +192,15 @@
 
     &:hover {
       background-color: $color-deep-cerulean;
+      color: $color-white;
+      outline: none;
+    }
+
+    &:focus,
+    &:active {
+      background-color: $color-lochmara;
+      color: $color-white;
+      outline: none;
     }
   }
 

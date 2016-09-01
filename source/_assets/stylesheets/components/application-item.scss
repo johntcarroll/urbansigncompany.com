@@ -5,7 +5,6 @@
     padding-top: 30px;
   }
 
-
   &__container {
     max-width: 780px;
     text-align: left;
@@ -23,11 +22,12 @@
       border: 1px solid $color-tundora;
       border-right: 0;
       border-bottom: 0;
-      padding: 20px 43px;
+      padding: 15px 43px;
 
       @include breakpoint ('tablet') {
         padding-left: 11px;
         padding-right: 11px;
+        padding-top: 18px;
       }
 
       @include breakpoint ('phone-max') {
@@ -43,6 +43,11 @@
 
       @include breakpoint ('tablet') {
         height: 28px;
+      }
+
+      @include breakpoint ('phone-max') {
+        height: auto;
+        margin-top: 22px;
       }
     }
   }
@@ -260,6 +265,7 @@
   &__post-nav {
     position: relative;
     top: -20px;
+    @include clearfix;
 
     @include breakpoint ('tablet') {
       top: -22px;
@@ -283,15 +289,6 @@
         @include breakpoint ('phone-max') {
           font-size: 14px;
           margin-bottom: 13px;
-        }
-      }
-
-      i,
-      span {
-        display: inline-block;
-        vertical-align: middle;
-
-        @include breakpoint ('phone-max') {
           display: block;
         }
       }
@@ -308,6 +305,7 @@
 
           @include breakpoint ('phone-max') {
             padding-right: 0;
+            text-align: left;
           }
         }
       }
@@ -330,9 +328,76 @@
     }
   }
 
+  &__info-box {
+    display: inline-block;
+    vertical-align: middle;
+
+    @include breakpoint('phone-max') {
+      white-space: normal;
+    }
+
+    &--left {
+      text-align: left;
+      
+      @include breakpoint('phone-max') {
+      }
+    }
+
+    &--right {
+      text-align: right;
+      
+      @include breakpoint('phone-max') {
+      }
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: 3.4px;
+
+    @include breakpoint('tablet') {
+      letter-spacing: 2.8px;
+    }
+
+    @include breakpoint ('phone-max') {
+      display: block;
+      font-size: 14px;
+      letter-spacing: 2.8px;
+      line-height: 18px;
+      margin-bottom: 3px;
+    }
+  }
+
+  &__client {
+    display: block;
+    font-size: 12px;
+    @include font-base-light;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+
+    @include breakpoint('tablet') {
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+
+    @include breakpoint('phone-max') {
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+  }
+
   &__social-links {
 
     span {
+      position: relative;
+      top: 2px;
+      letter-spacing: 2.5px;
+
+      @include breakpoint ('tablet') {
+        font-size:12px;
+      }
+
       @include breakpoint ('phone-max') {
         @include font-size--a;
       }
@@ -345,58 +410,57 @@
     }
 
     ul {
-      margin-left: 20px;
+      margin-left: 9px;
+      font-size:0;
+
+      @include breakpoint ('tablet') {
+        margin-left: 2px;
+      }
 
       @include breakpoint ('phone-max') {
-        margin-left: 10px;
+        margin-left: 1px;
       }
 
       & > li {
         display: inline-block;
-        padding: 0 6px;
         vertical-align: middle;
+        margin-left: 6px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        @include breakpoint ('tablet') {
+          margin-left: 3px;
+        }
 
         @include breakpoint ('phone-max') {
-          padding-left: 4px;
-          padding-right: 4px;
+          margin-left: 8px;
         }
 
         & > a {
           display: block;
-          font-size: 25px;
-          height: 25px;
-          width: 25px;
-
-          @include breakpoint ('phone-max') {
-            font-size: 20px;
-            height: 20px;
-            width: 20px;
-          }
 
           i {
             display: block;
-            font-size: 25px;
+            font-size: 31px;
             height: 100%;
             width: 100%;
+            color: $color-mine-shaft;
+            transition: color 350ms ease;
+
+            @include breakpoint ('tablet') {
+              font-size: 26px;
+            }
 
             @include breakpoint ('phone-max') {
-              font-size: 20px;
+              font-size: 22px;
             }
-
-            &.icon-facebook {
+            
+            &:hover {
               color: $color-lochmara;
-            }
-
-            &.icon-twitter {
-              color: $color-lochmara;
-            }
-
-            &.icon-linkedin {
-              color: $color-light-tundora
             }
           }
-
-
         }
       }
     }

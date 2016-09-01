@@ -2,6 +2,21 @@
 
   .application-item__container--full-width {
     padding: 0 20px;
+
+    @include breakpoint('phone-max') {
+      padding: 0 15px;
+    }
+  }
+
+  .separator--left-employment {
+
+    &:before {
+      height: 98.98%;
+
+      @include breakpoint('tablet') {
+        height: 98.7%;
+      }
+    }
   }
 
   .separator-wrapper--content {

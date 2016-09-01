@@ -41,17 +41,17 @@ layout: default
             <ul class="list-unstyled">
               <li>
                 <a href="">
-                    <i class="icon-facebook"></i>
+                  <i class="icon-facebook-square"></i>
                 </a>
               </li>
               <li>
                 <a href="">
-                    <i class="icon-twitter"></i>
+                  <i class="icon-twitter-square"></i>
                 </a>
               </li>
               <li>
                 <a href="">
-                  <i class="icon-linkedin"></i>
+                  <i class="icon-linkedin-square"></i>
                 </a>
               </li>
             </ul>
@@ -72,8 +72,10 @@ layout: default
             {% if page.url contains post.folder %}
               <a class="prev btn btn--clear" href="{{page.previous.url}}">
                 <i class="icon-angle-left"></i>
-                  <span>{{page.previous.title}}</span>
-                  <span>{{page.previous.client.name}}</span>
+                <div class="application-item__info-box application-item__info-box--left">
+                  <div class="application-item__title">{{page.previous.title}}</div>
+                  <div class="application-item__client">{{page.previous.client.name}}</div>
+                </div>
               </a>
             {% else %}
               <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
@@ -93,8 +95,10 @@ layout: default
               {% if page.url contains post.folder %}
                 <a class="next btn btn--clear" href="{{page.next.url}}">
                   <i class="icon-angle-right visible-xs text-right"></i>
-                  <span>{{page.next.title}}</span>
-                  <span>{{page.next.client.name}}</span>
+                  <div class="application-item__info-box application-item__info-box--right">
+                    <div class="application-item__title">{{page.next.title}}</div>
+                    <div class="application-item__client">{{page.next.client.name}}</div>
+                  </div>
                   <i class="icon-angle-right hidden-xs"></i>
                 </a>
               {% else %}

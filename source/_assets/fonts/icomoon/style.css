@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ijw85c');
-  src:  url('fonts/icomoon.eot?ijw85c#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ijw85c') format('truetype'),
-    url('fonts/icomoon.woff?ijw85c') format('woff'),
-    url('fonts/icomoon.svg?ijw85c#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?e3bsb6');
+  src:  url('fonts/icomoon.eot?e3bsb6#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?e3bsb6') format('truetype'),
+    url('fonts/icomoon.woff?e3bsb6') format('woff'),
+    url('fonts/icomoon.svg?e3bsb6#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-twitter-square:before {
+  content: "\e90b";
+}
+.icon-facebook-square:before {
+  content: "\e907";
+}
+.icon-linkedin-square:before {
+  content: "\e908";
+}
 .icon-chain:before {
   content: "\e922";
 }
@@ -57,39 +66,11 @@
 .icon-exterior-signs:before {
   content: "\e906";
 }
-.icon-facebook .path1:before {
-  content: "\e907";
-  color: rgb(0, 0, 0);
-}
-.icon-facebook .path2:before {
-  content: "\e908";
-  margin-left: -1.0048828125em;
-  color: rgb(255, 255, 255);
-}
 .icon-health-care:before {
   content: "\e909";
 }
 .icon-interior-signs:before {
   content: "\e90a";
-}
-.icon-linkedin .path1:before {
-  content: "\e90b";
-  color: rgb(48, 48, 48);
-}
-.icon-linkedin .path2:before {
-  content: "\e90c";
-  margin-left: -1.0048828125em;
-  color: rgb(255, 255, 255);
-}
-.icon-linkedin .path3:before {
-  content: "\e90d";
-  margin-left: -1.0048828125em;
-  color: rgb(255, 255, 255);
-}
-.icon-linkedin .path4:before {
-  content: "\e90e";
-  margin-left: -1.0048828125em;
-  color: rgb(255, 255, 255);
 }
 .icon-logo:before {
   content: "\e90f";
@@ -108,15 +89,6 @@
 }
 .icon-swipe:before {
   content: "\e914";
-}
-.icon-twitter .path1:before {
-  content: "\e915";
-  color: rgb(48, 48, 48);
-}
-.icon-twitter .path2:before {
-  content: "\e916";
-  margin-left: -1.0048828125em;
-  color: rgb(255, 255, 255);
 }
 .icon-x:before {
   content: "\e917";
