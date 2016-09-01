@@ -147,10 +147,6 @@
     line-height: 25px;
     margin-bottom: 20px;
 
-    @include breakpoint ('phone-max') {
-      margin-bottom: 17px;
-    }
-
     @include breakpoint ('tablet') {
       font-size: 12px;
       line-height: 22px;
@@ -160,11 +156,16 @@
     @include breakpoint ('phone-max') {
       font-size: 12px;
       line-height: 22px;
+      margin-bottom: 17px;
     }
 
     span {
       background-color: rgba(64,78,114,.6);
       padding: 0 4px;
+
+      @include breakpoint ('phone-max') {
+        margin: 0 -2px;
+      }
     }
   }
 

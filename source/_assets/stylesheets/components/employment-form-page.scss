@@ -10,4 +10,12 @@
       }
     }
   }
+
+  .separator-wrapper--content {
+
+    @include breakpoint('phone-max') {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
 }

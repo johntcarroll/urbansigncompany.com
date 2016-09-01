@@ -15,6 +15,14 @@
     max-width: 320px;
   }
 
+  .separator-wrapper--content {
+
+    @include breakpoint('phone-max') {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
   &__btn-group {
     @include clearfix;
 
