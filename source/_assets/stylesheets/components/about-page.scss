@@ -139,7 +139,7 @@
     background-position: 100% 30%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('/assets/photo.jpg');
+    background-image: image-url('photo.jpg');
     height: 220px;
   }
 
@@ -224,7 +224,7 @@
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url('/assets/photo.jpg');
+        background-image: image-url('photo.jpg');
         height: 403px;
 
         @include breakpoint ('tablet') {
