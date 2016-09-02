@@ -59,13 +59,15 @@ $(document).ready(function(){
 
     $("#datepicker").datepicker();
 
-
     // Select
 
     $('select').selectize({
        placeholder: "position applied for"
     });
+
+    // Validation
+
+    $('#form-contact').validate();
 });
 
-
-
+ 

@@ -42,6 +42,7 @@
       @include breakpoint ('phone-max') {
         font-size: 24px;
         letter-spacing: 1.2px;
+        margin-bottom: 0;
       }
     }
   }
@@ -50,6 +51,7 @@
 
     @include breakpoint ('phone-max') {
       margin-top: 18px;
+      font-size: 0;
     }
   }
 
@@ -64,7 +66,7 @@
     }
 
     @include breakpoint ('phone-max') {
-      width: 124px;
+      width: 50%;
     }
 
     p {
@@ -127,6 +129,13 @@
     }
   }
 
+  &__design {
+
+    @include breakpoint ('phone-max') {
+      padding-left: 10px;
+    }
+  }
+
   &__client {
     margin-right: 95px;
 
@@ -135,7 +144,8 @@
     }
 
     @include breakpoint ('phone-max') {
-      margin-right: 36px;
+      padding-right: 10px;
+      margin-right: 0;
     }
   }
 }

@@ -68,9 +68,9 @@ order: 4
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <form class="contact-form__form-container base-form" action="https://getsimpleform.com/messages?form_api_token=cf3234bb0cf33ba5d786c4c19c93aab2" method="post">
+            <form id="form-contact" class="contact-form__form-container base-form" action="https://getsimpleform.com/messages?form_api_token=cf3234bb0cf33ba5d786c4c19c93aab2" method="post">
               <div class="form-group base-form__item">
-                <input type="text" class="form-control input input--default" placeholder="Name" id="name" name="name" required="true">
+                <input type="text" class="form-control input input--default" minlength="3" placeholder="Name" id="name" name="name" required>
                 <div class="base-form__icon">
                   <i class="icon-required"></i>
                   <i class="icon-check"></i>
@@ -81,18 +81,23 @@ order: 4
                 <input type="text" class="form-control input input--default" placeholder="Company" name="company" >
               </div>
               <div class="form-group base-form__item">
-                <input type="email" class="form-control input input--default" placeholder="Email" id="email" name="email" >
-              </div>
-              <div class="form-group base-form__item">
-                <input type="tel" class="form-control input input--default" placeholder="Phone" id="phone" name="phone" required="true">
+                <input type="email" class="form-control input input--default" placeholder="Email" id="email" name="email" required>
                 <div class="base-form__icon">
                   <i class="icon-required"></i>
                   <i class="icon-check"></i>
                   <i class="icon-x"></i>
                 </div>
               </div>
-              <div class="form-group base-form__item is-error">
-                <textarea class="form-control" rows="3" placeholder="alert" name="text"></textarea>
+              <div class="form-group base-form__item">
+                <input type="tel" class="form-control input input--default" minlength="5" placeholder="Phone" id="phone" name="phone" required>
+                <div class="base-form__icon">
+                  <i class="icon-required"></i>
+                  <i class="icon-check"></i>
+                  <i class="icon-x"></i>
+                </div>
+              </div>
+              <div class="form-group base-form__item">
+                <textarea class="form-control" rows="3" placeholder="alert" name="text" required></textarea>
                 <div class="base-form__icon base-form__icon--textarea">
                   <i class="icon-required"></i>
                   <i class="icon-check"></i>
@@ -100,7 +105,7 @@ order: 4
                 </div>
               </div>
 
-              <div class="g-recaptcha" data-sitekey="6LdiTCgTAAAAAJ3TtsOPj2PQvve_qkHDLksb4fIp" data-callback="" required="true"></div>
+              <div class="g-recaptcha" data-sitekey="6LdiTCgTAAAAAJ3TtsOPj2PQvve_qkHDLksb4fIp" data-callback="" required></div>
                 <input type='hidden' name='redirect_to' value='http://127.0.0.1:4000/contact-form/?success=true'/>
 
                 {% if page.url == '/contact-form/' %}
