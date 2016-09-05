@@ -22,6 +22,17 @@
     }
   }
 
+  &__datepicker {
+    z-index: 3;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__calendar {
+    z-index: 2!important;
+  }
+
   &__item {
     position: relative;
     margin-bottom: 20px;
