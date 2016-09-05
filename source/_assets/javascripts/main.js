@@ -67,7 +67,18 @@ $(document).ready(function(){
 
     // Validation
 
-    $('#form-contact').validate();
+
+    var formContact = $('#form-contact');
+
+    var formValidation = formContact.validate({
+        invalidHandler: function() {
+            if (formValidation.numberOfInvalids() > 0) {
+                formContact.addClass('form-has-error');
+            } else {
+                formContact.removeClass('form-has-error');
+            }
+        }
+    });
 });
 
- 
+
