@@ -68,6 +68,24 @@ $(document).ready(function(){
     // Validation
 
 
+    jQuery.validator.addMethod("validEmail", function(value, element) {
+        if(value == '')
+            return true;
+        var temp1;
+        temp1 = true;
+        var ind = value.indexOf('@');
+        var str2=value.substr(ind+1);
+        var str3=str2.substr(0,str2.indexOf('.'));
+        if(str3.lastIndexOf('-')==(str3.length-1)||(str3.indexOf('-')!=str3.lastIndexOf('-')))
+            return false;
+        var str1=value.substr(0,ind);
+        if((str1.lastIndexOf('_')==(str1.length-1))||(str1.lastIndexOf('.')==(str1.length-1))||(str1.lastIndexOf('-')==(str1.length-1)))
+            return false;
+        str = /(^[a-zA-Z0-9]+[\._-]{0,1})+([a-zA-Z0-9]+[_]{0,1})*@([a-zA-Z0-9]+[-]{0,1})+(\.[a-zA-Z0-9]+)*(\.[a-zA-Z]{2,3})$/;
+        temp1 = str.test(value);
+        return temp1;
+    });
+
     var formContact = $('#form-contact');
 
     var formValidation = formContact.validate({
@@ -77,8 +95,27 @@ $(document).ready(function(){
             } else {
                 formContact.removeClass('form-has-error');
             }
+        },
+        highlight: function(element, errorClass, validClass) {
+            $(element).addClass(errorClass).removeClass(validClass);
+            $(element).closest('.js-validation').addClass(errorClass).removeClass(validClass);
+        },
+        unhighlight: function(element, errorClass, validClass) {
+            $(element).removeClass(errorClass).addClass(validClass);
+            $(element).closest('.js-validation').removeClass(errorClass).addClass(validClass)
+        },
+        errorPlacement: function(error, element) {
+            return false;
+        },
+        rules: {
+            'email': {
+                required: true,
+                validEmail: true
+            },
+            'phone': {
+                required: true,
+                digits: true
+            }
         }
     });
 });
-
-

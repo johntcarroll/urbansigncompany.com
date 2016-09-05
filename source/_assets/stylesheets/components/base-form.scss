@@ -4,6 +4,34 @@
     margin-bottom: 30px;
   }
 
+  &.error {
+
+    .base-form__title {
+
+      .icon-required {
+        display: none;
+      }
+
+      .icon-x {
+        display: inline-block;
+      }
+    }
+  }
+
+  &.valid {
+
+    .base-form__title {
+
+      .icon-required {
+        display: none;
+      }
+
+      .icon-check {
+        display: inline-block;
+      }
+    }
+  }
+
   &__title {
     @include font-size--i;
     letter-spacing: 4px;
@@ -17,8 +45,22 @@
       word-spacing: -2px;
     }
 
-    .icon-required {
+    i {
       font-size: 12px;
+    }
+
+    .icon-required {
+      display: inline-block;
+    }
+
+    .icon-check {
+      color: $color-curious-blue;
+      display: none;
+    }
+    
+    .icon-x {
+      color: $color-crimson;
+      display: none;
     }
   }
 
@@ -237,6 +279,44 @@
     @include breakpoint ('phone-max') {
       margin-bottom: 2px;
     }
+
+    .icon-required {
+      display: inline-block;
+      color: $color-curious-blue;
+    }
+
+    .icon-check {
+      display: none;
+      color: $color-curious-blue;
+    }
+
+    .icon-x {
+      display: none;
+      color: $color-crimson;
+    }
+
+    &.error {
+
+      .icon-required {
+        display: none;
+      }
+
+      .icon-x {
+        display: inline-block;
+      }
+    }
+
+    &.valid {
+
+      .icon-required {
+        display: none;
+      }
+
+      .icon-check {
+        display: inline-block;
+      }
+
+    }
   }
 
   input[type="radio"],
@@ -377,38 +457,54 @@
   }
 }
 
-.form-control {
-
-  &.error ~ .base-form__icon {
-
-    .icon-required {
-      display: none;
-    }
-
-    .icon-x {
-      display: inline-block;
-    }
-  }
-
-  &.valid ~ .base-form__icon {
-
-    .icon-required {
-      display: none;
-    }
-
-    .icon-x {
-      display: none;
-    }
-
-    .icon-check {
-      display: inline-block;
-    }
-  }
-}
-
-label {
+.form-group {
 
   &.error {
-    display: none!important;
+
+    .base-form__icon {
+
+      .icon-required {
+        display: none;
+      }
+
+      .icon-x {
+        display: inline-block;
+      }
+    }
+
+    .selectize-input {
+
+      &:before {
+        content: '\e917'!important;
+        color: $color-crimson!important;
+      }
+    }
   }
+
+  &.valid {
+
+    .base-form__icon {
+
+      .icon-required {
+        display: none;
+      }
+
+      .icon-x {
+        display: none;
+      }
+
+      .icon-check {
+        display: inline-block;
+      }
+    }
+
+    .selectize-input {
+
+      &:before {
+        content: '\e91b'!important;
+      }
+    }
+  }
+
+
 }

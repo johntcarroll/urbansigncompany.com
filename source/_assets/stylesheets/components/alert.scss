@@ -6,15 +6,15 @@
   margin-bottom: 0;
 
   @include breakpoint ('tablet') {
-    margin-bottom: 13px;
+    //margin-bottom: 13px;
   }
 
   &--default {
     color: $color-light-shaft;
-    margin-bottom: 0;
+    margin-bottom: 23px;
 
     @include breakpoint ('phone-max') {
-      margin-bottom: 7px;
+      margin-bottom: 16px;
     }
 
     .icon-required {
@@ -28,6 +28,11 @@
   &--danger {
     color: $color-crimson !important;
     display: none;
+    margin-bottom: 23px;
+
+    @include breakpoint ('phone-max') {
+      margin-bottom: 16px;
+    }
   }
 
   i {
@@ -60,5 +65,16 @@
     @include breakpoint ('phone-max') {
       margin-bottom: 12px;
     }
+  }
+}
+
+.form-has-error {
+
+  .alert--default {
+    display: none;
+  }
+
+  .alert--danger {
+    display: inline-block;
   }
 }

@@ -54,6 +54,13 @@ order: 4
                 <a href="tel:856 691 8388">856 691 8388</a>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
               </p>
+            </div>
+            <!-- /.contact-info -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <form id="form-contact" class="contact-form__form-container base-form" action="https://getsimpleform.com/messages?form_api_token=cf3234bb0cf33ba5d786c4c19c93aab2" method="post">
               <p class="alert alert--default">
                 <i class="icon-required"></i>
                 <span>Required fields!</span>
@@ -62,14 +69,7 @@ order: 4
                 <i class="icon-x"></i>
                 <span>Required fieldsnot filled out!</span>
               </p>
-            </div>
-            <!-- /.contact-info -->
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <form id="form-contact" class="contact-form__form-container base-form" action="https://getsimpleform.com/messages?form_api_token=cf3234bb0cf33ba5d786c4c19c93aab2" method="post">
-              <div class="form-group base-form__item">
+              <div class="form-group js-validation base-form__item">
                 <input type="text" class="form-control input input--default" minlength="3" placeholder="Name" id="name" name="name" required>
                 <div class="base-form__icon">
                   <i class="icon-required"></i>
@@ -80,7 +80,7 @@ order: 4
               <div class="form-group base-form__item">
                 <input type="text" class="form-control input input--default" placeholder="Company" name="company" >
               </div>
-              <div class="form-group base-form__item">
+              <div class="form-group js-validation base-form__item">
                 <input type="email" class="form-control input input--default" placeholder="Email" id="email" name="email" required>
                 <div class="base-form__icon">
                   <i class="icon-required"></i>
@@ -88,7 +88,7 @@ order: 4
                   <i class="icon-x"></i>
                 </div>
               </div>
-              <div class="form-group base-form__item">
+              <div class="form-group js-validation base-form__item">
                 <input type="tel" class="form-control input input--default" minlength="5" placeholder="Phone" id="phone" name="phone" required>
                 <div class="base-form__icon">
                   <i class="icon-required"></i>
@@ -96,7 +96,7 @@ order: 4
                   <i class="icon-x"></i>
                 </div>
               </div>
-              <div class="form-group base-form__item">
+              <div class="form-group js-validation base-form__item">
                 <textarea class="form-control" rows="3" placeholder="alert" name="text" required></textarea>
                 <div class="base-form__icon base-form__icon--textarea">
                   <i class="icon-required"></i>

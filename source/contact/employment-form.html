@@ -53,24 +53,23 @@ order: 4
               <p class="alert alert--info">
                 Want to work for us? Fill in the employment form and weâ€™ll contact you. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
               </p>
-              <p class="alert alert--default">
-                <i class="icon-required"></i>
-                <span>Required fields!</span>
-              </p>
-              <p class="alert alert--danger">
-                <span class="icon-x"></span>
-                <span>Required fieldsnot filled out!</span>
-              </p>
             </div>
             <!-- /.contact-info -->
           </div>
         </div>
         <form id="form-contact" class="form employment-form" action="https://getsimpleform.com/messages?form_api_token=cf3234bb0cf33ba5d786c4c19c93aab2" method="post">
-
+          <p class="alert alert--default">
+            <i class="icon-required"></i>
+            <span>Required fields!</span>
+          </p>
+          <p class="alert alert--danger">
+            <i class="icon-x"></i>
+            <span>Required fieldsnot filled out!</span>
+          </p>
           <div class="base-form">
             <h3 class="base-form__title">Personal information</h3>
             <div class="row">
-              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+              <div class="form-group js-validation col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
                 <input type="text" class="form-control input input--default" placeholder="First name" name="first name" required>
                 <div class="base-form__icon">
                   <i class="icon-required"></i>
@@ -78,10 +77,10 @@ order: 4
                   <i class="icon-x"></i>
                 </div>
               </div>
-              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+              <div class="form-group js-validation col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
                 <input type="text" class="form-control input input--default" placeholder="M.I." name="M.I.">
               </div>
-              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+              <div class="form-group js-validation col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
                 <input type="text" class="form-control input input--default" placeholder="Last Name" name="last name" required>
                 <div class="base-form__icon">
                   <i class="icon-required"></i>
@@ -89,7 +88,7 @@ order: 4
                   <i class="icon-x"></i>
                 </div>
               </div>
-              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+              <div class="form-group js-validation col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
                 <input type="tel" id="phone" class="form-control input input--default" placeholder="Phone" name="phone" required>
                 <div class="base-form__icon">
                   <i class="icon-required"></i>
@@ -97,8 +96,8 @@ order: 4
                   <i class="icon-x"></i>
                 </div>
               </div>
-              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
-                <input type="email" class="form-control input input--default" placeholder="Email" name="email">
+              <div class="form-group js-validation col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+                <input type="email" class="form-control input input--default" placeholder="Email" name="mail">
               </div>
             </div>
             <!-- /.row -->
@@ -107,7 +106,7 @@ order: 4
           <div class="base-form base-form--address">
             <h3 class="base-form__title">Address</h3>
             <div class="row">
-              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+              <div class="form-group js-validation col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
                 <input type="text" class="form-control input input--default" placeholder="Street address" name="Street address" required>
                 <div class="base-form__icon">
                   <i class="icon-required"></i>
@@ -115,10 +114,10 @@ order: 4
                   <i class="icon-x"></i>
                 </div>
               </div>
-              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+              <div class="form-group js-validation col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
                 <input type="text" class="form-control input input--default" placeholder="Address line 2" name="Address line 2">
               </div>
-              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+              <div class="form-group js-validation col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
                 <input type="text" class="form-control input input--default" placeholder="City" name="city" required>
                 <div class="base-form__icon">
                   <i class="icon-required"></i>
@@ -126,7 +125,7 @@ order: 4
                   <i class="icon-x"></i>
                 </div>
               </div>
-              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+              <div class="form-group js-validation col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
                 <input type="text" class="form-control input input--default" placeholder="State/ province/ region" name="State/ province/ region" required>
                 <div class="base-form__icon">
                   <i class="icon-required"></i>
@@ -134,7 +133,7 @@ order: 4
                   <i class="icon-x"></i>
                 </div>
               </div>
-              <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+              <div class="form-group js-validation col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
                 <input class="form-control input input--default" placeholder="zip/ postal code" type="text" name="zip" required>
                 <div class="base-form__icon">
                   <i class="icon-required"></i>
@@ -148,19 +147,19 @@ order: 4
           <!-- /.base-form -->
 
           <div class="row">
-            <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+            <div class="form-group js-validation col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
               <input id="datepicker" type="text" class="base-form__datepicker form-control input input--default" placeholder="Date avaiLable" name="date available">
               <div class="base-form__icon base-form__calendar">
                 <i class="icon-calander"></i>
               </div>
             </div>
-            <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+            <div class="form-group js-validation col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
               <input type="text" class="form-control input input--default" placeholder="REFFERED BY" name="reffered">
             </div>
-            <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+            <div class="form-group js-validation col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
               <input type="text" class="form-control input input--default" placeholder="DESIRED SALARY" name="desired salary">
             </div>
-            <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
+            <div class="form-group js-validation col-xs-12 col-sm-6 col-md-6 col-lg-6 base-form__item">
               <select class="select" required>
                 <option value="" disabled selected>POSITION APPLIED FOR</option>
                 <option>1</option>
@@ -173,14 +172,16 @@ order: 4
           <!-- /.row -->
           <div class="base-form base-form__radio-btn-group">
             <div class="row">
-              <div class="base-form__radio-btn-item col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <div class="base-form__radio-btn-item js-validation col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <div class="title">
                   <span>ARE YOU A CITIZEN OF THE UNITED STATES?</span>
                   <i class="icon-required"></i>
+                  <i class="icon-check"></i>
+                  <i class="icon-x"></i>
                 </div>
                 <div class="radio radio-inline radio-btn">
                   <label class="radio-bth__label-wrapper">
-                    <input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1">
+                    <input type="radio" name="optionsRadios1" id="optionsRadios1" required>
                     <span class="radio-btn__icon">
                       <i class="icon-check"></i>
                     </span>
@@ -189,7 +190,7 @@ order: 4
                 </div>
                 <div class="radio radio-inline radio-btn">
                   <label class="radio-bth__label-wrapper">
-                    <input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1">
+                    <input type="radio" name="optionsRadios1" id="optionsRadios1">
                     <span class="radio-btn__icon">
                       <i class="icon-check"></i>
                     </span>
@@ -197,14 +198,16 @@ order: 4
                   </label>
                 </div>
               </div>
-              <div class="base-form__radio-btn-item  col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <div class="base-form__radio-btn-item js-validation col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <div class="title">
                   <span>Have you ever worked for this company?</span>
                   <i class="icon-required"></i>
+                  <i class="icon-check"></i>
+                  <i class="icon-x"></i>
                 </div>
                 <div class="radio radio-inline radio-btn">
                   <label class="radio-bth__label-wrapper">
-                    <input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
+                    <input type="radio" name="optionsRadios2" id="optionsRadios2" required>
                     <span class="radio-btn__icon">
                       <i class="icon-check"></i>
                     </span>
@@ -213,7 +216,7 @@ order: 4
                 </div>
                 <div class="radio radio-inline radio-btn">
                   <label class="radio-bth__label-wrapper">
-                    <input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
+                    <input type="radio" name="optionsRadios2" id="optionsRadios2">
                     <span class="radio-btn__icon">
                       <i class="icon-check"></i>
                     </span>
@@ -221,14 +224,16 @@ order: 4
                   </label>
                 </div>
               </div>
-              <div class="base-form__radio-btn-item col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <div class="base-form__radio-btn-item js-validation col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <div class="title">
                   <span>Have you ever been convicted of a felony?</span>
                   <i class="icon-required"></i>
+                  <i class="icon-check"></i>
+                  <i class="icon-x"></i>
                 </div>
                 <div class="radio radio-inline radio-btn">
                   <label class="radio-bth__label-wrapper">
-                    <input type="radio" name="optionsRadios3" id="optionsRadios3" value="option3">
+                    <input type="radio" name="optionsRadios3" id="optionsRadios3" required>
                     <span class="radio-btn__icon">
                       <i class="icon-check"></i>
                     </span>
@@ -237,7 +242,7 @@ order: 4
                 </div>
                 <div class="radio radio-inline radio-btn">
                   <label class="radio-bth__label-wrapper">
-                    <input type="radio" name="optionsRadios3" id="optionsRadios3" value="option3">
+                    <input type="radio" name="optionsRadios3" id="optionsRadios3">
                     <span class="radio-btn__icon">
                       <i class="icon-check"></i>
                     </span>
@@ -250,14 +255,16 @@ order: 4
           </div>
           <!-- /.base-form -->
 
-          <div class="base-form">
+          <div class="base-form js-validation">
             <h3 class="base-form__title">
               Upload resume
               <i class="icon-required"></i>
+              <i class="icon-check"></i>
+              <i class="icon-x"></i>
             </h3>
-            <div class="form-group base-form__item">
+            <div class="form-group  base-form__item">
               <span class="form-control input input--primary input--upload">
-                Choose file <input id="uploadFile" type="file" name="uploadFile">
+                Choose file <input id="uploadFile" type="file" name="uploadFile" required>
                 <div class="base-form__icon">
                   <i class="icon-arrow-right"></i>
                 </div>
