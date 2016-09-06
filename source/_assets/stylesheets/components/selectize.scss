@@ -52,6 +52,23 @@
 .selectize-dropdown-header-close:hover {
   color: #000000;
 }
+.option {
+  font-size: 12px;
+  color: $color-black;
+  padding: 6px 0;
+  letter-spacing: 2.2px;
+  border-top: 1px solid $color-lochmara;
+
+  &:first-child {
+    border-top: none;
+  }
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-lochmara;
+  }
+}
+
 .selectize-dropdown.plugin-optgroup_columns .optgroup {
   border-right: 1px solid #f2f2f2;
   border-top: 0 none;
@@ -171,7 +188,7 @@
   }
 
   input {
-    width: 95%!important;
+    width: 50%!important;
   }
 
   input::-webkit-input-placeholder {
@@ -288,8 +305,7 @@
   cursor: default;
 }
 .selectize-dropdown .active {
-  background-color: #f5fafd;
-  color: #495c68;
+  color: $color-lochmara;
 }
 .selectize-dropdown .active.create {
   color: #495c68;
@@ -301,6 +317,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   max-height: 200px;
+  text-align: center;
 }
 .selectize-control.single .selectize-input,
 .selectize-control.single .selectize-input input {

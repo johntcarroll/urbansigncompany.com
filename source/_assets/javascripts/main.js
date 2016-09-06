@@ -86,9 +86,43 @@ $(document).ready(function(){
         return temp1;
     });
 
+    jQuery.validator.addMethod("validPhone", function(value, element) {
+        if(value == '')
+            return true;
+
+        return /^\d[0-9-]*\d$/.test(value);
+    });
+
     var formContact = $('#form-contact');
 
+    formContact.on('submit', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+    })
+
     var formValidation = formContact.validate({
+
+        submitHandler: function(form) {
+            // do other things for a valid form
+            if (grecaptcha.getResponse().length) {
+                //form.submit();
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://getsimpleform.com/messages?form_api_token=cf3234bb0cf33ba5d786c4c19c93aab2',
+                    data: $(form).serialize(),
+                    success: function(data) {
+
+                    },
+                    error:  function(xhr, str){
+
+                    }
+                });
+            } else {
+
+            }
+        },
+
         invalidHandler: function() {
             if (formValidation.numberOfInvalids() > 0) {
                 formContact.addClass('form-has-error');
@@ -114,8 +148,15 @@ $(document).ready(function(){
             },
             'phone': {
                 required: true,
-                digits: true
+                validPhone: true
             }
         }
+    });
+    $('input[type="radio"]').on('click', function() {
+        formContact.validate().element( this );
+    });
+    $('select').on('change', function() {
+        formContact.validate().element( this );
+        formContact.validate().element( $('.selectize-input input') );
     });
 });
