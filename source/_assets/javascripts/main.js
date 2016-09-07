@@ -95,29 +95,12 @@ $(document).ready(function(){
 
     var formContact = $('#form-contact');
 
-    formContact.on('submit', function(e){
-        e.preventDefault();
-        e.stopPropagation();
-        return false;
-    })
-
     var formValidation = formContact.validate({
 
         submitHandler: function(form) {
             // do other things for a valid form
             if (grecaptcha.getResponse().length) {
-                //form.submit();
-                $.ajax({
-                    type: 'POST',
-                    url: 'https://getsimpleform.com/messages?form_api_token=cf3234bb0cf33ba5d786c4c19c93aab2',
-                    data: $(form).serialize(),
-                    success: function(data) {
-
-                    },
-                    error:  function(xhr, str){
-
-                    }
-                });
+                form.submit();
             } else {
 
             }

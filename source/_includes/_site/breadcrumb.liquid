@@ -1,0 +1,35 @@
+{% for node in site.pages %}
+  {% if page.url == node.url %}
+    {% if page.url != '/'%}
+      <ol class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        <li><i class="icon-angle-right"></i></li>
+        <li class="active"><a href="{{node.url}}">{{node.title}}</a></li>
+      </ol>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% for node in site.posts %}
+  {% if page.url == node.url %}
+    {% if node.folder == 'applications' %}
+      <ol class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        <li><i class="icon-angle-right"></i></li>
+        <li><a href="/applications/">Application</a></li>
+        <li><i class="icon-angle-right"></i></li>
+        <li class="active"><a href="{{node.url}}">{{node.title}}</a></li>
+      </ol>
+    {% else %}
+      <ol class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        <li><i class="icon-angle-right"></i></li>
+        <li><a href="/applications/">Application</a></li>
+        <li><i class="icon-angle-right"></i></li>
+        <li><a href="/application/{{node.folder}}">{{node.breadcrumb}}</a></li>
+        <li><i class="icon-angle-right"></i></li>
+        <li class="active"><a href="{{node.url}}">{{node.title}}</a></li>
+      </ol>
+    {% endif %}
+  {% endif %}
+{% endfor %}

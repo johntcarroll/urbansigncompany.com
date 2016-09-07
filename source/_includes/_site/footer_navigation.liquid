@@ -1,7 +1,7 @@
 <div class="footer">
 <ul>{% assign sorted_pages = site.pages | sort:"order" %}
   {% for node in sorted_pages %}
-  {% if node.title != null %}
+  {% if node.title != null && node.categories == 'header'%}
     {% if group == null or group == node.group %}
       {% if node.url == "/contact/" %}
          <li><a href="{{ BASE_PATH }}{{node.url}}#1">{{node.title}}</a></li>
@@ -17,7 +17,8 @@
   {% endif %}
 {% endfor %}</ul>
 <div class="footer__logo">
-  <a href="">{{ src | img : "linkedin.svg" }}</a>
+  <a href="" class="footer__logo-main">{{ src | img : "linkedin.svg" }}</a>
+  <a href="" class="footer__logo-hover">{{ src | img : "linkedin-hover.svg" }}</a>
 </div>
 </div>
 

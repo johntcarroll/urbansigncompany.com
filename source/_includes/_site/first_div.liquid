@@ -1,0 +1,1 @@
+{% assign my_array = page.url | split: '/' %}{% if {{my_array.size}} == 4 %}post-page{% elsif {{my_array.size}} == 3 %}project-page{% else %}{% for i in my_array %}{% if forloop.last %}{% for node in site.pages %}{% if node.url == page.url %}{{ i }}__page{% endif %}{% endfor %}{% endif %}{% endfor %}{% endif %}

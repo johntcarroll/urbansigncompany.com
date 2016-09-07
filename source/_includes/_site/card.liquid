@@ -1,0 +1,22 @@
+<div class="card js-card">
+  <div class="card__line-box">
+    <div class="card__line"></div>
+    <div class="card__line-text">Projects</div>
+  </div>
+  <div class="card__container">
+    <div class="card__box">
+      {% assign size = 0 %}
+      {% for post in site.posts %}
+        {% if page.url contains post.folder %}
+          {% assign size = size | plus:1 %}  
+          {% include card_box_generator.liquid %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% if size > 6 %}
+      <div class="card__more">
+        <button class="btn btn--more js-show-more"><span>More Projects</span><i class="icon-arrow-down"></i></button>
+      </div>
+    {% endif %}
+  </div>
+</div>

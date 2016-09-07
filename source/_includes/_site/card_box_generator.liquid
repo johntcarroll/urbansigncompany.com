@@ -1,0 +1,15 @@
+<div class="card__item js-card{% if size > 6 %} is-hidden {% endif %}">
+  <a  href="{{ post.url }}" class="card__image" style="background-image:">
+    <div class="card__image" style="background-image: url('/assets/fotorama/{{ post.image }}')"></div>
+    <div class="card__photo"><span>{{ post.count_of_image }}</span><i class="icon-camera"></i></div>
+  </a>
+  <div class="card__title">
+    {{ post.title }}
+  </div>
+  <div class="card__description">
+    {{ post.client.name }}
+  </div>
+  <div class="card__btn">
+    <a href="{{ post.url }}" class="btn btn--project"><span>see project</span><i class="icon-arrow-right"></i></a>
+  </div>
+</div>
