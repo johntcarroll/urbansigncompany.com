@@ -70,6 +70,7 @@ $(document).ready(function(){
 
     if (/success=true/.test(window.location.search)) {
         $('.alert--success').show();
+        $("html, body").scrollTop($(document).height());
     }
 
     jQuery.validator.addMethod("validEmail", function(value, element) {
