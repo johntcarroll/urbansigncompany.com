@@ -275,7 +275,7 @@ order: 4
               </span>
             </div>
             <div class="g-recaptcha" data-sitekey="6LdiTCgTAAAAAJ3TtsOPj2PQvve_qkHDLksb4fIp" data-callback=""></div>
-              <input type='hidden' name='redirect_to' value='http://127.0.0.1:4000/employment-form?success=true'/>
+              <input type='hidden' name='redirect_to' value="{% if page.url contains 'heroku' %}http://urbansign.herokuapp.com/{% else %}http://127.0.0.1:4000{% endif %}/success/"/>
 
             <button type="submit" class="btn btn-primary btn--submit">
               <span>Submit</span>
