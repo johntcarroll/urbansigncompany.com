@@ -49,6 +49,7 @@
   &--success {
     color: $color-lochmara;
     @include font-size--e;
+    display: none;
 
     @include breakpoint ('tablet-max') {
       @include font-size--c ;

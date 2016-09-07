@@ -20,6 +20,7 @@
 
     @include breakpoint ('phone-max') {
       float: none;
+      max-width: 500px;
     }
   }
 

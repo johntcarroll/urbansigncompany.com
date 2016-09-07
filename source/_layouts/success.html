@@ -17,11 +17,15 @@
   <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body>
-    <div class="{% include first_div.liquid %}">
-      {{ content }}
-      {% include menu.liquid %}
-      {% include footer_navigation.liquid %}
-      {% include footer.liquid %}
+    <div class="success-form">
+      <div class="success-form__content">
+        {{ content }}
+        {% include menu.liquid %}
+      </div>
+      <div class="success-form__footer">
+        {% include footer_navigation.liquid %}
+        {% include footer.liquid %}
+      </div>
       <script type="text/javascript" src="{% asset_path application.js %}"></script>
     </div>
   </body>

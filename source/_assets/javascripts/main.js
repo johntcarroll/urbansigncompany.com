@@ -68,6 +68,10 @@ $(document).ready(function(){
     // Validation
 
 
+    if (/success=true/.test(window.location.search)) {
+        $('.alert--success').show();
+    }
+
     jQuery.validator.addMethod("validEmail", function(value, element) {
         if(value == '')
             return true;

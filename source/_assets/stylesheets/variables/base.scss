@@ -11,6 +11,11 @@
   outline: none;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   @include font-base-regular;
 }
