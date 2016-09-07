@@ -106,7 +106,7 @@ order: 4
               </div>
 
               <div class="g-recaptcha" data-sitekey="6LdiTCgTAAAAAJ3TtsOPj2PQvve_qkHDLksb4fIp" data-callback="" required></div>
-                <input type='hidden' name='redirect_to' value="{% if page.url contains 'heroku' %}http://urbansign.herokuapp.com{% else %}http://127.0.0.1:4000{% endif %}/employment-form/?success=true"/>
+                <input type='hidden' name='redirect_to' value="{% if page.url contains 'heroku' %}http://urbansign.herokuapp.com{% else %}http://127.0.0.1:4000{% endif %}/contact-form/?success=true"/>
 
                 {% if page.url == '/contact-form/' %}
                   <button type="submit" class="btn btn-primary btn--sent">
@@ -121,6 +121,10 @@ order: 4
                 {% endif %}
             </form>
 
+              <p class="alert alert--success">
+                <i class="icon-check"></i>
+                Your message has been successfully send
+              </p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
             <div class="contact-form__details">
