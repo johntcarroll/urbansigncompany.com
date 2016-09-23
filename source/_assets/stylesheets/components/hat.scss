@@ -70,6 +70,15 @@
   }
 
   &__info-box {
+    @include breakpoint ('high') {
+      max-width: 70% !important;
+      margin: 0 auto;
+    }
+
+    @include breakpoint ('medium') {
+      max-width: 90%;
+      margin: 0 auto;
+    }
 
     @include breakpoint ('phone-max') {
       margin-top: 18px;
