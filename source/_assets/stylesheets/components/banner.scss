@@ -83,6 +83,14 @@
     position: relative;
     height: 100%;
 
+    @include breakpoint ('high') {
+      max-width: 70% !important;
+    }
+
+    @include breakpoint ('medium') {
+      max-width: 90%;
+    }
+
     @include breakpoint ('tablet') {
       max-width: 626px;
       padding-top: 76px;
