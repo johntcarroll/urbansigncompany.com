@@ -14,7 +14,7 @@
   }
 
   &__wrapper {
-    max-width: 925px;
+    max-width: 100%;
     margin: 0 auto;
 
     @include breakpoint ('tablet') {
@@ -26,7 +26,29 @@
     }
   }
 
+  .breadcrumb {
+    @include breakpoint ('high') {
+      max-width: 70% !important;
+      margin: 0 auto;
+    }
+
+    @include breakpoint ('medium') {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  }
+
   &__title {
+
+    @include breakpoint ('high') {
+      max-width: 70% !important;
+      margin: 0 auto;
+    }
+
+    @include breakpoint ('medium') {
+      max-width: 90%;
+      margin: 0 auto;
+    }
 
     h2 {
       font-size: 34px;
