@@ -20,9 +20,11 @@ count_of_image: 5
    University Circle, located in Cleveland, OH, is a square mile chock-full of live, work, learn and play destinations. University Circle Inc. wanted to engage visitors and locals by sharing the stories of the area's people, places and institutions. 
   </p>
   <div class="fotorama application-item__slider" data-nav="thumbs" data-thumbheight="109" border-width="3">
-    <a {{ href | img : "fotorama/pin-wall-1.jpg" }}></a>
-    <a {{ href | img : "fotorama/pin-wall-2.jpg" }}></a>
-    <a {{ href | img : "fotorama/pin-wall-3.jpg" }}></a>
+    <a {{ href | img : "fotorama/poly-1.jpg" }}></a>
+    <a {{ href | img : "fotorama/poly-2.jpg" }}></a>
+    <a {{ href | img : "fotorama/poly-3.jpg" }}></a>
+    <a {{ href | img : "fotorama/poly-4.jpg" }}></a>
+    <a {{ href | img : "fotorama/poly-5.jpg" }}></a>
   </div>
   <div class="visible-xs application-item__icon-slider">
       <i class="icon-swipe"></i>
