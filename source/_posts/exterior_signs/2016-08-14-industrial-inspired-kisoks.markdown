@@ -11,7 +11,7 @@ client:
   site: http://www.phoenixville.org
 design: 
   name: KRD Design, Delve Associates LLC
-  site: http:/www.krddesign.com
+  site: http://www.krddesign.com
 image: industrial-inspired-2.jpg
 count_of_image: 4
 ---
