@@ -1,5 +1,5 @@
 ---
-title: Speciality
+title: Bike Helmet Wall
 date:   2016-10-17 00:00:00
 categories: speciality-fabrication
 breadcrumb: Speciality Fabrication
