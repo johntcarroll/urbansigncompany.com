@@ -12,7 +12,7 @@ client:
 design: 
   name: Cloud Gehshan Associates
   site: http://cloudgehshan.com
-image: bronze-wall-1.jpg
+image: bronze-wall-2.jpg
 count_of_image: 5
 ---
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -24,6 +24,7 @@ count_of_image: 5
     <a {{ href | img : "fotorama/bronze-wall-3.jpg" }}>{{ src | img : "fotorama/bronze-wall-3.jpg" }}</a>
     <a {{ href | img : "fotorama/bronze-wall-4.jpg" }}>{{ src | img : "fotorama/bronze-wall-4.jpg" }}</a>
     <a {{ href | img : "fotorama/bronze-wall-1.jpg" }}>{{ src | img : "fotorama/bronze-wall-1.jpg" }}</a>
+    <a {{ href | img : "fotorama/bronze-wall-5.jpg" }}>{{ src | img : "fotorama/bronze-wall-5.jpg" }}</a>   
   </div>
   <div class="visible-xs application-item__icon-slider">
       <i class="icon-swipe"></i>
