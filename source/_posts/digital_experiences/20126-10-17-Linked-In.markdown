@@ -23,7 +23,7 @@ count_of_image: 5
     <a {{ href | img : "fotorama/linked-in-mov.m4v" }}>{{ src | img : "fotorama/linked-in-mov.m4v" }}</a>
     <a {{ href | img : "fotorama/linked-in-2.jpg" }}>{{ src | img : "fotorama/linked-in-2.jpg" }}</a>
     <a {{ href | img : "fotorama/linked-in-3.jpg" }}>{{ src | img : "fotorama/linked-in-3.jpg" }}</a>
-    <a {{ href | img : "fotorama/linked-in-4.jpg" }}>{{ src | img : "fotorama/linked-in-4.jp" }}</a>
+    <a {{ href | img : "fotorama/linked-in-4.jpg" }}>{{ src | img : "fotorama/linked-in-4.jpg" }}</a>
     <a {{ href | img : "fotorama/linked-in-1.jpg" }}>{{ src | img : "fotorama/linked-in-1.jpg" }}</a>
   </div>
   <div class="visible-xs application-item__icon-slider">
