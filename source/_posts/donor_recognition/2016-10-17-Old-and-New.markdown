@@ -13,7 +13,7 @@ design:
   name: Cloud Gehshan Associates
   site: http://cloudgehshan.com
 image: new-and-old-1.jpg
-count_of_image: 5
+count_of_image: 4
 ---
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <p class="application-item__content application-item__content--top">
