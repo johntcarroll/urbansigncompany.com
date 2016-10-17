@@ -20,10 +20,10 @@ count_of_image: 4
    When The Historical Society of Pennsylvania completed a $5.7M renovation, a critical component was the recognition of their donors. The solution was a seamless blend of new and old processes.
   </p>
   <div class="fotorama application-item__slider" data-nav="thumbs" data-thumbheight="109" border-width="3">
-    <a {{ href | img : "fotorama/new-and-old-2.jpg" }}>{{ src | img : "fotorama/new-and-old-2.jpg" }}</a>
-    <a {{ href | img : "fotorama/new-and-old-3.jpg" }}>{{ src | img : "fotorama/new-and-old-3.jpg" }}</a>
-    <a {{ href | img : "fotorama/new-and-old-4.jpg" }}>{{ src | img : "fotorama/new-and-old-4.jpg" }}</a>
-    <a {{ href | img : "fotorama/new-and-old-1.jpg" }}>{{ src | img : "fotorama/new-and-old-1.jpg" }}</a>
+    <a {{ href | img : "fotorama/new-and-old-2.jpg" }}></a>
+    <a {{ href | img : "fotorama/new-and-old-3.jpg" }}></a>
+    <a {{ href | img : "fotorama/new-and-old-4.jpg" }}></a>
+    <a {{ href | img : "fotorama/new-and-old-1.jpg" }}></a>
   </div>
   <div class="visible-xs application-item__icon-slider">
       <i class="icon-swipe"></i>

@@ -25,6 +25,7 @@ Sample content Trail Signage
     <a {{ href | img : "fotorama/beam-trail-1.jpg" }}></a>
     <a {{ href | img : "fotorama/beam-trail-2.jpg" }}></a>
     <a {{ href | img : "fotorama/beam-trail-3.jpg" }}></a>
+    <a {{ href | img : "fotorama/beam-trail-4.jpg" }}></a>
   </div>
   <div class="visible-xs application-item__icon-slider">
       <i class="icon-swipe"></i>
