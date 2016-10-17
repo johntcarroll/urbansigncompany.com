@@ -11,7 +11,7 @@ client:
   site: http://drive21.com
 design: 
   name: Graham Hanson
-  site: www.grahamhanson.com
+  site: http://www.grahamhanson.com
 image: bike-helmet-wall-1.jpg
 count_of_image: 3
 ---
