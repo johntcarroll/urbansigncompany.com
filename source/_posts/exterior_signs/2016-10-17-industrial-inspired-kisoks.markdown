@@ -1,6 +1,6 @@
 ---
 title: Industrial Inspired Kiosks
-date:  2016-08-14 17:26:19
+date:  2016-10-17 00:00:00
 categories: exterior-signs
 breadcrumb: Exterior Signs
 layout: posts

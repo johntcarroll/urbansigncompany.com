@@ -1,6 +1,6 @@
 ---
 title: Interior Inspiration at Time, Inc. NYC
-date:  2016-08-14 17:26:19
+date:  2016-10-17 00:00:00
 categories: interior-signs
 breadcrumb: Interior Signs
 layout: posts
