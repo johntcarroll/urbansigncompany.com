@@ -39,10 +39,8 @@ count_of_image: 9
     </div>
   <p class="application-item__content application-item__content--bottom">
     The wide range of solutions used a variety of approaches to echo the vibe of the venue:
-    <ul>
-      <li>Large illuminated channel letters stretch almost 60' across new fascia banding with die-cut musical notes & stars. They notes and stars “twinkled” via a state-of-the-art color changing light system. Urban rebuilt the horizontal fascia banding along the entire front of the roof line, providing clean lines and a sleek new face to the community.</li>
-      <li>Aluminum flag parking signs with vibrant contemporary imagery and accentuated with a dimensional music visually pop in the urban environs and simplify parking options.</li>
-      <li>Wayfinding signage has to work 24/7 - easily visible during the day, and gently illuminated at night so as not to detract from the performances. The wayfinding sign EXIT, seating indicators and even the highly-detailed seating chart are push-through, back-lit acrylic. The back-lit green edging added a pulse of energy.</li>
-    </ul>
+      * Large illuminated channel letters stretch almost 60' across new fascia banding with die-cut musical notes & stars. They notes and stars “twinkled” via a state-of-the-art color changing light system. Urban rebuilt the horizontal fascia banding along the entire front of the roof line, providing clean lines and a sleek new face to the community.
+      * Aluminum flag parking signs with vibrant contemporary imagery and accentuated with a dimensional music visually pop in the urban environs and simplify parking options.
+      * Wayfinding signage has to work 24/7 - easily visible during the day, and gently illuminated at night so as not to detract from the performances. The wayfinding sign EXIT, seating indicators and even the highly-detailed seating chart are push-through, back-lit acrylic. The back-lit green edging added a pulse of energy.
   </p>
 </div>
