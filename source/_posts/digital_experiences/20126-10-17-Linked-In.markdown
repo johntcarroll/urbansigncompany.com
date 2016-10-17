@@ -20,7 +20,6 @@ count_of_image: 5
    Built for Linked In’s New York City location, these “feature walls” create a high-tech, energetic vibe to their workplace.
   </p>
   <div class="fotorama application-item__slider" data-nav="thumbs" data-thumbheight="109" border-width="3">
-    <a {{ href | img : "fotorama/linked-in-mov.m4v" }}>{{ src | img : "fotorama/linked-in-mov.m4v" }}</a>
     <a {{ href | img : "fotorama/linked-in-2.jpg" }}>{{ src | img : "fotorama/linked-in-2.jpg" }}</a>
     <a {{ href | img : "fotorama/linked-in-3.jpg" }}>{{ src | img : "fotorama/linked-in-3.jpg" }}</a>
     <a {{ href | img : "fotorama/linked-in-4.jpg" }}>{{ src | img : "fotorama/linked-in-4.jpg" }}</a>
