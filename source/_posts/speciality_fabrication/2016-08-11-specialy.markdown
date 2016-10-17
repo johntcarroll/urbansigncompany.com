@@ -1,11 +1,11 @@
 ---
-title: Specialy
+title: Speciality
 date:   2016-08-11 17:26:19
-categories: specialy-fabrication
-breadcrumb: Specialy Fabrication
+categories: speciality-fabrication
+breadcrumb: Speciality Fabrication
 layout: posts
 permalink: /application/:categories/information-kiosks-1/
-folder: specialy-fabrication
+folder: speciality-fabrication
 client:
   name: Borough Of Phoenixville
   site: http://www.phoenixville.org
