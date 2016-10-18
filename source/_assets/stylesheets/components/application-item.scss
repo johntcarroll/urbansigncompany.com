@@ -119,7 +119,7 @@
         &--prev {
           background-color: $color-lochmara;
           background: $color-lochmara;
-          bottom: -23.7%;
+          bottom: -119px;
           cursor: pointer;
           top: auto;
           font-size: 30px;
@@ -338,14 +338,14 @@
 
     &--left {
       text-align: left;
-      
+
       @include breakpoint('phone-max') {
       }
     }
 
     &--right {
       text-align: right;
-      
+
       @include breakpoint('phone-max') {
       }
     }
@@ -456,7 +456,7 @@
             @include breakpoint ('phone-max') {
               font-size: 22px;
             }
-            
+
             &:hover {
               color: $color-lochmara;
             }
