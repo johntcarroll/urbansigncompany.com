@@ -89,8 +89,20 @@
     }
   }
 
+  @else if $breakpoint == "medium" {
+    @media (min-width: $screen-md-min) {
+      @content;
+    }
+  }
+
   @else if $breakpoint == "large" {
     @media (min-width: $screen-md-min) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "high" {
+    @media (min-width: 1600px) {
       @content;
     }
   }

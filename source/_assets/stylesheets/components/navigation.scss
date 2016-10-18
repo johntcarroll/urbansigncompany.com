@@ -36,6 +36,15 @@
       border: 1px solid $color-white;
       border-right: none;
 
+      @include breakpoint ('high') {
+        width: 14% !important;
+      }
+
+      @include breakpoint ('medium') {
+        width: 18%;
+        white-space: nowrap;
+      }
+
       @include breakpoint ('tablet') {
         width: 20%;
       }
@@ -56,10 +65,15 @@
       display: block;
       background-color: $color-nepal;
       text-transform: uppercase;
-      padding: 14px 11px;
+      padding: 14px 8px;
       font-size: 12px;
       letter-spacing: 2.3px;
       @include font-base-medium;
+
+      @include breakpoint ('tablet-desktop') {
+        font-size: 10px;
+        padding: 14px 2px;
+      }
 
       @include breakpoint ('tablet') {
         font-size: 10px;

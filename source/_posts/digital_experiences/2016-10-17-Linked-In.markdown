@@ -1,0 +1,37 @@
+---
+title: Linked In Feature Walls
+date:   2016-10-17 00:00:00
+categories: digital-experiences
+breadcrumb: Digital Experiences
+layout: posts
+permalink: /application/:categories/Linked-In-Feature-Walls/
+folder: digital-experiences
+client:
+  name: Drive 21
+  site: http://drive21.com
+design: 
+  name: Graham Hanson
+  site: http://www.grahamhanson.com
+image: linked-in-4.jpg
+count_of_image: 5
+---
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <p class="application-item__content application-item__content--top">
+   Built for Linked In’s New York City location, these “feature walls” create a high-tech, energetic vibe to their workplace.
+  </p>
+  <div class="fotorama application-item__slider" data-nav="thumbs" data-thumbheight="109" border-width="3">
+    <a {{ href | img : "fotorama/linked-in-2.jpg" }}></a>
+    <a {{ href | img : "fotorama/linked-in-3.jpg" }}></a>
+    <a {{ href | img : "fotorama/linked-in-4.jpg" }}></a>
+    <a {{ href | img : "fotorama/linked-in-1.jpg" }}></a>
+  </div>
+  <div class="visible-xs application-item__icon-slider">
+      <i class="icon-swipe"></i>
+    </div>
+  <p class="application-item__content application-item__content--bottom">
+    The eye-popping digital wall  has four 65” portrait LED screens with a 10mm RGB ticker display scrolling across the top. An integrated touchscreen monitor is used to activate and modify the graphics.
+  </p>
+  <p class="application-item__content application-item__content--bottom">
+    For an interactive experience, Urban built a fabricated aluminum cabinet and grid to hold 4,000 custom LED rocker switches with encased wiring. Visitors and staff create their own designs by toggling the switches on or off.
+  </p>
+</div>
