@@ -119,19 +119,13 @@
         &--prev {
           background-color: $color-lochmara;
           background: $color-lochmara;
-          bottom: -23.7%;
+          bottom: -119px;
           cursor: pointer;
           top: auto;
           font-size: 30px;
           height: 109px;
           width: 30px;
           z-index: 9999;
-
-          @include breakpoint ('tablet') {
-            bottom: -28.6%;
-            font-size: 25px;
-            width: 25px;
-          }
 
           &:before {
             color: $color-white;
@@ -338,14 +332,14 @@
 
     &--left {
       text-align: left;
-      
+
       @include breakpoint('phone-max') {
       }
     }
 
     &--right {
       text-align: right;
-      
+
       @include breakpoint('phone-max') {
       }
     }
@@ -456,7 +450,7 @@
             @include breakpoint ('phone-max') {
               font-size: 22px;
             }
-            
+
             &:hover {
               color: $color-lochmara;
             }

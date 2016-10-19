@@ -158,6 +158,10 @@ $url_1: url(/assets/fotorama/fotorama@2x.png);
   right: -10px;
 }
 
+.fotorama__stage {
+  position: relative;
+  z-index: 10;
+}
 
 .fotorama__arr {
   //Instead of the line below you could use @include user-select($select)
