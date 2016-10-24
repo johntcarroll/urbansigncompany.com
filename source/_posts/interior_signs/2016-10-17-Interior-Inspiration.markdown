@@ -12,14 +12,23 @@ client:
 design:
   name: Airspace
   site: http://www.airspace.nyc
-image: interior-inspiration-1.jpg
-count_of_image: 2
+image: time-inspiration-1.jpg
+count_of_image: 11
 ---
 
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <div class="fotorama application-item__slider" data-nav="thumbs" data-thumbheight="109" border-width="3">
-    <a {{ href | img : "fotorama/interior-inspiration-1.jpg" }}></a>
-    <a {{ href | img : "fotorama/interior-inspiration-2.jpg" }}></a>
+    <a {{ href | img : "fotorama/time-inspiration-1.jpg" }}></a>
+    <a {{ href | img : "fotorama/time-inspiration-2.jpg" }}></a>
+    <a {{ href | img : "fotorama/time-inspiration-3.jpg" }}></a>
+    <a {{ href | img : "fotorama/time-inspiration-4.jpg" }}></a>
+    <a {{ href | img : "fotorama/time-inspiration-5.jpg" }}></a>
+    <a {{ href | img : "fotorama/time-inspiration-6.jpg" }}></a>
+    <a {{ href | img : "fotorama/time-inspiration-7.jpg" }}></a>
+    <a {{ href | img : "fotorama/time-inspiration-8.jpg" }}></a>
+    <a {{ href | img : "fotorama/time-inspiration-9.jpg" }}></a>
+    <a {{ href | img : "fotorama/time-inspiration-10.jpg" }}></a>
+    <a {{ href | img : "fotorama/time-inspiration-11.jpg" }}></a>
   </div>
   <div class="visible-xs application-item__icon-slider">
     <i class="icon-swipe"></i>
