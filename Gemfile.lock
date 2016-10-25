@@ -118,6 +118,3 @@ DEPENDENCIES
   therubyracer
   thin
   uglifier
-
-BUNDLED WITH
-   1.13.1

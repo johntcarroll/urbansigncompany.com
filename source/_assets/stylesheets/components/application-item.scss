@@ -39,15 +39,17 @@
     &--full-width {
       max-width: 100%;
       padding: 0 15px;
-      height: 31px;
+      //height: 31px;
+      margin-bottom: -20px;
 
       @include breakpoint ('tablet') {
-        height: 28px;
+        //height: 28px;
       }
 
       @include breakpoint ('phone-max') {
         height: auto;
         margin-top: 22px;
+        margin-bottom: 0;
       }
     }
   }
@@ -235,11 +237,16 @@
     line-height: 1.4;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+    @include clearfix;
+
+    @include breakpoint ('phone-max') {
+      margin-bottom: 20px;
+    }
 
     @include breakpoint ('phone-max') {
       letter-spacing: 1px;
-      margin-bottom: 55px;
+      margin-bottom: 10px;
     }
 
     a {
@@ -258,11 +265,11 @@
 
   &__post-nav {
     position: relative;
-    top: -20px;
+    //top: -20px;
     @include clearfix;
 
     @include breakpoint ('tablet') {
-      top: -22px;
+      //top: -22px;
     }
 
     a {
