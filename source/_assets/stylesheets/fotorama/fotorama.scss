@@ -327,6 +327,7 @@ $url_1: url(/assets/fotorama/fotorama@2x.png);
   position: relative;
   direction: ltr;
   z-index: 0;
+  overflow: hidden;
   .fotorama__grab {
     cursor: move;
     cursor: grab;
@@ -830,11 +831,11 @@ $url_1: url(/assets/fotorama/fotorama@2x.png);
   }
 }
 .fotorama__arr--prev {
-  left: 2px;
+  left: 0;
   background-position: 0 0;
 }
 .fotorama__arr--next {
-  right: 2px;
+  right: 0;
   background-position: -32px 0;
 }
 .fotorama__arr--disabled {

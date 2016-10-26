@@ -1,5 +1,9 @@
 .post-page {
 
+  .hat {
+    margin-bottom: 0;
+  }
+
   .application-item__container--full-width {
     padding: 0 20px;
 
@@ -11,12 +15,17 @@
   .separator--left-employment {
 
     &:before {
-      height: 98.98%;
+      height: 100%;
 
-      @include breakpoint('tablet') {
-        height: 98.7%;
-      }
+      //@include breakpoint('tablet') {
+      //  height: 98.7%;
+      //}
     }
+  }
+
+  .separator--left-content:before {
+    height: 100%;
+    top: 0;
   }
 
   .separator-wrapper--content {
