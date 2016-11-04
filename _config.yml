@@ -20,5 +20,4 @@ url: "http://54.172.155.116"
 
 # Build settings
 markdown: kramdown
-
 exclude: ['vendor']
