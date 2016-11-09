@@ -16,7 +16,7 @@ description: Prototyping starter kit for Jekyll
 
 # Name of project on Github
 baseurl: ""
-url: "http://code.ishb.us/staging/urbansign"
+url: "54.172.155.116"
 
 # Build settings
 markdown: kramdown
