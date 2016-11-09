@@ -15,8 +15,8 @@ title: Jekyll Starter
 description: Prototyping starter kit for Jekyll
 
 # Name of project on Github
-#baseurl: ""
-url: "54.172.155.116"
+baseurl: ""
+url: "http://54.172.155.116"
 
 # Build settings
 markdown: kramdown
