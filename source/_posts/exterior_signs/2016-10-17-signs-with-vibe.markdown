@@ -20,7 +20,6 @@ count_of_image: 9
   <div class="fotorama application-item__slider" data-nav="thumbs" data-thumbheight="109" border-width="3">
     <a {{ href | img : "fotorama/signs-with-vibe-1.jpg" }}></a>
     <a {{ href | img : "fotorama/signs-with-vibe-2.jpg" }}></a>
-    <a {{ href | img : "fotorama/signs-with-vibe-3.jpg" }}></a>
     <a {{ href | img : "fotorama/signs-with-vibe-4.jpg" }}></a>
     <a {{ href | img : "fotorama/signs-with-vibe-5.jpg" }}></a>
     <a {{ href | img : "fotorama/signs-with-vibe-6.jpg" }}></a>

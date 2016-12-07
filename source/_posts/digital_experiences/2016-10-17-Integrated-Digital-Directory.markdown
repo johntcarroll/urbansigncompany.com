@@ -30,6 +30,6 @@ count_of_image: 4
     Lankenau Medical Center combined the flexibility of digital technology with a traditional graphic map showing navigation zones. Information is networked, making it easy to update at any time.  The directory was implemented in both a wall mounted and freestanding version.
 </p>
 <p class="application-item__content application-item__content--bottom">
-    <a href=''>Click here</a> to see interior signage from this project.
+     <a style='color:blue;' href='/application/interior-signs/Color-Zones-in-Healthcare-Wayfinding/'>Click here</a> to see interior signage from this project.
 </p>
 </div>

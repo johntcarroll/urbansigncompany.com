@@ -27,6 +27,6 @@ count_of_image: 5
       <i class="icon-swipe"></i>
     </div>
 <p class="application-item__content application-item__content--bottom">
-    These donor panels were fabricated using the laminated DuPont sentry glass process. The printed inner layer is laminated between two pieces of tempered glass.  The heading was etched and filled.  The donor names where silkscreened on the first surface. The glass panels are secured in place at the top and bottom with stainless steel holders.
+    These donor panels were fabricated using the laminated DuPont sentry glass process. The printed inner layer is laminated between two pieces of tempered glass.  The heading was etched and filled.  The donor names were silkscreened on the first surface. The glass panels are secured in place at the top and bottom with stainless steel holders.
   </p>
 </div>

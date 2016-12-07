@@ -29,6 +29,9 @@ count_of_image: 6
     <i class="icon-swipe"></i>
   </div>
 <p class="application-item__content application-item__content--bottom">
-    Over the years, the City of Philadelphia has developed comprehensive standards for Wayfinding, Vehicular and Interpretive signage. Urban Sign has consistently been the preferred fabricator, providing the full complement of signs for over 10 years. With varied organizations tapping into the city contract, Urban provides the continuity, expertise and experience with the standards – recommending appropriate sign types when necessary and helping to ensure all signs adhere to the standards
+    This award-winning gateway sign serpentines along the landscape for over 120 feet. The background pattern, evoking the Maryland State flag, is fabricated using a varied dot pattern. As the sign is located in a traffic circle, the back of the sign is as beautifully finished as the front. The biggest challenge in fabrication was consistently forming the sign to the undulating concrete base. Success was ensured with multiple on-site mock-ups.  At night, the large glowing backlit channel letters and interior lighting create a grand entrance to the college campus.
+  </p>
+<p class="application-item__content application-item__content--bottom">
+    Urban Sign was awarded a 2016 Craftsmanship Award by the Building Congress & Exchange. <a style='color:blue;' href='https://www.youtube.com/watch?v=f5UaOM150Qs'>Click here</a> to view a YouTube video of Chris Gellian, Urban Lead Fabricator, talk about building this sign.
   </p>
 </div>
