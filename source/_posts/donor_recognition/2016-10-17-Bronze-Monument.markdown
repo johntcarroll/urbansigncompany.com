@@ -12,15 +12,15 @@ client:
 design: 
   name: Bohlin Cywinski Jackson
   site: http://bcj.com/
-image: bronze-monumnet-1.jpg
+image: bronze-monument-1.jpg
 count_of_image: 3
 ---
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <div class="fotorama application-item__slider" data-nav="thumbs" data-thumbheight="109" border-width="3">
-    <a {{ href | img : "fotorama/bronze-monumnet-1.jpg" }}></a>
-    <a {{ href | img : "fotorama/bronze-monumnet-2.jpg" }}></a>
-    <a {{ href | img : "fotorama/bronze-monumnet-3.jpg" }}></a>
-    <a {{ href | img : "fotorama/bronze-monumnet-4.jpg" }}></a>
+    <a {{ href | img : "fotorama/bronze-monument-1.jpg" }}></a>
+    <a {{ href | img : "fotorama/bronze-monument-2.jpg" }}></a>
+    <a {{ href | img : "fotorama/bronze-monument-3.jpg" }}></a>
+    <a {{ href | img : "fotorama/bronze-monument-4.jpg" }}></a>
     
   </div>
   <div class="visible-xs application-item__icon-slider">
