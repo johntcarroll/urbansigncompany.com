@@ -33,6 +33,6 @@ count_of_image: 4
     Urban Sign etched and filled donor names on the interior courtyard granite wall located near the sign and along the pathway leading up to the building.
   </p>
 <p class="application-item__content application-item__content--bottom">
-    <a href='/application/donor-recognition/Luminous-Bronze-Wall/'>Click here</a> to see the gateway sign from this project.
+    <a style='color:blue;' href='/application/donor-recognition/Luminous-Bronze-Wall/'>Click here</a> to see the gateway sign from this project.
   </p>
 </div>
