@@ -11,7 +11,7 @@ client:
   site: 
 design: 
   name: Pentagram
-  site:http://www.pentagram.com/
+  site: http://www.pentagram.com/
 image: engraved-wall-1.jpg
 count_of_image: 3
 ---
