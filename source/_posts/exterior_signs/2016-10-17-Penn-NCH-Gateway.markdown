@@ -32,6 +32,6 @@ count_of_image: 6
     New College House brings together Penn’s community in state-of-the-art facilities.  Their gateway sign reflects this—fabricated from a monolithic rolled aluminum plate with waterjet cut copy.  LED wash lighting highlights the sign at night.
 </p>
 <p class="application-item__content application-item__content--bottom">
-    <a href=''>Click here</a> to see the unique donor signage from this project.
+     <a style='color:blue;' href='/application/donor-recognition/New-College-House-Donor-Signage/'>Click here</a> to see the unique donor signage from this project.
 </p>
 </div>

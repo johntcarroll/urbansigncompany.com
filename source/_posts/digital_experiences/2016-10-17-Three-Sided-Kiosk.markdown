@@ -32,6 +32,6 @@ count_of_image: 6
     Good mix and static and digital graphics.  Finishes and materials were selected to give a millwork feel, to match the lobby entrance.
 </p>
 <p class="application-item__content application-item__content--bottom">
-    <a href=''>Click here</a> to see interior signage from this project.
+    <a style='color:blue;' href='/application/interior-signs/Fabrication-Consistency-in-Healthcare-Wayfinding/'>Click here</a> to see interior signage from this project.
 </p>
 </div>
