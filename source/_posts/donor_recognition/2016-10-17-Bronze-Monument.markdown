@@ -13,7 +13,7 @@ design:
   name: Bohlin Cywinski Jackson
   site: http://bcj.com/
 image: bronze-monument-1.jpg
-count_of_image: 3
+count_of_image: 4
 ---
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <div class="fotorama application-item__slider" data-nav="thumbs" data-thumbheight="109" border-width="3">
