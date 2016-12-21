@@ -7,8 +7,8 @@ layout: posts
 permalink: /application/:categories/High-Tech-Corporate-Lobby/
 folder: digital-experiences
 client:
-  name: <a href="https://www.appnexus.com">Appnexus</a>
-  site: 
+  name: Appnexus
+  site: https://www.appnexus.com
 design: 
   name: Drive 21
   site: http://drive21.com 
