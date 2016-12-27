@@ -7,7 +7,10 @@ layout: posts
 permalink: /application/:categories/Integrated-Digital-Directory/
 folder: digital-experiences
 client:
-  name: Main Line Health | Lankenau Medical Center
+  name: Main Line Health
+  site: https://www.mainlinehealth.org/locations/lankenau-medical-center
+client2:
+  name: Lankenau Medical Center
   site: https://www.mainlinehealth.org/locations/lankenau-medical-center
 design: 
   name: Ex;it

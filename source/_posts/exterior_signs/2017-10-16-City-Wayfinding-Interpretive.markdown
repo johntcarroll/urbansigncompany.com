@@ -10,8 +10,17 @@ client:
   name: City of Philadelphia
   site: http://www.philaparks.org
 design:
-  name: Sussman Prejza | Joel Katz | Cloud Gehshan | Gecko Group 
-  site: www.sussmanprejza.com | www.joelkatzdesign.com | www.cloudgehshan.com | www.geckogroup.com
+  name: Sussman Prejza
+  site: http://www.sussmanprejza.com
+design2:
+  name: Joel Katz
+  site: http://www.joelkatzdesign.com
+design3:
+  name: Cloud Gehshan
+  site: http://www.cloudgehshan.com
+design4:
+  name: Gecko Group 
+  site: www.geckogroup.com
 image: city-wayfinding-1.jpg
 count_of_image: 6
 ---

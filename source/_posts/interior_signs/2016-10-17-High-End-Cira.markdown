@@ -7,8 +7,11 @@ layout: posts
 permalink: /application/:categories/High-End-Finishes-at-Cira-Centre-South/
 folder: interior-signs
 client:
-  name: FMC | Turner Construction
+  name: FMC
   site: http://www.fmc.com
+client2:
+  name: Turner Construction
+  site: http://www.turnerconstruction.com/
 design:
   name: Calori & Vanden-Eynden
   site: http://cvedesign.com

@@ -7,8 +7,11 @@ layout: posts
 permalink: /application/:categories/New-College-House-Donor-Signage/
 folder: donor-recognition
 client:
-  name: Intech Construction | University of Pennsylvania
+  name: Intech Construction
   site: http://www.intechconstruction.com
+client2:
+  name: University of Pennsylvania
+  site: http://www.upenn.edu
 design: 
   name: Bohlin Cywinski Jackson
   site: http://bcj.com/

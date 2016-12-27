@@ -7,8 +7,11 @@ layout: posts
 permalink: /application/:categories/indeed-pin-wall/
 folder: speciality-fabrication
 client:
-  name: Drive 21 / Undisclosed Tech Company
+  name: Drive 21
   site: http://drive21.com
+client2:
+  name: Undisclosed Tech Company
+  site: 
 design: 
   name: Graham Hanson
   site: http://www.grahamhanson.com

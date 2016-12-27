@@ -10,8 +10,11 @@ client:
   name: Intech Construction
   site: http://www.intechconstruction.com
 design:
-  name: Bohlin Cywinski Jackson & Cloud Gehshan 
+  name: Bohlin Cywinski Jackson
   site: http://bcj.com/
+design2:
+  name: Cloud Gehshan
+  site: http://www.cloudgehshan.com
 image: penn-nch-gateway-1.jpg
 count_of_image: 6
 ---

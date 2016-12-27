@@ -7,9 +7,12 @@ layout: posts
 permalink: /application/:categories/Color-Zones-in-Healthcare-Wayfinding/
 folder: interior-signs
 client:
-  name: Main Line Health | Lankenau Hospital
+  name: Main Line Health
   site: https://www.mainlinehealth.org/locations/lankenau-medical-center
-design:
+client2:
+  name: Lankenau Hospital
+  site: https://www.mainlinehealth.org/locations/lankenau-medical-center
+design: 
   name: Ex;it
   site: http://www.exploreexit.com
 image: color-zone-wayfinding-1.jpg

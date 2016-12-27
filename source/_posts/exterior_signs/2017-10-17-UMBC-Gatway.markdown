@@ -8,6 +8,9 @@ permalink: /application/:categories/Award-Winning-UMBC-Gateway/
 folder: exterior-signs
 client:
   name: Whiting-Turner
+  site: http://www.whiting-turner.com
+client2:
+  name: UMBC
   site: http://www.umbc.edu/
 design:
   name: Cloud Gehshan

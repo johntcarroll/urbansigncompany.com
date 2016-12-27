@@ -7,8 +7,11 @@ layout: posts
 permalink: /application/:categories/Recognition-Award/
 folder: interior-signs
 client:
-  name: Drive 21 / Capital One
+  name: Drive 21
   site: http://Drive21.com
+client2: 
+  name: Capital One
+  site: https://www.capitalone.com 
 design:
   name: Graham Hanson Design
   site: http://grahamhanson.com

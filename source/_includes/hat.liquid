@@ -24,10 +24,25 @@
         <div class="hat__client">
           <p>CLIENT</p>
           <a target="_blank" href="{{ post.client.site }}"><h4>{{ post.client.name }}</h4></a>
+          {% if post.client2 %}
+          <a target="_blank" href="{{ post.client2.site }}"><h4>{{ post.client2.name }}</h4></a>
+          {% endif %}
+          {% if post.client3 %}
+          <a target="_blank" href="{{ post.client3.site }}"><h4>{{ post.client3.name }}</h4></a>
+          {% endif %}
         </div>
         <div class="hat__design">
           <p>DESIGN</p>
           <a target="_blank" href="{{ post.design.site }}"><h4>{{ post.design.name }}</h4></a>
+          {% if post.design2 %}
+          <a target="_blank" href="{{ post.design2.site }}"><h4>{{ post.design2.name }}</h4></a>
+          {% endif %}
+          {% if post.design3 %}
+          <a target="_blank" href="{{ post.design3.site }}"><h4>{{ post.design3.name }}</h4></a>
+          {% endif %}
+          {% if post.design4 %}
+          <a target="_blank" href="{{ post.design3.site }}"><h4>{{ post.design3.name }}</h4></a>
+          {% endif %}
         </div>
       </div>
     {% endif %}
