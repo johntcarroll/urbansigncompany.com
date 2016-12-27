@@ -14,6 +14,8 @@ tests:
   site: https://www.appnexus.com
   name: ISHB
   site: https://ishb.us
+  name: TEST
+  site: test.site.com
 design: 
   name: Drive 21
   site: http://drive21.com 
