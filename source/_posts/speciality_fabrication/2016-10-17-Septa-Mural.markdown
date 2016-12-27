@@ -16,7 +16,7 @@ image: septa-mural-1.jpg
 count_of_image: 1
 ---
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-  <div class="fotorama application-item__slider" data-nav="thumbs" data-thumbheight="109" border-width="3">
+  <div class="fotorama application-item__slider" data-nav="thumbs" data-thumbheight="109" border-width="3" data-maxheight="500">
     <a {{ href | img : "fotorama/septa-mural-1.jpg" }}></a>
   </div>
   <div class="visible-xs application-item__icon-slider">

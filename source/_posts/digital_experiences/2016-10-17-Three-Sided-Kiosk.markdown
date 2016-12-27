@@ -16,7 +16,7 @@ image: three-sided-kiosk-1.jpg
 count_of_image: 6
 ---
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-  <div class="fotorama application-item__slider" data-nav="thumbs" data-thumbheight="109" border-width="3">
+  <div class="fotorama application-item__slider" data-nav="thumbs" data-thumbheight="109" border-width="3" data-maxheight="500">
     <a {{ href | img : "fotorama/three-sided-kiosk-1.jpg" }}></a>
     <a {{ href | img : "fotorama/three-sided-kiosk-2.jpg" }}></a>
     <a {{ href | img : "fotorama/three-sided-kiosk-3.jpg" }}></a>
