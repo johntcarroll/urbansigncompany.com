@@ -39,6 +39,6 @@ count_of_image: 13
     <i class="icon-swipe"></i>
   </div>
 <p class="application-item__content application-item__content--bottom">
-    <a href='/application/digital-experiences/Integrated-Digital-Directory/'>Click here </a> to see the digital directory from this project. 
+    <a style='color:blue;' href='/application/digital-experiences/Integrated-Digital-Directory/'>Click here </a> to see the digital directory from this project. 
   </p>
 </div>
