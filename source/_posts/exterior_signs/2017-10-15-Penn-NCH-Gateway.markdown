@@ -9,6 +9,9 @@ folder: exterior-signs
 client:
   name: Intech Construction
   site: http://www.intechconstruction.com
+client2:
+  name: University of Pennsylvania
+  site: http://www.upenn.edu
 design:
   name: Bohlin Cywinski Jackson
   site: http://bcj.com/
