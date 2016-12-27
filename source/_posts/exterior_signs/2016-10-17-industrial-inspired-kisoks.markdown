@@ -10,8 +10,11 @@ client:
   name: Borough of Phoenixville
   site: http://www.phoenixville.org
 design: 
-  name: KRD Design, Delve Associates LLC
+  name: KRD Design
   site: http://www.krddesign.com
+design2:
+  name: Delve Associates LLC
+  site: http://delve-associates.com/
 image: industrial-inspired-5.jpg
 count_of_image: 4
 ---
