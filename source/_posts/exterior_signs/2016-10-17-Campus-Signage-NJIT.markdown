@@ -22,8 +22,8 @@ count_of_image: 10
     <a {{ href | img : "fotorama/campus-signage-njit-2.jpg" }}></a>
     <a {{ href | img : "fotorama/campus-signage-njit-3.jpg" }}></a>
     <a {{ href | img : "fotorama/campus-signage-njit-4.jpg" }}></a>
-    <a {{ href | img : "fotorama/campus-signage-njit-5.jpg" }}></a>
     <a {{ href | img : "fotorama/campus-signage-njit-6.jpg" }}></a>
+    <a {{ href | img : "fotorama/campus-signage-njit-5.jpg" }}></a>
     <a {{ href | img : "fotorama/campus-signage-njit-7.jpg" }}></a>
     <a {{ href | img : "fotorama/campus-signage-njit-8.jpg" }}></a>
     <a {{ href | img : "fotorama/campus-signage-njit-9.jpg" }}></a>

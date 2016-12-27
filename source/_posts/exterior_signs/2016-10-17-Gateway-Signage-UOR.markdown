@@ -30,4 +30,7 @@ count_of_image: 8
   <div class="visible-xs application-item__icon-slider">
     <i class="icon-swipe"></i>
   </div>
+<p class="application-item__content application-item__content--bottom">
+   Perforated panels were chosen to obscure the aging trestle while still providing a sense of its interesting architecture. Wash lighting was mocked up in the shop prior to installation — to ensure the coverage and consistency met design goals. Installation over the busy highway was tricky. Lane-by-lane closures helped lessen the impact on traffic during installation. 
+  </p>
 </div>

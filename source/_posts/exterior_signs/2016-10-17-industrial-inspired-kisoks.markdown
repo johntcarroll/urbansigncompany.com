@@ -13,7 +13,7 @@ design:
   name: KRD Design, Delve Associates LLC
   site: http://www.krddesign.com
 image: industrial-inspired-5.jpg
-count_of_image: 5
+count_of_image: 4
 ---
 
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -22,7 +22,6 @@ count_of_image: 5
     <a {{ href | img : "fotorama/industrial-inspired-2.jpg" }}></a>
     <a {{ href | img : "fotorama/industrial-inspired-1.jpg" }}></a>
     <a {{ href | img : "fotorama/industrial-inspired-3.jpg" }}></a>
-    <a {{ href | img : "fotorama/industrial-inspired-4.jpg" }}></a>
   </div>
   <div class="visible-xs application-item__icon-slider">
       <i class="icon-swipe"></i>

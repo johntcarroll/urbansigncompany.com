@@ -29,6 +29,6 @@ count_of_image: 6
     <i class="icon-swipe"></i>
   </div>
 <p class="application-item__content application-item__content--bottom">
-    Urban Sign works closely with Foundry, producing a family of signage as part of a re-branding initiative.
+    Architectural multi-hued gateway signs create a striking sense of arrival to this New Jersey community. Fabricated aluminum structures with painted aluminum letter-forms expose structural details for visual interest. A mixture of lightboxes with LED lighting and 3-Form lenses create the block pattern. At night, car headlights illuminate the lenses.
   </p>
 </div>

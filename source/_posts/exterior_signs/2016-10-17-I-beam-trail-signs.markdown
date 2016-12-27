@@ -28,7 +28,7 @@ count_of_image: 5
       <i class="icon-swipe"></i>
     </div>
 <p class="application-item__content application-item__content--bottom">
-    As part of the Belmont Plateau Trails Restoration Project, this quiet urban oasis received new trail signage. In this design-build project collaboration was critical to achieve both design and budget goals.
+    As part of the Belmont Plateau Trails Restoration Project, this quiet urban oasis received new trail signage. In this design-build project, collaboration was critical to achieve both design and budget goals.
   </p>
   <p class="application-item__content application-item__content--bottom">
     Over 40 posts with color-coded distance indicators were installed throughout the course to guide visitors. Attention to detail and strict quality control ensured that the 140+ message panels were installed correctly on their respective posts. At the trailhead, a large sign with maps, trail info and a magnetic section allow for informative and flexible messaging.

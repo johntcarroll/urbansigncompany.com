@@ -13,7 +13,7 @@ design:
   name: Sussman Prejza | Joel Katz | Cloud Gehshan | Gecko Group 
   site: www.sussmanprejza.com | www.joelkatzdesign.com | www.cloudgehshan.com | www.geckogroup.com
 image: city-wayfinding-1.jpg
-count_of_image: 8
+count_of_image: 6
 ---
 
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -24,8 +24,6 @@ count_of_image: 8
     <a {{ href | img : "fotorama/city-wayfinding-4.jpg" }}></a>
     <a {{ href | img : "fotorama/city-wayfinding-5.jpg" }}></a>
     <a {{ href | img : "fotorama/city-wayfinding-6.jpg" }}></a>
-    <a {{ href | img : "fotorama/city-wayfinding-7.jpg" }}></a>
-    <a {{ href | img : "fotorama/city-wayfinding-8.jpg" }}></a>
   </div>
   <div class="visible-xs application-item__icon-slider">
     <i class="icon-swipe"></i>
