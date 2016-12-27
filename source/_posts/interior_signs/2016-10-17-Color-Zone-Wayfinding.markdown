@@ -10,7 +10,7 @@ client:
   name: Main Line Health | Lankenau Hospital
   site: https://www.mainlinehealth.org/locations/lankenau-medical-center
 design:
-  name:Ex;it
+  name: Ex;it
   site: http://www.exploreexit.com
 image: color-zone-wayfinding-1.jpg
 count_of_image: 13
