@@ -8,7 +8,7 @@ permalink: /application/:categories/Blending-Old-and-New/
 folder: donor-recognition
 client:
   name: Historical Society of Pennsylvania
-  site: http://www.hsp.org
+  site: https://www.hsp.org
 design: 
   name: Cloud Gehshan Associates
   site: http://cloudgehshan.com
