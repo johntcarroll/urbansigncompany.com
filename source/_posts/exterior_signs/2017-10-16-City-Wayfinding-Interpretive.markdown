@@ -20,7 +20,7 @@ design3:
   site: http://www.cloudgehshan.com
 design4:
   name: Gecko Group 
-  site: www.geckogroup.com
+  site: http://www.geckogroup.com
 image: city-wayfinding-1.jpg
 count_of_image: 6
 ---
