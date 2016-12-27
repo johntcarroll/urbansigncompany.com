@@ -7,8 +7,8 @@ layout: posts
 permalink: /application/:categories/Construction-Scrim-as-Art/
 folder: speciality-fabrication
 client:
-  name: Barnes Foundation
-  site: http://www.barnesfoundation.org
+  name: Undisclosed Art Museum
+  site:
 design: 
   name: Cloud Gehshan
   site: http://cloudgehshan.com
@@ -26,6 +26,6 @@ count_of_image: 4
       <i class="icon-swipe"></i>
     </div>
 <p class="application-item__content application-item__content--bottom">
-    This 12’ high serpentine wall oscillates down the Parkway for over 400’.  The structure was an architectural feature and construction barrier and helped to generate excitement for the Barnes move from the suburbs to Center City. Over 4,000 square feet of self-adhesive printed vinyl was mounted to ACM panels.  These panels were then mounted to a rolled aluminum tube frame.  Fabrication was simplified (and thus more cost-effective) by constructing identically curved sections. The basic curve was then plotted to achieve the intended serpentine design.
+    This 12’ high serpentine wall oscillates down the Parkway for over 400’. The structure was an architectural feature and construction barrier and helped to generate excitement for the Barnes museum’s move from the suburbs to Center City. Over 4,000 square feet of self-adhesive printed vinyl was mounted to ACM panels. These panels were then mounted to a rolled aluminum tube frame. Fabrication was simplified (and thus more cost-effective) by constructing identically curved sections. The basic curve was then plotted to achieve the intended serpentine design.
   </p>
 </div>

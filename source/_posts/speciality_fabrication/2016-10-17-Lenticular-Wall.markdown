@@ -24,6 +24,6 @@ count_of_image: 2
       <i class="icon-swipe"></i>
     </div>
 <p class="application-item__content application-item__content--bottom">
-    Franklin Institute came to Urban Sign with a one-of-a-kind request--a 40-foot long lenticular panel. Lenticular effects are comprised of two distinctly different graphics, interwoven together. As you approach the panel from either end, a unique image will resolve.  The framework is fabricated aluminum.  The V shaped panels and are easy to replace and change out. Coordination of art file development, fabrication of the lenticular panel and graphic placement are critical to achieving this unique visual effect. 
+    Franklin Institute came to Urban Sign with a one-of-a-kind request--a 40-foot long lenticular panel. Lenticular effects are comprised of two distinctly different graphics, interwoven together. As you approach the panel from either end, a unique image will resolve.  The framework is fabricated aluminum.  The V shaped panels and are easy to replace if damaged. Coordination of art file development, fabrication of the lenticular panel and graphic placement are critical to achieving this unique visual effect. 
   </p>
 </div>
