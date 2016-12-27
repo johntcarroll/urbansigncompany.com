@@ -28,6 +28,6 @@ count_of_image: 5
     <i class="icon-swipe"></i>
   </div>
 <p class="application-item__content application-item__content--bottom">
-    Black anodized aluminum cabinets, laser cut letterforms, LED illumination. Brushed aluminum interior wayfinding, silkscreened copy.
+    Black anodized aluminum cabinet, laser cut letterforms and LED illumination set the stage for a fine dining experience at the Balcony Restaurant. The sophisticated interior wayfinding signage is brushed aluminum plaques with silkscreened copy.
   </p>
 </div>

@@ -34,3 +34,7 @@ exiftool.exe -ifd1:all= file.jpg
 ```
 exiftool.exe -Orientation=1 -n zoo-wayfinding-md-4.jpg
 ```
+
+```
+use paint to rotate and save images
+```

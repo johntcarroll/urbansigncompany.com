@@ -12,7 +12,7 @@ client:
 design:
   name: Gecko Group
   site: http://www.geckogroup.com 
-image: art-as-wayfinding-1.jpg
+image: art-as-wayfinding-5.jpg
 count_of_image: 7
 ---
 

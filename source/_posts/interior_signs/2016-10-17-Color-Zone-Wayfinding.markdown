@@ -10,8 +10,8 @@ client:
   name: Main Line Health | Lankenau Hospital
   site: https://www.mainlinehealth.org/locations/lankenau-medical-center
 design:
-  name: https://www.mainlinehealth.org/locations/lankenau-medical-center
-  site: www.exploreexit.com
+  name:Ex;it
+  site: http://www.exploreexit.com
 image: color-zone-wayfinding-1.jpg
 count_of_image: 13
 ---
@@ -35,4 +35,7 @@ count_of_image: 13
   <div class="visible-xs application-item__icon-slider">
     <i class="icon-swipe"></i>
   </div>
+<p class="application-item__content application-item__content--bottom">
+    <a href='/application/digital-experiences/Integrated-Digital-Directory/'>Click here </a> to see the digital directory from this project. 
+  </p>
 </div>
