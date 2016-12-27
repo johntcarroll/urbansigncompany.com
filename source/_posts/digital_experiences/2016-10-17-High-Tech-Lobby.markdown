@@ -9,7 +9,7 @@ folder: digital-experiences
 client:
   name: Appnexus
   site: https://www.appnexus.com
-clients:
+tests:
   name: Appnexus
   site: https://www.appnexus.com
   name: ISHB
