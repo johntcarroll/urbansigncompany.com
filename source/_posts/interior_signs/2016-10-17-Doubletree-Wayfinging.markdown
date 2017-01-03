@@ -10,7 +10,7 @@ client:
   name: DoubleTree Hotel
   site: http://doubletree3.hilton.com/
 design:
-  name: Veronica Miller Design
+  name: Veronica Miller and Associates
   site: http://www.veronicamiller.com 
 image: doubletree-wayfinding-1.jpg
 count_of_image: 5

@@ -12,17 +12,18 @@ client:
 design:
   name: Gecko Group
   site: http://www.geckogroup.com 
-image: art-as-wayfinding-5.jpg
+image: art-as-wayfinding-7.jpg
 count_of_image: 7
 ---
 
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <div class="fotorama application-item__slider" data-nav="thumbs" data-thumbheight="109" border-width="3" data-maxheight="500" data-width="100%" >
-    <a {{ href | img : "fotorama/art-as-wayfinding-5.jpg" }}></a>
+    <a {{ href | img : "fotorama/art-as-wayfinding-7.jpg" }}></a>    
     <a {{ href | img : "fotorama/art-as-wayfinding-1.jpg" }}></a>
     <a {{ href | img : "fotorama/art-as-wayfinding-2.jpg" }}></a>
     <a {{ href | img : "fotorama/art-as-wayfinding-3.jpg" }}></a>
     <a {{ href | img : "fotorama/art-as-wayfinding-4.jpg" }}></a>
+    <a {{ href | img : "fotorama/art-as-wayfinding-5.jpg" }}></a>
     <a {{ href | img : "fotorama/art-as-wayfinding-6.jpg" }}></a>
     <a {{ href | img : "fotorama/art-as-wayfinding-7.jpg" }}></a>
   </div>
