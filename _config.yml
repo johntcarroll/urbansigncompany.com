@@ -16,7 +16,7 @@ description: Urban Sign - a national leader in architechtural sign fabrication.
 
 # Name of project on Github
 baseurl: ""
-url: "http://54.172.155.116"
+url: "http://urbansigncompany.com"
 
 # Build settings
 markdown: kramdown
